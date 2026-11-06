@@ -1,0 +1,7266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0F1111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Happy Dhanteras 2026 - Amazon Pay ₹2 Gift Card Code Dispenser. 100% Static GitHub Pages Ready.">
+  <title>Happy Dhanteras 2026 • Amazon Pay ₹2 Gift Card</title>
+  <style>
+    /* -------------------------------------------------------------
+       APPLE FLUID INTERFACE & OPTICAL TYPOGRAPHY SYSTEM
+       Palette: Amazon Dark Obsidian (#0A0D12, #131921, #232F3E),
+       Amazon Warm Amber/Orange (#FF9900, #FFB84D), 
+       Festive Accents, High-Vibrancy White (#FFFFFF)
+    ------------------------------------------------------------- */
+    :root {
+      font: 100%/1.5 system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+      --bg-dark: #0A0D12;
+      --surface-glass: rgba(19, 25, 33, 0.78);
+      --surface-glass-border: rgba(255, 172, 51, 0.38);
+      --amazon-orange: #FF9900;
+      --amazon-amber: #FFB84D;
+      --amazon-navy: #131921;
+      --amazon-slate: #232F3E;
+      --text-vibrant: #FFFFFF;
+      --text-muted: rgba(255, 255, 255, 0.72);
+      --text-faint: rgba(255, 255, 255, 0.45);
+      --radius-sheet: 26px;
+      --radius-card: 20px;
+      --radius-btn: 14px;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-left: env(safe-area-inset-left, 0px);
+      --safe-right: env(safe-area-inset-right, 0px);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      overflow: hidden;
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 50% 12%, rgba(255, 153, 0, 0.16) 0%, transparent 55%),
+        radial-gradient(circle at 50% 88%, rgba(35, 47, 62, 0.8) 0%, transparent 60%),
+        linear-gradient(180deg, #090C10 0%, #10141B 50%, #07090C 100%);
+      color: var(--text-vibrant);
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+      overscroll-behavior: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Ambient Festive Sparkles Canvas */
+    #ambient-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Viewport Shell */
+    #app {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: calc(var(--safe-top) + 0.5rem);
+      padding-bottom: var(--safe-bottom);
+      padding-left: calc(var(--safe-left) + 1rem);
+      padding-right: calc(var(--safe-right) + 1rem);
+      z-index: 2;
+    }
+
+    /* -------------------------------------------------------------
+       HEADER & STATUS PILL (Apple Translucent Materials)
+    ------------------------------------------------------------- */
+    .top-header {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 10;
+      pointer-events: auto;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.95rem;
+      background: rgba(19, 25, 33, 0.72);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid rgba(255, 172, 51, 0.38);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--amazon-amber);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+      margin-bottom: 0.4rem;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #34C759;
+      box-shadow: 0 0 8px #34C759;
+      animation: pulse-dot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .display-title {
+      font-size: clamp(1.85rem, 6vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFE5B4 45%, #FFB84D 75%, #FF9900 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 24px rgba(255, 153, 0, 0.3);
+      margin-bottom: 0.2rem;
+    }
+
+    .display-sub {
+      font-size: clamp(0.78rem, 2.8vw, 0.92rem);
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* -------------------------------------------------------------
+       AMAZON PAY ₹2 GIFT CARD (REPLACES 24K GOLD BAR)
+       Interactive 3D Fluid Card with Realistic Sheen & Apple Physics
+    ------------------------------------------------------------- */
+    .app-main-layout {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .stage-container {
+      position: relative;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1200px;
+      transform-style: preserve-3d;
+      z-index: 5;
+      padding: 0.5rem 0;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+      will-change: transform, opacity;
+    }
+
+    .stage-container.dimmed {
+      transform: scale(0.93) translateY(-14px);
+      opacity: 0.65;
+    }
+
+    .card-3d-wrapper {
+      position: relative;
+      width: clamp(240px, 80vw, 360px);
+      aspect-ratio: 1.586;
+      cursor: grab;
+      touch-action: none;
+      transform-style: preserve-3d;
+      transform: translate3d(0, 0, 0);
+      will-change: transform, opacity;
+    }
+
+    .card-3d-wrapper:active {
+      cursor: grabbing;
+    }
+
+    .card-3d {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--radius-card);
+      transform-style: preserve-3d;
+      transform-origin: center center;
+    }
+
+    /* Authentic Amazon Pay Voucher Face */
+    .card-face {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--radius-card);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      overflow: hidden;
+      box-shadow: 
+        0 22px 55px rgba(0, 0, 0, 0.8),
+        0 8px 26px rgba(255, 153, 0, 0.22),
+        inset 0 1px 1px rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 172, 51, 0.45);
+    }
+
+    /* Front: Modern Amazon Pay Midnight Slate & Orange Voucher */
+    .card-face.front {
+      background: 
+        radial-gradient(circle at 85% 15%, rgba(255, 153, 0, 0.28) 0%, transparent 50%),
+        radial-gradient(circle at 15% 85%, rgba(35, 47, 62, 0.8) 0%, transparent 60%),
+        linear-gradient(135deg, #1A212D 0%, #131921 40%, #0D1219 100%);
+      transform: rotateY(0deg) translateZ(1px);
+    }
+
+    /* Back: Redemption info and Barcode */
+    .card-face.back {
+      background: 
+        radial-gradient(circle at 30% 70%, rgba(255, 153, 0, 0.2) 0%, transparent 50%),
+        linear-gradient(135deg, #131921 0%, #232F3E 60%, #0F141C 100%);
+      transform: rotateY(180deg) translateZ(1px);
+    }
+
+    /* Specular Light Canvas Overlay */
+    .card-specular-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      border-radius: var(--radius-card);
+      mix-blend-mode: screen;
+      z-index: 4;
+    }
+
+    /* Subtle Card Graphic Watermark */
+    .card-watermark {
+      position: absolute;
+      right: -25px;
+      bottom: -35px;
+      width: 220px;
+      height: 220px;
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Card Content Structure */
+    .card-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 1.15rem 1.35rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #FFFFFF;
+      z-index: 3;
+    }
+
+    /* Card Header */
+    .card-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .amazon-brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .amazon-smile-icon {
+      width: 26px;
+      height: 26px;
+    }
+
+    .amazon-brand-text {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      line-height: 1;
+    }
+
+    .amazon-brand-sub {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--amazon-amber);
+      text-transform: uppercase;
+      margin-left: 0.15rem;
+    }
+
+    .dhanteras-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(255, 172, 51, 0.15);
+      border: 1px solid rgba(255, 172, 51, 0.4);
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--amazon-amber);
+      letter-spacing: 0.02em;
+    }
+
+    /* Center: PROMINENT ₹2 RUPEES DENOMINATION */
+    .card-center-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto 0;
+    }
+
+    .card-amount-wrapper {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      line-height: 0.9;
+      filter: drop-shadow(0 4px 14px rgba(255, 153, 0, 0.45));
+    }
+
+    .card-currency-sym {
+      font-size: clamp(2.2rem, 8vw, 3.2rem);
+      font-weight: 800;
+      color: var(--amazon-orange);
+      margin-right: 0.15rem;
+    }
+
+    .card-amount-num {
+      font-size: clamp(3.8rem, 14vw, 5.2rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFF2D6 40%, #FFB84D 80%, #FF9900 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card-value-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--amazon-amber);
+      margin-top: 0.25rem;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-festival-greeting {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 0.04em;
+      margin-top: 0.15rem;
+    }
+
+    /* Card Bottom Row */
+    .card-bottom-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .card-live-code-chip {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .code-micro-label {
+      font-size: 0.58rem;
+      font-weight: 700;
+      color: var(--text-faint);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .code-micro-val {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: clamp(0.85rem, 3.2vw, 1rem);
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      color: #FFFFFF;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      text-shadow: 0 0 10px rgba(255, 153, 0, 0.4);
+    }
+
+    .card-validity-tag {
+      font-size: 0.62rem;
+      color: var(--amazon-amber);
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* Back Face Content */
+    .card-back-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 3;
+    }
+
+    .card-barcode-strip {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 6px;
+      padding: 0.5rem 0.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .barcode-lines {
+      width: 100%;
+      height: 32px;
+      background: repeating-linear-gradient(
+        90deg,
+        #111 0px, #111 2px,
+        transparent 2px, transparent 4px,
+        #111 4px, #111 7px,
+        transparent 7px, transparent 9px,
+        #111 9px, #111 10px,
+        transparent 10px, transparent 13px,
+        #111 13px, #111 16px
+      );
+    }
+
+    .barcode-text {
+      font-family: ui-monospace, "SF Mono", monospace;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #111;
+      letter-spacing: 0.12em;
+    }
+
+    .card-back-instructions {
+      font-size: 0.68rem;
+      line-height: 1.35;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+
+    .card-drag-hint {
+      position: absolute;
+      bottom: -2.3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--amazon-amber);
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    /* -------------------------------------------------------------
+       GIFT VAULT BOTTOM SHEET (Apple Fluid Materials)
+       Natural Thumb Zone Ergonomics
+    ------------------------------------------------------------- */
+    .bottom-sheet {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: rgba(19, 25, 33, 0.78);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-top: 1px solid rgba(255, 172, 51, 0.38);
+      border-top-left-radius: var(--radius-sheet);
+      border-top-right-radius: var(--radius-sheet);
+      box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.75), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      touch-action: none;
+      transform: translate3d(0, 0, 0);
+      transform-origin: center bottom;
+      will-change: transform, opacity;
+    }
+
+    .sheet-handle-zone {
+      width: 100%;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: grab;
+      touch-action: none;
+      padding: 10px 0;
+    }
+
+    .sheet-handle-zone:active {
+      cursor: grabbing;
+    }
+
+    .sheet-handle {
+      width: 38px;
+      height: 4.5px;
+      border-radius: 999px;
+      background: rgba(255, 172, 51, 0.45);
+      transition: background 0.2s ease, width 0.2s ease;
+    }
+
+    .sheet-handle-zone:active .sheet-handle {
+      background: rgba(255, 172, 51, 0.85);
+      width: 44px;
+    }
+
+    .sheet-body {
+      padding: 0 1.25rem calc(var(--safe-bottom) + 1.25rem) 1.25rem;
+      max-width: 520px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    .sheet-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sheet-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-vibrant);
+      letter-spacing: -0.015em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .sheet-badge {
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(255, 153, 0, 0.2);
+      border: 1px solid rgba(255, 172, 51, 0.5);
+      color: var(--amazon-amber);
+      letter-spacing: 0.02em;
+    }
+
+    /* -------------------------------------------------------------
+       1. RANDOM ₹2 GIFT CODE MONOSPACE BOX & ONE-TAP COPY
+    ------------------------------------------------------------- */
+    .code-display-card {
+      background: rgba(14, 18, 24, 0.9);
+      border: 1px solid rgba(255, 172, 51, 0.35);
+      border-radius: 18px;
+      padding: 0.9rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6), 0 4px 16px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .code-display-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 172, 51, 0.5), transparent);
+    }
+
+    .code-meta-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--amazon-amber);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .code-string-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .code-string {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-variant-numeric: tabular-nums;
+      font-size: clamp(1.15rem, 4.4vw, 1.45rem);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #FFFFFF;
+      text-shadow: 0 0 16px rgba(255, 153, 0, 0.45);
+      user-select: text;
+      -webkit-user-select: text;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Apple Zero-Latency Buttons */
+    .apple-btn {
+      position: relative;
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      border-radius: var(--radius-btn);
+      transition: transform 100ms ease-out, filter 100ms ease-out, background 150ms ease;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .apple-btn::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+    }
+
+    .apple-btn:active, .apple-btn.pressed {
+      transform: scale(0.97) !important;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .apple-btn:hover {
+        filter: brightness(1.08);
+        transform: translateY(-1px);
+      }
+      .apple-btn:active {
+        transform: scale(0.97) translateY(0) !important;
+      }
+      .card-3d-wrapper:hover {
+        cursor: grab;
+      }
+      .card-3d-wrapper:active {
+        cursor: grabbing;
+      }
+    }
+
+    .btn-copy-code {
+      padding: 0.6rem 0.95rem;
+      font-size: 0.82rem;
+      background: linear-gradient(135deg, #FFB84D 0%, #FF9900 100%);
+      color: #111;
+      font-weight: 800;
+      border-radius: 11px;
+      box-shadow: 0 2px 10px rgba(255, 153, 0, 0.4);
+      flex: 1;
+    }
+
+    .btn-copy-code svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    .btn-copy-code.copied {
+      background: linear-gradient(135deg, #34C759 0%, #28A745 100%);
+      color: #FFFFFF;
+      box-shadow: 0 2px 12px rgba(52, 199, 89, 0.45);
+    }
+
+    .code-button-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.55rem;
+      margin-top: 0.2rem;
+    }
+
+    .btn-get-another-code {
+      padding: 0.6rem 0.85rem;
+      font-size: 0.82rem;
+      background: rgba(35, 47, 62, 0.8);
+      color: var(--amazon-amber);
+      border: 1px solid rgba(255, 172, 51, 0.45);
+      font-weight: 700;
+      border-radius: 11px;
+      flex: 1;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-get-another-code svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    .page-credits-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 0 0.2rem 0;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--amazon-amber);
+      text-align: center;
+      border-top: 1px solid rgba(255, 172, 51, 0.2);
+      margin-top: 0.2rem;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    /* -------------------------------------------------------------
+       2. INTERACTIVE "PASTE & VERIFY / REDEEM" WORKFLOW
+    ------------------------------------------------------------- */
+    .paste-verify-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .paste-input-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: rgba(14, 18, 24, 0.8);
+      border: 1px solid rgba(255, 172, 51, 0.28);
+      border-radius: 14px;
+      padding: 0.25rem 0.35rem 0.25rem 0.85rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .paste-input-container:focus-within {
+      border-color: var(--amazon-orange);
+      box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.25);
+    }
+
+    .paste-input-container.verified {
+      border-color: #34C759;
+      box-shadow: 0 0 0 3px rgba(52, 199, 89, 0.25);
+    }
+
+    .paste-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text-vibrant);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      min-width: 0;
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    .paste-input::placeholder {
+      font-family: inherit;
+      color: var(--text-faint);
+      font-size: 0.78rem;
+      letter-spacing: normal;
+    }
+
+    .btn-paste-action {
+      padding: 0.45rem 0.85rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: rgba(255, 153, 0, 0.18);
+      color: var(--amazon-amber);
+      border: 1px solid rgba(255, 172, 51, 0.4);
+      border-radius: 10px;
+    }
+
+    .btn-paste-action svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    .verify-feedback {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      min-height: 1.1rem;
+      padding-left: 0.25rem;
+    }
+
+    .verify-feedback.active-success {
+      color: #34C759;
+      font-weight: 700;
+    }
+
+    .verify-feedback.active-notice {
+      color: var(--amazon-amber);
+      font-weight: 600;
+    }
+
+    /* -------------------------------------------------------------
+       3. PRIMARY ACTION BUTTONS (Natural Thumb Zone)
+    ------------------------------------------------------------- */
+    .sheet-actions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+
+    .btn-redeem-amazon {
+      grid-column: 1 / -1;
+      padding: 0.95rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      background: linear-gradient(135deg, #FFB84D 0%, #FF9900 60%, #E68A00 100%);
+      color: #111;
+      border-radius: var(--radius-btn);
+      box-shadow: 0 4px 18px rgba(255, 153, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+    }
+
+    .btn-redeem-amazon svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .btn-spin-again {
+      grid-column: 1 / -1;
+      padding: 0.82rem 1.1rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      background: rgba(35, 47, 62, 0.65);
+      color: var(--amazon-amber);
+      border: 1px solid rgba(255, 172, 51, 0.4);
+      border-radius: var(--radius-btn);
+    }
+
+    .btn-spin-again svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .sheet-footer-info {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      font-size: 0.68rem;
+      color: var(--text-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding-top: 0.2rem;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .trust-item svg {
+      width: 12px;
+      height: 12px;
+      fill: var(--amazon-amber);
+    }
+
+    /* -------------------------------------------------------------
+       TOAST FEEDBACK
+    ------------------------------------------------------------- */
+    .toast-pill {
+      position: fixed;
+      top: calc(var(--safe-top) + 4.8rem);
+      left: 50%;
+      transform: translateX(-50%) translateY(-20px) scale(0.9);
+      opacity: 0;
+      pointer-events: none;
+      background: rgba(19, 25, 33, 0.92);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(255, 172, 51, 0.6);
+      border-radius: 999px;
+      padding: 0.45rem 1.1rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--amazon-amber);
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+      z-index: 200;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    }
+
+    .toast-pill.active {
+      transform: translateX(-50%) translateY(0) scale(1);
+      opacity: 1;
+    }
+
+    /* -------------------------------------------------------------
+       RESPONSIVE OPTIMIZATION (PHONE VIEW & PC / DESKTOP VIEW)
+    ------------------------------------------------------------- */
+    /* PC & Large Tablets (Side-by-Side 2-Column Dashboard) */
+    @media (min-width: 880px) {
+      html, body {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        touch-action: auto !important;
+      }
+
+      #app {
+        min-height: 100vh;
+        height: auto;
+        justify-content: center;
+        padding: 2.5rem 2rem;
+        max-width: 1240px;
+        margin: 0 auto;
+        overflow: visible;
+      }
+
+      .top-header {
+        max-width: 760px;
+        margin-bottom: 1.5rem;
+      }
+
+      .display-title {
+        font-size: clamp(2.4rem, 4vw, 3.4rem);
+      }
+
+      .display-sub {
+        font-size: 1.05rem;
+      }
+
+      .app-main-layout {
+        display: grid;
+        grid-template-columns: 1.05fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        max-width: 1100px;
+        width: 100%;
+        margin: auto 0;
+      }
+
+      .stage-container {
+        padding: 0;
+        height: auto;
+      }
+
+      .card-3d-wrapper {
+        width: clamp(340px, 32vw, 440px);
+      }
+
+      .card-drag-hint {
+        bottom: -2.8rem;
+        font-size: 0.8rem;
+      }
+
+      .bottom-sheet {
+        position: relative !important;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        max-width: 490px;
+        transform: none !important;
+        border-radius: 24px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 172, 51, 0.35);
+        margin: 0 auto;
+      }
+
+      .sheet-handle-zone {
+        display: none !important;
+      }
+
+      .sheet-body {
+        padding: 1.6rem 1.75rem;
+        max-width: none;
+        gap: 1.15rem;
+        max-height: none;
+        overflow: visible;
+      }
+
+      .stage-container.dimmed {
+        transform: none !important;
+        opacity: 1 !important;
+      }
+    }
+
+    /* Small Phone Screens (<= 380px) */
+    @media (max-width: 380px) {
+      .card-3d-wrapper {
+        width: clamp(230px, 86vw, 290px);
+      }
+
+      .card-content {
+        padding: 0.85rem 1rem;
+      }
+
+      .card-amount-num {
+        font-size: 3.2rem;
+      }
+
+      .card-currency-sym {
+        font-size: 1.9rem;
+      }
+
+      .display-title {
+        font-size: 1.65rem;
+      }
+
+      .code-string {
+        font-size: 1.05rem;
+      }
+
+      .code-button-row {
+        gap: 0.4rem;
+      }
+
+      .btn-copy-code, .btn-get-another-code {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.75rem;
+      }
+    }
+
+    /* Mobile Landscape (Height <= 520px) */
+    @media (max-height: 520px) and (orientation: landscape) {
+      html, body {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        touch-action: auto !important;
+      }
+
+      #app {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+        touch-action: pan-y;
+        padding-top: calc(var(--safe-top) + 0.3rem);
+      }
+
+      .top-header {
+        margin-bottom: 0.4rem;
+      }
+
+      .display-title {
+        font-size: 1.5rem;
+      }
+
+      .app-main-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+        align-items: center;
+      }
+
+      .card-3d-wrapper {
+        width: clamp(220px, 40vw, 300px);
+      }
+
+      .bottom-sheet {
+        position: relative !important;
+        transform: none !important;
+        border-radius: 18px;
+        max-height: none;
+      }
+
+      .sheet-handle-zone {
+        display: none;
+      }
+
+      .sheet-body {
+        padding: 1rem;
+      }
+    }
+
+    /* -------------------------------------------------------------
+       ACCESSIBILITY MEDIA QUERIES (Apple Standards)
+    ------------------------------------------------------------- */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.2s !important;
+      }
+      .card-3d-wrapper, .stage-container, .bottom-sheet {
+        transform: none !important;
+      }
+      .card-face.back {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-transparency: reduce) {
+      .status-pill, .bottom-sheet, .toast-pill {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: #131921 !important;
+      }
+    }
+
+    @media (prefers-contrast: more) {
+      :root {
+        --amazon-orange: #FFA500;
+        --amazon-amber: #FFD700;
+        --text-vibrant: #FFFFFF;
+      }
+      .card-face, .code-display-card, .paste-input-container {
+        border-color: #FFD700 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Festive Sparkles Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- App Shell -->
+  <div id="app">
+
+    <!-- Top Status Header -->
+    <header class="top-header">
+      <div class="status-pill" id="vault-status-pill">
+        <span class="status-dot"></span>
+        <span id="vault-status-text">5,000 ₹2 Codes Loaded</span>
+      </div>
+      <h1 class="display-title">Happy Dhanteras</h1>
+      <p class="display-sub">2026 Prosperity Shagun • Amazon Pay ₹2 Gift Card Dispenser</p>
+    </header>
+
+    <!-- Main Content Layout (Mobile: Vertical Stack, Desktop: 2-Column Split) -->
+    <div class="app-main-layout">
+
+    <!-- 3D Interactive Stage -->
+    <main class="stage-container" id="stage-container">
+      <div class="card-3d-wrapper" id="card-wrapper" role="region" aria-label="3D Amazon Pay ₹2 Gift Card">
+        <div class="card-3d" id="card-3d">
+          
+          <!-- Front Face: Amazon Pay ₹2 Voucher -->
+          <div class="card-face front">
+            <canvas class="card-specular-canvas" id="specular-front"></canvas>
+            
+            <!-- Amazon Smile curved SVG watermark -->
+            <svg class="card-watermark" viewBox="0 0 100 100" fill="#FF9900">
+              <path d="M15.54 63.56C33.78 74.86 61.12 75.57 83.92 65.57C85.86 64.57 88.12 63.45 90.02 61.58C90.84 60.42 90.94 60.19 88.15 62.33C63.65 78.97 32.74 78.96 1.93 64.96C0.83 63.96 1.98 62.44 3.93 61.36C6.27 60.17 12.54 62.51 15.54 63.56Z"/>
+            </svg>
+
+            <div class="card-content">
+              
+              <!-- Top Row: Amazon Pay Brand & Dhanteras Tag -->
+              <div class="card-top-row">
+                <div class="amazon-brand-logo">
+                  <!-- Amazon smile curved icon -->
+                  <svg class="amazon-smile-icon" viewBox="0 0 24 24" fill="#FF9900">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.54 11.56C13.78 14.86 11.12 15.57 8.92 15.57C5.86 15.57 3.12 14.45 1.02 12.58C0.84 12.42 0.94 12.19 1.15 12.33C3.65 13.97 6.74 14.96 9.93 14.96C11.83 14.96 13.98 14.44 15.93 13.36C16.27 13.17 16.54 13.51 15.54 13.56Z"/>
+                  </svg>
+                  <div>
+                    <span class="amazon-brand-text">amazon</span><span style="color:#FF9900;font-weight:900;">pay</span>
+                    <span class="amazon-brand-sub">GIFT CARD</span>
+                  </div>
+                </div>
+                <div class="dhanteras-badge">
+                  <span>✨ DHANTERAS 2026</span>
+                </div>
+              </div>
+
+              <!-- Center: PROMINENT ₹2 RUPEES DENOMINATION -->
+              <div class="card-center-block">
+                <div class="card-amount-wrapper">
+                  <span class="card-currency-sym">₹</span>
+                  <span class="card-amount-num">2</span>
+                </div>
+                <div class="card-value-label">TWO RUPEES SHAGUN</div>
+                <div class="card-festival-greeting">शुभ धनतेरस • Instant Amazon Pay Balance</div>
+              </div>
+
+              <!-- Bottom Row: Live Code & Validity -->
+              <div class="card-bottom-row">
+                <div class="card-live-code-chip">
+                  <span class="code-micro-label">Active Claim Code</span>
+                  <span class="code-micro-val" id="card-micro-code">••••••••••••••</span>
+                </div>
+                <div class="card-validity-tag">
+                  <span>No Expiry • 100% Genuine</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Back Face: Barcode & Instructions -->
+          <div class="card-face back">
+            <canvas class="card-specular-canvas" id="specular-back"></canvas>
+            <div class="card-back-content">
+              <div class="card-barcode-strip">
+                <div class="barcode-lines"></div>
+                <div class="barcode-text" id="card-barcode-text">AMZ-₹2-DHANTERAS</div>
+              </div>
+              <div class="card-center-block" style="margin: 0.5rem 0;">
+                <div style="font-size:0.85rem; font-weight:800; color:#FFB84D; letter-spacing:0.04em;">AMAZON PAY ₹2 GIFT VOUCHER</div>
+                <div style="font-size:0.65rem; color:rgba(255,255,255,0.7); margin-top:0.25rem;">Flick or tap card to cycle next ₹2 gift code</div>
+              </div>
+              <div class="card-back-instructions">
+                Redeemable on Amazon.in for products & digital payments. Add to Amazon Pay balance instantly.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-drag-hint">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          <span>Flick or Drag Card to Dispense Next ₹2 Code</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Interactive Gift Vault Bottom Sheet (Thumb-Zone Ergonomics) -->
+    <section class="bottom-sheet" id="bottom-sheet" role="dialog" aria-label="Amazon Gift Vault Controls">
+      
+      <!-- Grab Handle Zone (10px Hit-Padding) -->
+      <div class="sheet-handle-zone" id="sheet-handle-zone">
+        <div class="sheet-handle"></div>
+      </div>
+
+      <div class="sheet-body" id="sheet-body">
+        
+        <!-- Sheet Title Row -->
+        <div class="sheet-title-row">
+          <div class="sheet-title">
+            <span>✨ Amazon Pay ₹2 Gift Code</span>
+          </div>
+          <span class="sheet-badge" id="sheet-badge-status">Value: ₹2</span>
+        </div>
+
+        <!-- 1. High-Contrast Monospace Random Gift Code Display Box -->
+        <div class="code-display-card">
+          <div class="code-meta-label">
+            <span>₹2 Claim Code Readout</span>
+            <span id="code-pool-indicator">5,000 Genuine Codes</span>
+          </div>
+          <div class="code-string-wrapper">
+            <div class="code-string" id="active-code-display" title="Active Amazon ₹2 Gift Code">LOADING...</div>
+          </div>
+          <div class="code-button-row">
+            <button class="apple-btn btn-copy-code" id="btn-copy-code" type="button" aria-label="Copy Active Code">
+              <svg id="copy-icon" viewBox="0 0 24 24"><path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5H19ZM19 21H8V7H19V21Z"/></svg>
+              <span id="copy-btn-text">Copy Code</span>
+            </button>
+            <button class="apple-btn btn-get-another-code" id="btn-get-another-code" type="button" aria-label="Get Another Code">
+              <svg viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+              <span>Get Another Code</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Interactive "Paste & Verify / Redeem" Workflow -->
+        <div class="paste-verify-section">
+          <div class="paste-input-container" id="paste-input-container">
+            <input 
+              type="text" 
+              class="paste-input" 
+              id="verify-input" 
+              placeholder="Paste ₹2 gift code here to verify or redeem..." 
+              autocomplete="off" 
+              autocorrect="off" 
+              autocapitalize="characters" 
+              spellcheck="false"
+            />
+            <button class="apple-btn btn-paste-action" id="btn-paste-action" type="button" aria-label="Paste from Clipboard">
+              <svg viewBox="0 0 24 24"><path d="M19 2H14.82C14.4 0.84 13.3 0 12 0C10.7 0 9.6 0.84 9.18 2H5C3.9 2 3 2.9 3 4V20C3 21.1 3.9 22 5 22H19C20.1 22 21 21.1 21 20V4C21 2.9 20.1 2 19 2ZM12 2C12.55 2 13 2.45 13 3C13 3.55 12.55 4 12 4C11.45 4 11 3.55 11 3C11 2.45 11.45 2 12 2ZM19 20H5V4H7V7H17V4H19V20Z"/></svg>
+              <span>Paste</span>
+            </button>
+          </div>
+          <div class="verify-feedback" id="verify-feedback">
+            <span>Tap "Paste" to auto-populate from your clipboard.</span>
+          </div>
+        </div>
+
+        <!-- 3. Primary Action Buttons (Amazon Redeem & Re-Spin) -->
+        <div class="sheet-actions-grid">
+          <a class="apple-btn btn-redeem-amazon" id="btn-redeem-amazon" href="https://www.amazon.in/gc/redeem" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M15.54 13.56C13.78 14.86 11.12 15.57 8.92 15.57C5.86 15.57 3.12 14.45 1.02 12.58C0.84 12.42 0.94 12.19 1.15 12.33C3.65 13.97 6.74 14.96 9.93 14.96C11.83 14.96 13.98 14.44 15.93 13.36C16.27 13.17 16.54 13.51 15.54 13.56ZM16.89 12.39C16.63 12.06 15.22 12.26 14.59 12.35C14.4 12.38 14.36 12.21 14.53 12.09C15.65 11.3 17.76 11.64 18 11.95C18.23 12.25 17.47 14.33 16.39 15.21C16.23 15.34 16.08 15.26 16.14 15.08C16.38 14.42 17.15 12.72 16.89 12.39Z"/></svg>
+            <span>Redeem ₹2 on Amazon.in</span>
+          </a>
+
+          <button class="apple-btn btn-spin-again" id="btn-spin-again" type="button">
+            <svg viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+            <span>Dispense Another ₹2 Code</span>
+          </button>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="sheet-footer-info">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z"/></svg>
+            <span>₹2 Amazon Shagun</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <span>No Expiry Date</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>100% Genuine</span>
+          </div>
+        </div>
+
+        <!-- Page Credits Footer -->
+        <div class="page-credits-footer">
+          <span>From your future stepdad</span>
+        </div>
+
+      </div>
+    </section>
+
+    </div><!-- /.app-main-layout -->
+
+    <!-- Floating Feedback Toast -->
+    <div class="toast-pill" id="toast-pill" role="status" aria-live="polite">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#34C759"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      <span id="toast-message">Copied to Clipboard!</span>
+    </div>
+
+  </div>
+
+  <!-- Hidden Fallback Copy Helper -->
+  <textarea id="hidden-copy-area" style="position:fixed;top:-9999px;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true"></textarea>
+
+  <!-- Complete 5,000 Unedited Amazon Gift Codes Embedded Directly from codes.txt -->
+  <script id="embedded-codes-data" type="text/plain">
+GFBWQM34YNJU8G
+AT3VW3J7KKG6VJ
+URBQJDXUKAT88W
+CQK6FPQ46AKDV3
+ARTJYKKPHDPPRX
+K66NBVHRQV3UEF
+MYHE3G7EUTPGRT
+EMVAWVAWN3DEKN
+C3H7VN3RDJEFRW
+AJVCNFYKFFWRRQ
+3KNHEM3VGR368X
+4WN7ABAR3XN7BA
+CPQGTMAUDUGEKB
+Q6KMHUGPNAMYGJ
+H7JXBGRKQXJMJC
+QAG73GB7FYMGTX
+UCDG8R3G46E7F8
+BFPG7UNCM6KJMH
+W7PXCEXGYD4BT6
+RMGVMPTQMPF67R
+E77EPHJ6G3UW43
+RBCGNV6QTPMBWD
+HFCHEB4FJCY67U
+G8WUTRPATQ77FQ
+D4CNJ63YKBREKH
+DBD8Y3CDDYKHQ7
+8TFT48XB8P3YER
+WJY46CY7GUCXE8
+6KMEDF8WY6A3BC
+GJQ7BJT3NKTBUA
+N88MBVFGMVTFJQ
+3JRQFTAHTJPHGM
+KNXMNBGGYDQK7K
+BGK8F6RBB344DR
+M4GDW6NX7XPHDA
+XG3DQRFNFVNWRF
+GX8XCN6Y7RY4HH
+YEHRNBWYTBNUG7
+U3UNBKH6VWHMAQ
+TPM63DM4BME3HR
+TGP3YVP47E88MQ
+VMHFWG3M8TKWTH
+FCRJR64HJXM74E
+FBXRG7WWHR3W8T
+3JKUCHE8FNFGJN
+BCXAX6KUBFWQNA
+XDFCHQPQVKC8WV
+VQP3EWTT7VE6VH
+RJDKN6KMUNHDUD
+WH6KT86KB4E3NP
+CD63MF8BP7PQEQ
+87RUBQXYYEF6G8
+GYJTB83DKTQ6HB
+V6HP4J6F8Y7DEP
+KMFWTA8UFW4PBX
+WBX6UEN7W7F3F3
+RWJYHYVK3R4QWC
+JCNUDNUPEXPCYT
+DQGAXU47KGK7AN
+V7U44YX4CVUUDQ
+M7GRPJP6AFATHC
+PPWAP3PBYK4M8A
+86UEWBH3JFR3GC
+JFWE8BYMEEX8FA
+EBYCWXAKRVUEGN
+H8P7JE7Y7X8GXA
+7NX4N3KCTAEW6W
+ECF84NPBAVWWJJ
+G3H4CVKGT767D4
+DNT4BUY8MBBFTW
+X38XMFE3D38H3V
+JAFQVCXJFFT8KK
+GA6B7NJRGYCGRQ
+GHQ7GY8UXCVT7U
+NDU6DUG44HMQF4
+7KCNFXBFGHA8GP
+FPHT8TJGRDVPDY
+JPN8UR6GC8DMMG
+FN4JUEGM6P3FQW
+NJUHBTG7Q8MNHE
+QAVFHPTJYG3AFP
+Y8YHARDYMMXPP6
+6NEGKVRFVMFYHN
+JXNFUFX6NWDFTD
+HB34RBVMCCACCF
+WXBXGFCYGPU4YR
+66PPQPR4VP7ATT
+QGV3AUEYRFED3M
+DEGBJWDGWTKDUN
+HT3GN8DTBURBBX
+Q6K3RMNVFGC3FN
+H7JG87DMXXW6DM
+8FXVPA4C86T7JQ
+VJ73YQKQK7URYK
+YRBMCEBPU6QBQA
+RGKUKMMRQTAEQP
+EUTJ6U64KAAB7U
+6DGYGQ3CA467TQ
+DTTJJQG6VFHACK
+PDPPFDFW73BBUH
+JXVJB4KPVGMURJ
+YUXVCFBHRHN4BP
+BDATNXW8X7Y7VQ
+AFRTNQRDF6XEG8
+3KEY8QPHXTHWNG
+R4KEWNPDD8KDB6
+BTQYKPF84PQHEN
+FGP7QHD67BM47J
+T7FMYQNTVATTR8
+P3TUUWM4HUX44K
+W6J7JVUB4C6J7B
+JX3J6ERHMQKFUM
+RHFPXWME3JXFHF
+ENEQM3TXYJFCTD
+JJ4EH4KWBRYBRJ
+WXENUPCQVT4PBY
+R8XHRPJKFDAMEU
+3HVJCGUQQFFYHQ
+M7BBQEEV4C6JGQ
+8EETGMQTP74A8K
+WEU3APQQ4QTEP7
+URHRA7XABUCF3F
+TDAYFYBUPWYYJ6
+JMRUAHF8GAA6PC
+8VWWWN3QNRPCEU
+NNP3QFW4W8HFQG
+VGG6N3U3C7GUJE
+JBA8KHTTG6HHRN
+4AKGMGRKGN6VRH
+BJVKW36X64FJKY
+CQPQXEUCXP3TF4
+PTKRNP6KDAMDGQ
+FR4RG6PE3BA7EQ
+HHJJUBYVCWWKNY
+MRHQUPJNHECFTK
+FGR3BTXHCWRQ6K
+UE8RD7AFD6EGKR
+WRCDKUDQVDFCB6
+TXXDGJVQVETKKT
+VC4ND6CQKD3EBD
+N3YKAHDQYUDG8M
+E8VPKCVAGF73QQ
+YPUQENFGPRTC7V
+RK8AUGGWX38BJ7
+VAP7EE6P6DJY3Y
+4BHBH8JKN4RANM
+UEFKMAJYDGKGYG
+MMRJYXF6JR437H
+XCUKMGP48KNCCB
+GRFUQDDG7QUQW6
+7UBQCMBM3JXURB
+J4QQB3QMJYYVNA
+8KHQE4W3AATKVY
+QRPJD8WW8XUK8J
+JNUY8DKPR348YE
+8MM6TXD4TX4UFH
+JD6TAK4XUATFAN
+JECB8FVE6TEBGU
+463D4AJRH4QJDF
+F8MRJ6MFRD6FJY
+8PGJ6UN3468687
+88PQXUAWXWHWUW
+QBRTVPNQFEEGM8
+QUMEXHFMQECKAU
+M7RQBGEAX7RH76
+D4JKM4B884N3G3
+RHBTADPRBEQJRP
+PCUGD8K8H8WAEV
+4NB8ARCY77MJWJ
+VMWEAKJQ6G4AHY
+NV6TAGFDRVPE6V
+6J48NG6BRX6MHD
+MUMMRK6RFNADB7
+FWTEWJDN8BWJDA
+M8P7X78YVMH7DT
+VMTKBG8RBXDUNJ
+YQYFCH4J8HT6BP
+UVDQ6Y8PXW3ET3
+YDER3846F6H8Q3
+DVMN8UJ6P3E8W6
+447WBVAMNP8YNY
+4RG6GRA4UWDFET
+B7Y4YU3AVVPWB4
+VGAUXKC6NVQNH3
+3JU67Y4NWNRNKC
+3X8DCCEC8YDKPP
+NPQW3E7WT63FC8
+VB8XBAJHPB6F4G
+UYUDDTXFMMV7MM
+HKYNGGAJCGYJCB
+HNYT3V4G684TJK
+K373EWP4K8846A
+HGRVKTRFFRXGAB
+P4UU7QJYYQQNQR
+CT6HQN3QUDCVUV
+VYJ8FCWG4VAGHE
+AWTYQYBVNMCEV7
+CXNMXFK3WJERGJ
+AYAMGUGQUPQQTH
+3GCXDTNYFAGMAN
+T4GEWFF4XHUYTC
+J74G4YET3WJ7VU
+JCAJ36Q77PV8TN
+E78AEBTDEDRDUT
+B34QQA3VU3NDTD
+M8NDJN7JN4TYPT
+MNDDCEKEVHXC6D
+3GKP4MAF4W3WMU
+QEAV3AH7EDRKF4
+8KY67GFNFTRE8U
+G74MDAGQBC7BHN
+JGGUDF44H4A7JH
+GTG4ADT83PP4EQ
+KUCJMC34XTGWFM
+7KHPN8WE3K4XDN
+HHM6FERU7EXMWQ
+HTWQXBNKCGNJAB
+A4YHK6TRPGKWK3
+8TBJGUBDYAM3AG
+AVTVU6NAB8KXCD
+87T66DD84HR7QN
+TUE6EDWCDGGQQ4
+CH6XQTNRH4MQM6
+RUYAD8HF37HW4K
+CJA8AH7PEP4RKH
+HUQJ6MV6YWHJ4Y
+QGX47RYG3BFWAC
+ECYMEUXN4EV3P6
+TYQHD76QBYDXXF
+GKAPU6K63E88WJ
+QYENXC3P4787HQ
+PV7UC7WANECYTA
+FTWW34DWXUHU6J
+QXU44JPAFUKR7B
+TR8DUJDQTATGY4
+BHCE33WCFDGBV7
+7PF7JECVEHWF8Q
+GMYG37R88KAGNK
+6ER7CQNU4JEKDN
+WQ8X4NDBWVTHCU
+YYFAVK6RRG48GV
+ECPE8HHFJ77QGJ
+3QPD7HJXWNBPWQ
+KDKGJX66XUBPUJ
+GD66JMJYMVGTKW
+PYC8CD3GJVFX4K
+AKB7C6RKK4DRDK
+UB4VKUHJPKMCA4
+4DWW447HYGAJ6F
+F7QFJVK7MPTPGY
+PM6W8HR4AMVDFJ
+EC48Q3TYADGQTU
+HPNQQCR7HCNXBG
+VKGPTXKQWDCJMD
+8FBA7UUEYETNRM
+UAQAQJQBMA6TBN
+3FW6YFVBBDNWGJ
+WG4MXADUQVNYB7
+FEAWGNHCBDYQDC
+QDN3QQWNQGVRK4
+MU6JANDEU6HYJ4
+HJAXGYR8YGDTY6
+FB7AKYUJXHKPKY
+CMH37CXA7K4F63
+JPE7Q4XDU4YA7K
+MJGUFDTAB4W7JR
+CA7FKVD4GGYKGN
+HVPQVBYUJDCH46
+8TAAU7BBFWPEBP
+N44WKVCT78CGWN
+DYQJ3UPE6XGEQC
+NCYWABYH6HJT8D
+VMK6HYJ7NQCKQC
+WT4NCMUURJEJNM
+3QACBVBFQPVVWG
+EH386Y7NPFAEJE
+UDJQPHN8GR8TQ7
+VX6NKW3F63CPFV
+V44KR8NEG7XYV8
+K4FX7B4HAP6PCU
+6HKE6DQ7XFWAT3
+AQDTAFFKXCFJ6B
+6DGBQFX8J3V6UC
+QJYNMBQ8TV7RU8
+WMGA3K3AJABCGR
+4BAFG7DB8TUPTY
+CMAWTQ4X8XBYXW
+APCAC68ARCPQKK
+Q6MU8UGFKEXE7E
+M43VRDJ8PUQTBF
+UCYQ3EHJUW44Y8
+UBN838KUHMAKNR
+J6NBFKN8834W6B
+4CYKP7CRP3G7JA
+JYF7WEFYABAXQP
+NN7MGQK4V33JET
+R8A8YBQYA7YY8Y
+DECD7B778HP4CU
+UDMU4AWTG8UA7G
+W8AWFNQEMBADGP
+R4UBKPN67T6GUJ
+E67FJQPJ8YAKBB
+NCGDGNVXFN6YT7
+NUDTGDR3EBF7D8
+P3EYUNBCDUFEA8
+DQHTWQ6XPP38DX
+TMBWCM8RRGWYEG
+NXGRPYFVAFEER3
+B883PTGF77UERQ
+MQDH6AEYQRP3DD
+D8GMAWKT83B4MV
+YT7FH4ABAVQKPR
+AXHXCPAEBPGTDH
+QERJTRC4NK6E8G
+CYGE8GF6Q6GTCT
+VFB3YURVQ43GRB
+E6YY4GRT8MKJMV
+MN6XG8EETPDM8D
+EFKMMJKX7VRQNA
+3FF34PEQJD4Y4T
+XHJRAUWXMYHY63
+FM8VDF4BRFTJXU
+QCXXKKH3637JTQ
+EUTGRWKYQCRHUU
+AXUEU4MCG3KX7M
+M76GDKDRDKU8CB
+8P3KBKT4ADXHNE
+BRAJ873K33QTF6
+8CCMVMCKUTM4RV
+YGGKNJT33JUWRN
+XA86F4VGHRUH36
+QCGMWCGKWUTH83
+TBVP4XPQ67Q8PG
+B3RX6AD7VXVGTT
+3UWVNN6YBCHF4R
+68XRANW6A7RF6B
+7YVTPQWAF4XYWK
+RCJYDTAVWUE7P8
+GYBXHT7RTKA6RF
+3WUDM6NKMB3T4U
+7TNC4HJRFAYFGW
+PWMMFNJ4EJDUAN
+EUEF64N8646DBQ
+UURMBQ8CH8NVGY
+MQV7VTNWE8RTYC
+RUUQNRBYGAC3D3
+K3FEAPWDG8EKT6
+8JKFXCPKDJEMJF
+JNQMD7HAGVKHKT
+NYCQMUVUUFYXNU
+7TJDD7RJ4VGCUB
+CB7EG8HY33APHU
+NTK7HBWMRFQAXJ
+8EQAPC4FR3EMUD
+E7N7WMM46U8KB7
+RCBXVEFJUE66XP
+BQKQYBMAGVKKP8
+EAMF84XCK87A4U
+HF3CYHQNWXCGB7
+8TR8VNKKK7Q6A3
+N86HA7QDDJMUNC
+E7Q8GAV7HRXGKJ
+JK7B7GUB7XCTRG
+RF6YQQ6H4A6RQD
+47DNJXC7MFNQJW
+XAQBPG4AA8E4PH
+C7DNBQMFNCMGKJ
+QJKMXCFPXYBYP8
+KRQBVBRGGVBQAQ
+FVN4JUAGX3TQ8R
+HRG68DNJTBM7AK
+EX8GA7BFXQPDJE
+GGKDEVN6TNCCEE
+6QQ6Q6PETEPRQB
+HJEUFJPFRAYGGK
+HUKV3MUMNW78GB
+TJHR6FEKC8MAU6
+EW3G8WFMB6QMDA
+BFR7TX6NFG7AXC
+MVCAQYNNTM4JV6
+KEN4KQUXCXYBT8
+DB7NUGQQDKHN4M
+7CWDJHRDVXPQUQ
+6T6K76Y3PNFNJB
+VFRN3XDXBU7NND
+B8YJ3PTGCQPHEY
+HD7UTQD4Y8GFHD
+4EY88UDJWMHTQ8
+DQTDGTB7HE6MUN
+UKKJYQGKFRMBYE
+AHTWUXYGGEF7K8
+MKG8DN4DWNXQYW
+A4HD6HUDKEMXFT
+FPJFGUDXP6HJ8J
+EAUAHXPUEJRGGP
+8FJTENCFMBV3PP
+BCYT3FMJ4BRN3R
+BCDU7EJAPMK84U
+R3KQYQFKXQKAQ8
+NTG8FJ4MM3QQW7
+HNYT8KYJDAB6U7
+ARP3AJGJEU6BT7
+X6788WDMJ64PQD
+H47J6AYU8FTRER
+FYBXQNNUBKJ7TR
+BUGNEFG4KXJ8R7
+MCWMG6UMCXCP3R
+FFNCYEE6TH8HBH
+ANTXDAEWCTJXQU
+DF4PM7MYCYNC8J
+MBRAVHWXNTRBC6
+C4BCTQVFDVHPPT
+FW6T4F3WMAPEHE
+MKKNT3YTMCVGAB
+HMEFJGKMYRQ64Y
+DHE8HGNDK76W3M
+TFF8XAWFDGP6RF
+4WTJQ6C4JNDWCJ
+BKGB4GHV438NJJ
+KRKEDYM3WFJTQG
+EQ7VRY34QMBVR7
+3CTC8EEV8U8KDQ
+3MA6868TP4G3NT
+BVRPUFAYATDHR3
+JJPUBATDYDGC34
+6XQ74TAWEH86WV
+UEBXUW6J64HTDR
+4HCXTAX6WCNQQM
+7N7TH6C48WECDM
+EME4FUUHQM7WCM
+PFFBCEJTKMUAJR
+4UXKW68BW7HERV
+HDXHK4UVVTBCTT
+UKRPMQ4NVGHJWC
+QWVHFEF6FX6PW6
+UKMUNRAY8JPM3C
+FNPNYD4PK886M4
+7PDQ3A36TK33BP
+3FKPHTPERU6674
+QF4FTCKB6UR437
+YNBKTHAJECE8NP
+UBQM38RGNTBXGK
+QG38TPXVQNA36J
+V6VUUMEWBXUDWT
+P4CMQBDRJ6YTQY
+TY86K4RJKAW6U8
+F7QCH7X6RFKPUT
+Q7GFEPMFNMVGHE
+FMYDY7GPHU4KQG
+BJAC43FTWCMB3X
+HTMCM4HF4AV86F
+JPQG38RGDHJETH
+Q8CJR34EWMMAN7
+8XKW7UUAX7U7G7
+JEC7EQDCM4KFR3
+76QC7BN3KKBPQG
+BD8JHT4KGWEWNM
+MN7JM6P6JAKDQF
+MCEJQMH7XDVEB4
+4UU846NBACMTFU
+3NV6PNPRWCVNU4
+X3FH8CV38VB8YJ
+U6HF67B3V3Y3M4
+FYEKP3DM3R7RKT
+EVKPTHMHE8R6EC
+6AU34QMVWKV7DX
+RGAQHUCFXFJGXE
+R8YU4QQW8XXKF3
+APAKQPK3Q8HDKE
+Y6TAVFEKAAYNBJ
+ANJFMW7PW8N876
+8P37U78W3PHVDT
+CJHU6GXUPF4M44
+CWWRBYB6VR67JP
+CGPJBMHG7CR6C8
+3HV48AMKRYKQR4
+F7WHWUFKHPDNXK
+G3C6JUAWHBW6Q8
+GQTEJNFEB6HUK8
+YCXCGQTMUXRUJ6
+QAUNKHKFDFWW48
+AC47PCDQVRUH38
+PWDAEYGX4T4XND
+6RJ6HMRETWRBAX
+YHFH6VF8TGYCHW
+UBBWNUQUFDTH8X
+ERRGM787CMTRBB
+B8QCXWDECUNX7C
+YEM64WR4VDJ6BT
+FPWD8N8JG7JPMH
+N46X48HE7C3KDU
+XRV7XJGEV4WQP3
+8B3F68JMKJRDPD
+MRGCKCK8PPG7GQ
+MYBFRED4EWMWQP
+CNUNTTQEGRDWAM
+8PPCVVBKKE7BGU
+NX3DY6P8G37WUY
+WPTJT4CTPBMQK7
+QEHYCGFF8AFCJX
+AAB4AVTCATRQ3Q
+C664GBFCDFVN8Q
+AJARH64WJ6EUNV
+Q7N6B8FK844MWP
+UFEQ8R8T7WEMMF
+TU7M6NG643CTX8
+YCU7FUY4Q3MAWV
+UF4874F8T6KYPA
+VUREWARQTKJ4DA
+KBCGWKC8K6VYPC
+KMDMW473AWQNCN
+N3EBCN3PDV4HDN
+Q4EPHRQYC4FQXU
+QPWAEJ3RV48F8J
+TUDBFY4YCQW3R3
+TNVEGQNGXP86RR
+FXHCTN47HYNAUG
+NANXHHHBV8YB67
+RVA6NYYAXB438H
+FVHKRKWHQ7M78W
+73QHYUHVYMT4WU
+W4TFKEHA674DPP
+77NQNTP8AMUXV6
+JM7WWY88AEYYH3
+TWC4WNB4BME44Y
+CFBVPFPCGP4KDA
+HDPMBDEPPAGKGD
+DFQAP7UANMWBHG
+G4PNUPPEFXAGAM
+XFGCW88FA66Q7W
+ENDBGVUXJRJYKA
+EAFBKPFMNW6MCB
+ATVJ6B3E37CMAQ
+67BQM6XAF76GDP
+GPQ676BFKFGK6B
+68AVGAEAQW7YWV
+4MYYT36348Q7BH
+JHYXW6YXTHQN78
+7B7CEX7JGTUFWB
+6CAXKN3FX6CDEQ
+R6Y4DP3KEMRT7R
+6HYW4ENE4DD6M8
+BGKMADK7ACK4JV
+8MB3FJKDHMJ3FH
+N3YPAFKHRVXPWB
+RABGAX4U7GWDTD
+MCC6NW766VJUEF
+CGJ7NDGE4WQBHD
+FQQVGCKTJD7RFD
+46X674VA4ATJBA
+K7FRKFMJEBPUUT
+YYFUEEB7WKWJPP
+GNHUFG4Q4D3WNA
+YDNMGTFK7J6X4F
+6JFNF8MCU66YU3
+VWWXKCCD7Y86A7
+N6CGJTCBFFP3HQ
+FETRHWNJX3FJNA
+JNKXAEG76HHAPM
+CD4MR4N36WAFRM
+JGQE4UMFGCXGCB
+W47TANBCPRXT6C
+J4GJNF6TKEGTRJ
+4V73KWBPWKJV77
+WRRP7XAXFVM6DP
+M8JA7B4RPJHREA
+QYEAJKYUJGTGDH
+TEVQ683CA7J3NM
+H6RMKNDRRMJGRX
+RM7KH66AA6MUAE
+DKU6XW8JDVKKCN
+NNDT4HGHG6KCNU
+VXBYN4T8FQGCJ7
+MKDUHWJGM7GRAF
+HAVMD74C4FRJCR
+8NWFGNVG8VCQEA
+JAA3UUN764HBYG
+RDMAHQXTP7T8EC
+KJG88QXMNEAMPB
+UAB4XCB67GFPJD
+HWU4YUJNK3X6PX
+U6WTKHK7GU6FGV
+PEDYWUGJMGH7G4
+FXPGKAEHUE4GPF
+EH6DVMXP8NTJYV
+4WQPFKRFMX6FAR
+YWPCYXUQHX6N4H
+V37RTFEX8XHBH7
+BU4E76EHX4C4JN
+UWKGANQQTWP4CC
+AW3XJYQXVBNCDK
+7AHP4Q8WPGYJ7M
+XXKKAX4GKU4TBP
+33AYNUMM7JJF37
+EBENTBNKYYPGWG
+6CGKWY7NX7TQPG
+NRDVMG3M3C3WU8
+4JMUFPCWYV48FN
+HC4CKGHJDKDEV8
+REUP3TFX76PKX7
+4HTN6VQBUN6EJA
+NA3EDM8WGH33B6
+VD8Y6HEHMXKMTX
+V4QFTB6FCNW3GD
+6VARDRHYANP6EB
+RQYJMFPU7NJPF3
+X4EWPF7FAP7436
+MUHVEFUH3QD6VB
+EX8WEDHPH6CQYG
+RAVGC6NYA3WYHE
+KCEKB7QBEMPAEE
+AY8KGXW8KBKJGT
+JQ8VWCNC8Y3WNM
+4TFGXREKXYB47F
+UGYHM7TJBXVQTF
+4B3Q7MFNUMJW6P
+8MTV7JB7YTE8JR
+3K3C67HGXA7PRV
+WXWQQDYWUK4QRY
+66NTPDUJPTTFGD
+GY3DRYHT4AGFYR
+MFCHQ6A3J78GP3
+BCKGG4WM8MA6RF
+6YUXWNXNFFMC48
+MJF7PTEEAEDQWP
+CAQVPJGVVCTHMR
+F8CCYUGDNG8BNA
+QG8RKUCPDBXEMG
+YHVXFDVQ7R4DDV
+W37RMWBEQQ6NBU
+E3M8AUTQJCYM4T
+GFKKQMHDMYVTBF
+VBTPCKA66VYWGM
+4JQMTMBMUBRPR7
+UFXDUBYRNG3HBC
+P8DCRK7YHEDQBW
+UWN6GRNTE3V48M
+N3ETJNYJRY84FM
+36A7QN6TYYVEHB
+VAFMY6DJ4HPVKK
+RYXBKG7F36MYNW
+TUUUJN7UXT4KW8
+U4P7VDYBXYRADY
+KAHYMTKNMDERKQ
+D6YU7PGEGNPFNT
+AFWV6TWGQBFQNR
+CCMAF3PQ8DYECJ
+VJG444EVMJGXYV
+DFGRM8QJNXJCJ4
+B7XYXQED3VPKPP
+73Y3W6UWCXJW43
+BKQH8GG43T44CW
+DXHGTG73QMUDGU
+6JJPYBN3TF78NX
+EHW4DC7VYF8E64
+JEX8E6XF4CP6DB
+EUKXQTVC387EMJ
+3JA6HAW8URABB8
+7FWPBACFDB8XEM
+QNRTXRHK8V3JFK
+8QHYYQCGU6YG4H
+DCQJTVGP4PJANN
+4HP48DF4RRMDJP
+EPMDA64VJ7TH8D
+NRY6HCUY6PYEDR
+AWJ6TUPERMDRPR
+FBXG7E7AQW4GM8
+NBKRJCQW8848VK
+D8TH76KG33QGUC
+36FMTKAQWWETRY
+BHBG63GTWEKEMM
+HADYEWHHK8HBX4
+MVMEUTGPMNJKCX
+QVDRPCRUYPQHPY
+MDVQMHYFJKJCBE
+CYUD7PYPXKC4VR
+DWJ6WCT7DP73KE
+KJYFNC6C3JVFYK
+7UDR4PEVXWXT7A
+WTARFAWDN8EGQT
+YM8C4DY8766GX8
+J6M8MK7MGNFDVY
+PWDRFHKUWA6QFD
+U8AMVCQ7F4PACU
+QHRB6AQYQ6RAJ6
+DTB4HPUHGRF67V
+F4JADVH4M7EAXN
+JAEQEABT3AMHVV
+7APDJMAJRJHJT3
+7ACXBTXTCXBEBN
+JP6F6EH33BXJER
+D3CY6F8FTYVEDU
+MAHBQYT7GX3HJ6
+EKEQW8R48DVETW
+BKXEQGTA7T3NUD
+G7QN64RYMFANVR
+8NAXDJ47X7JGRJ
+C4HDTNWGVMBJ7W
+CRATPCYNDUATBN
+HKJTQ6PKDX6F6E
+FNJ843RNWE3QY6
+7KCVN7KT634FEX
+T87PYX6M8WKKH4
+6N6TEF6FKYATTQ
+PDGJCFKKMYY8XJ
+UAHEJ6GHKKVDFM
+Q8DVXBM3HFVRYF
+63XW7KX7EYMHFC
+JQGAJKJKWRBPTA
+TVND6WFTXC88UM
+AGXY7XWQDTF6Q6
+R3V4WD8N4URRAN
+DYAHJMTKV3MPTW
+YFHRBA883TB6N6
+XPEEN3FB8A7C74
+AEGNCX3TGBMEB3
+JNR7XJ33CPPB3Y
+CWDVPUJAWVHJRD
+UURMQQJRMM4E8A
+JHNPNM77BWCBNG
+FMR6X3GRPWDVKY
+MYQYXKF38W8VRA
+YYNPP4X4DP4XBB
+JX7FK6WP47R7KR
+NCWNH68UVDMFVB
+YKFXNHB7B3CXKU
+XCMQYGPVECKHKC
+EA7XVUENUVJW3R
+VEPJ4PCH47GBX8
+K7Y7RMUARM3TVA
+4QGW3YEWQJHEX8
+VVV874XBTPXCHR
+YFTVGC3DWXGJH8
+BW736DPPP8JYXY
+E333GNK8H84GJ7
+3MQWUY6QK8WJJX
+AGKMWFHM6GPTV3
+DEQYT7EMVPJFXP
+XCCUCWC6FJ7VFP
+X7REV4MTNVBBBQ
+PKAJFKJ6CCDAN7
+QTTNRYN3KBAUU8
+DABJPWGEKVVKHB
+GU4C4DUEPR7WWU
+GF6GUG67FHKPGD
+RE4KW3EDKVJWWN
+EQX3EVYRJKCYBH
+EB3KTTRDCPDWM4
+RAFDEYPD43PXVD
+3PA73MPCMHHKBH
+RPYMHWN4KX6CAR
+JQ8RG6D8RGE38E
+TAB6WDF4HNKEYD
+E4UYBJJ7HPPD8X
+8846MURAGDAT6C
+WYUUVK4M8QQBKY
+NM7M4XQRPWJF7C
+ACHYHBYRWHKVND
+4U4QNEVEAE7HM3
+TDAJU3JWUFGWUC
+WVEXDE4KRDA6G3
+PTJHHDWYFNXDHD
+PA4JVATFGTKPFW
+TAKJTW6C6VKFQM
+4MW6RW8PFVQ8C7
+ND77PJFQBVWKXH
+7EXMK6KHYWYDMJ
+78AG68RGA4PX4Y
+DNTV7V4XH8MBDE
+HY3TGYQYD6VWAM
+AQ4NDHBQPWEYE8
+GB6AV6UFUB6PVH
+PKHR6R8R4JCJME
+JHUJNNGYCKCH6K
+UC4C7EACBB4TAC
+4MP64EEFE7PFYE
+N3VFPWJ7Q7Q4M7
+RCPA7WBNQH3Y6X
+HVVX44TNVWCPGU
+8XQRCYTEQYH6CP
+7ENKVKB4FPEAMV
+KP7YWBPBAXP8YK
+3JDMAGXEUDCCMC
+4VY7NBEKFNCNNB
+HDBN3G8JG6UA8T
+GUTN37NQDBC47K
+DTFNMTFPAUFGE6
+3XQRKGKXJEFDAK
+8DTKDUFQXHTKTP
+FTNMTBN4G48J6M
+EPKW6UMPEAQVXR
+7VNBGVUYG6NPEE
+QVBWWVB6DUR63B
+F3YDHG7AEM3PD7
+AXWY6NFMXNVJQ6
+M84A6JUBEFN48Y
+8QT8NVJBTKXAMK
+WM6BK8JW6JDTEU
+3K7AEYVTPKMXUN
+EUFQP6MUP6N78M
+PDTMBAFAUPJJWU
+U8T78V8JGYDHH8
+DXVD4QTGVWUDM6
+BTUEFY64RYJ86Q
+AD6KH4UWJTHCDX
+UV7JFUGAFN3XMT
+QBEXTAWA4CWVXX
+MXKHUVPCKUWEXY
+NWA3F48TDD4BTQ
+JARVURBJGMJ7JH
+JAM6AKNHNMXYJR
+7UUEWDE84AAYT3
+3EEQ87QUPPTMYU
+CCA6YUNDP8W7RH
+JMNNRAKNEQU8DK
+YTTUUPDPDDWJ8T
+PHQD4M3QTMB6AJ
+D7YFDG3FWADK8Y
+4UEQ6Q8APXDK3U
+VRVNFTT8EU7ERH
+QQ37PA68UNBTV4
+WYP3MYMTFCT3GG
+K7TARWWPUXRPAM
+TQNGBEBFT7J6JU
+YEWR4FGRCJM33R
+E6J4PPAEVTGA6P
+EEK8NMMCGB4N4F
+DDGWDPE7QCAUVB
+8JPRWC3KBKJMFA
+T7B8R3UBH3RT4U
+EWWTBEQYMEBGYV
+N4YJX6RUA7C6BQ
+J6GGGFF6NTT4UT
+NAMVW4N3CNRCTV
+AXQPTXTEKHANFE
+XJKW8YQQHRA74A
+7UDPHNRUK7QPH6
+NRVR8K66HEXERY
+XCGBXHTQGPFGMH
+4UNT7VQ8QJ3ENT
+WX76GGRVAB4GBT
+MYJA6XHF7PVMPV
+JJV78KNUDD3KQW
+UFHX78DTKBJYT6
+P8BKMPAB3VR67T
+P7HYJC7A8YKXNP
+74HJQ4WT7VE4DP
+ECD74BFPHVVQQ4
+H7B6MF6WMTPEDC
+MUUMCCGQVGRXUR
+Q6XUX43W7NJUYE
+6NRTMWKGAX6EPG
+BC6WVDNYTEJTG7
+Q7EBC6PD673F7P
+DMYXDC8TGVNMWH
+4C8RNAVY6FXD6K
+GAKJGQG36GFBQE
+FJV4C6UWUPMPR7
+4K6WBMGGYMCARV
+QAF8PARBEMRAEK
+VG4N8PTW76MDHR
+MEH4QXYNGUAAPP
+XQ7BJDKNVGTJJD
+CUYCB38J8NMVCP
+CGYTU4ADUB46FC
+4GPHKYUXG6NQMJ
+C4HM8JKNJUNRUH
+8XBCAMAMH867VV
+HN7FAF8XQVKKHY
+UTNC88G87TWKJM
+7XV3TF3Q7UPJPB
+FVW4ADTHMFQE7K
+RPJX6GFD7MV8HY
+3B6UHADJFAKJGJ
+7KDC7DFE7M63AH
+BAQMNMV3D7RJ7C
+H6TCUWRWCHPKT7
+8PYQTQVJ7EA8XB
+QEBNE4TX784B7X
+3EU3RWN4VGYYUU
+PYWGJMAMHVBXK4
+36AMTNKVWG7GTB
+JMVHQHMMMVE63D
+T6F8HBHK3GR6WW
+MCFJARJQ7887H7
+FKFQWAX6X6TQJG
+KB688HJFCGHCYX
+UX7JTQGHNDE7UT
+DYEQKVFTYKDNDP
+RKPJ8G63QHGWR6
+R4R3TWTYX84JW4
+7QHD6KQCCTWXQ7
+7GN7CQWTVFM6HH
+RPN77HRFCEH3RN
+HPNGYRRXU4ECUY
+6QM4AQ46FAEKUV
+XQHBCWDUDGKXAX
+MWQTGYK878XKQH
+HXMFTK8AVTDYJA
+ECJTY8G4WTAGKX
+3U8AAPXCM48CFT
+PQH64DPJAEYBMF
+GE4XW873NUQWRE
+PAXCQQUETU6WRK
+QKUFJGFG68XMC8
+3G84K4NFE6PRFR
+VGGTUBMWRUFAPA
+GHBXKVAWEFHUXT
+EPDDNRE7F7A8XJ
+D4FCKU3RVG6M8R
+7GWWQFGE4HPDDP
+FM7NDGKDAWA6V3
+UQYMH7HDTFYRQY
+JTTCBDRWREUAAM
+YTGBYKJRGKWP3M
+FUBUCRCQ4DVDD3
+G7MGN84X4F7DRJ
+HGGHTVEWQCTAE6
+HQXGYBWVHTHHDG
+YRDURJ77UXGXRN
+VD4BEAHNDMMRKT
+BCVNXEE33UJFA8
+P4BYJFGA4UK7XQ
+6HU8B4TVVH6J6W
+E4KJ4PG8HVJJWP
+VXGBTARXTUQVK8
+UC8Q7WKNAAD4KM
+BQ6HRTRMV3UJ8W
+YXTPHMEXUJD6TT
+AH7GUAXBMQUVTD
+CHH8PJM4YVDWQ3
+TPMNVHJ63DX8YA
+4QPFYMW3T87A7P
+CTGWTNKCGHJVMA
+CXPXDKTE7MYKC8
+6GPA6AJ4Y38AJF
+JX7A63H8HU8UJD
+VAVRYNBXJHYYE8
+XYJREKGRUR6JHW
+CJXW8YKNQQAVHG
+4D4Y8B8NGXQ4GU
+TFJWR7DGCTQUJX
+B4BAUAPR4KGBDD
+878N3Y3GWQC68X
+WJTF6XQAWAWYMR
+CHQURXMEAKFAJQ
+44XQUGNWQVQUH7
+YQEGMHGCU3YPYQ
+WXBCHPPNF6AD6Y
+VPR3XMD8WF3CUU
+G6U7UA87QRHM4Y
+3NTQNMAMXXGYG3
+QD37UUPYA8CXTT
+UKEKXWCXQQTDFD
+TPMYTN4X8K7EB8
+W4U6GXXPN6JFMD
+7RT4BH88Q3PMYA
+UTVQXJCEF3P8UT
+G4676PG3JVXNDV
+G7PTK7HPCRYAHQ
+C6X8TDKPVCPKPT
+7U7HX3V3N3ACF4
+QPECFBT4GHTTTB
+Y78KBCWPBAXQ4H
+DN7QXF6FTHBX4J
+PKHAPHYGAV7NXR
+CHTNA3UYTX7BGB
+A8RHYJGJEN8DK6
+X3UV3T4DWQR7HF
+VWXJXWHF4Q4AX6
+JQ8XBCE7GWDQPU
+NWU8TGG7EWRK6E
+JWFTR7XMJ7DBUA
+BEAEHADCKQVKWD
+6BMP8HM8XUWK3W
+F6XBFGMYCCCNJT
+7RQKW4VPT83RGW
+3EX6M77PPUTBFK
+QGQW3T33FQC3UQ
+RAXEKPHHA8FUBP
+KXFUB6YM67TMHD
+BJQG3DCFGT6G4W
+M4NDUEH8PHBTAP
+RVBERUHUXYWD8V
+4TYBFJ34E4VGDJ
+AKACUHH63PT86G
+N3PM8BBVMTVRKU
+A3PF387VVGEYQH
+NXCGAMGFV7CWRX
+47RUHG3RTNW43M
+WQKJ8PRWQXJA8R
+MRHBYD4YQ8DGME
+DX6NYJMRXPV433
+YYTEFRUH3XFQ8W
+R83364MH4HC4JC
+W8UXACWBRMJU6C
+JWWURB48X4K47U
+EAAMUT7DJKFHFD
+D6FNJUCAR6DEPV
+KPWHVHGJYGVXN7
+VN8DWJD6RAT8MV
+UNVW87VFPCXKVQ
+XEV6GQBXNQVCCN
+MKM7Q87WCF8FT7
+MG6DU64FR4EUED
+MQUGREGRKUQBW8
+E4QQNA66UH7HHG
+WN63NEMBWVVPU6
+TU8U7MFMUYDHKT
+R64E4DXCRXAHK4
+VDAUXNVTF6VD7F
+VMTPWEW84GPYB8
+PUU4GGC8CAHAVH
+CDHG8HPPVMXPYG
+EUP836FQKKPT37
+GBN83TPTRK4CP6
+PCWTGCYVQEBYE4
+KRQHNGDDMTXDTN
+VTRAUYCJJMKNUF
+8EX3CDTHYAHRE8
+ED4WUV7B8TQ76V
+BVU4TDJCA8ABUB
+GYQ8MGEP4HXXM7
+H8K3H3R366N7PY
+RQ3AMDDFPKGCQF
+MTYK7PGDK73QRN
+MPP4TURWQ684X3
+W4DXVE3HMRTRBQ
+VDGWTVEGJ7XW8T
+VXF7DYNPW8R7CP
+QMVHYP66YX8Q43
+4CBTA7K7JEQHHU
+D4VN4WHYBFRNVM
+4RFY3XNE8HNUKN
+MEFJTVBGKEFMGX
+BFXJPPPXDJRBVT
+AHBGG3XPRUFA6A
+PUNGFVAUBACDJP
+W4FJPFPWJ8VGEJ
+T86D6WJNBG4REW
+MXBKP6JVDU7NH4
+634VT3AA4KUC3F
+3PK78EMN6QB8FB
+PTTKYUH8KGJ8BY
+PXC6GYXQ8NQPXJ
+Y8VRCUTEH6QGM3
+MKECR8EXEKVXJG
+8FQBTYEVKTQ776
+W47KUECNWRWC6H
+Q7C4P6U6WRQXTD
+F4MDR8RGYGVVTF
+WEMCU784TADWGG
+DQMVX6PY7EDPDT
+UTFYWNYYP4XH7K
+FTQT7CVVKPGD3H
+6NGAKATNYAW4BR
+N43DMBU8CEJK47
+Y7AHBARYCUEHPB
+KQ34HTP6VQRYFN
+N4U3MRBPAWC83H
+MVEPPWJR7R4Q7J
+7CJNJAVHHVNXP6
+K6G3PBV83HM67V
+NCY677N4DAP6V4
+G6XYXG4B6AKGMM
+3XM4CJMGRFTDD4
+7MVH6FWRM3NN37
+EXK684U8ATYCFF
+P44BGTADFYHYVN
+AV8PQGHFVFFA7F
+F8834383VCCC8G
+CR3TQKMU7YTCWM
+TKU46W8JJYV4YV
+CQMFWBNX4QU8YJ
+Y3XM77KJCBPX67
+TT3GHHYR7BU7EE
+W786AQVQJRN4VG
+DQPM6CA64PNJ4D
+AJQGECWWBDVME6
+YBYFCU7W8DM6N8
+P3XR7PBKBCAT7M
+HQV863CU6QQDGA
+JKM7GWFN4G3RM7
+FN36HMMGNKFM4C
+QPREXWEHQR48FV
+QCFGJPR4VDGUKT
+K4HNRP6JHBTXQA
+TDXEDDVJ7NN7D8
+ENHRXD48H484FE
+QJ7QBC4WQ4NV7K
+NAVENT7C6GA4GA
+PCKXBW78QDVBYQ
+DDEQFQVDKRKHDG
+V7PF4JWKTVMMM3
+RND8DUU7WFHN7C
+PMVRPHG4C7R6RB
+MH8BNEDQKAXG3V
+EH7T6NUCEVEHXY
+T4TA4QWPA3YEHW
+R3Y4JYP6YHGCPU
+6XRKB6VFBHUPX7
+X3DBHVEEUEPJJQ
+4BHFAHQYUJDUMK
+YHDFB8ANRYJEXB
+AGTJNDBKQBNEFF
+KFWJPYFMHJKHRF
+CEV67PF3GVBVWX
+WQR3KYEVG8GJGH
+EQAWU463EMUYEK
+MTNMHFTB8TKWDX
+HFQUMUFRNP7JXY
+FT8PTFYE7CN3TD
+B64TKKDMUURVVY
+KNXRCKHMGC3J47
+HRNYKJD4D47N7A
+4UAFBH6UMEJ6TW
+WY7EE4WKBGFVXN
+6GY7BKGGJP6C74
+BV6X88QHVKVQYF
+JWJXDKQB7XKPCX
+PTGQQ3CRB6APJM
+TXKFKT4BVH3A4K
+TYQUKEJNPHKVH6
+AWDPHMC8UCCQYU
+PMEMTPNT4QTFXM
+7AQKUYDKFDVUJA
+TM8QQ8UX43FFUC
+VKV6E3FFQHVWP7
+6FQMVKPX66KM4R
+T3EMQAFU8JP47R
+GE6RNXFGBNHBB6
+PUG4JKR7GVJU48
+8MT7X8EUWN3GMD
+JTB7G8PBFE64R4
+Q8YJMNNBTTWQXF
+TJAM4PY6TJATWQ
+WEDNPY3MRUKQQE
+KCTARG8ME6BMGB
+CJHQRBTH4AHMHT
+FABAVWNAHNPTBD
+CQ84VEJQGMNFVU
+8GYUEC83WVQXT6
+3CHKQKW3WFKHDN
+3N3JHGCGR44EPU
+F8QC8JJAEXEKMM
+UYMY3NNKNRRR6T
+EXPX3VD7VUFACU
+JBGDTKCNUM687Q
+3KRXCYJ786FQR8
+E6MG6PVBMK8F3K
+YFJMXX6TW8WJ8P
+UETPYE7T7YHXGT
+QMYQJM83YHWHGU
+ME76C8TAGVFP6V
+WVUCKYJEDFBRXM
+3NQKMAQVM8GQME
+GDKMEQVGQF3NHR
+3ENH3JFTRYE7AY
+NQNGYP7JFYU7YX
+DDCWHY4UTQBKYE
+MK6NTF7P8NBNYX
+BQUQRJECRG8EG6
+4MPQYFMQA7F3XR
+TX88KJQYU4864H
+VU4DTJ4BD3FPF4
+63DBERBUGTUYBK
+6BCTAYBG3MVRU3
+XMG7RJ8638QX8V
+RHKNE77BHGHCN6
+THH7UAWFEWC3DK
+P4GJCKC7EMH4HA
+WAFWHMTVPYXR6T
+7PTMGKKPTE3TWA
+PJPKGTCEV6FNA4
+3VQKMBHRNHNP83
+YCCDWNJKKPXFK8
+BENDQTMX7H3UM3
+YDB6VDUY3KXCUX
+R47FB7EMKFXWHU
+4HEWBHGWU7PTDH
+B4RGQKXYEHKT76
+FXFBHY4FY84CUX
+6HEGQWTVUGPQY3
+HAD8VM4KYD34V4
+MYRTEYFDJTQM47
+C4P7YYXGBJAKET
+XMJMVFY3UKMM74
+GX7ED44GWCH6MU
+PFM63WGUUPD38X
+WM3UQJFEW6DYGK
+JB3FB4QTT4G4HV
+737UEE7RU6BHHG
+PPJKCBQ3AU6H8B
+K47HJK4QPA4F4X
+WFJ473RAUXJYKE
+3W4GMTR7RQUGYY
+3CDW7YPHUJ8AF4
+BPN6PPHPQHW4MX
+UMUUAHFT4QU8WT
+EEK6DMBXVK63G7
+HMT7WAHK3YQCRB
+DJ7X8QPBXKBD6H
+MPPQFCA6DGFQTQ
+T778TP36KWA4MN
+YMCE7DCNRMEH67
+KENQDH8XHN36DC
+JVE84KMUEB8WKX
+AFPGAYXKKEHFTM
+RY3PBKTD4XW74P
+DN77NXEGHKW8NX
+XWM4TMJVJYFD7N
+QKHMY8KWM4VJHX
+KQANXYMAWJ6NK3
+6XHDADJCMPMT4M
+N48BJHCTVN3CXN
+DYMU6E3A6XVP4Q
+ND44VNDY3F6YA8
+8UPU4VNCPY434C
+HDGP3YT37XC6EK
+CPXDCPF8RR3FH7
+E4P8FQJQQ3PPCF
+MEJQRPBR8VJ4GG
+EHCVJ4RFP37DVX
+UCKEQVW764DFAQ
+8UXBQRV34X6EGR
+XUUHRYPF7JWATK
+YFA6N6K3C8GF6C
+73RTDMP6GMBDV3
+BDXKABEH6APH4C
+GQV6K44TJHXYQH
+Q3AJFDYDJJEDPX
+UHC3NNV8HD8HR6
+GTBEN4Y3D3KUGU
+GR4YYCQX3UF666
+PU87X8HERKEG8F
+NE7JJHTWBKDVV6
+QETPBJ66E4BEWT
+HX3KUN88XRMRYA
+WFDAECV6BE7HDP
+3BEXPDFTRCRH7R
+DBUYH3DGJ3NHB6
+4PMHY866MTAJHQ
+WUEWANBUQRTP6N
+KHU7BEJC77W3GQ
+YRHWEXRE8FVX8M
+QRMN3HQAYV6PD4
+8YVPH86TYCBJPQ
+EPPH6J7KCBYUCP
+4EYFBM36FGATY6
+P7CQ3ADQKGP4TM
+38CPBUDCBJMHRJ
+CBCUH43AMJCVHC
+YTFYGNGCWMD4TR
+RGPEYNGMYGRX7Q
+JPHGBH6MUFP8JU
+EXNEBYKQ438DJU
+G38FMJ3FWHR7PY
+DFHQUMACAFWTMU
+WHK7TXWUG4EMM3
+W3RBCWR4R4UPHV
+TJFMUQRAJQHTDR
+J7DNH3WJT7EPF3
+TQRRG3REUDFDK4
+PDFECFJUU3QREC
+GKGJA8TTWT6BNK
+3W4JMHGPH4KRJA
+4U4V38V8FUY8M4
+JCRGQQTKUGHMFC
+4YNRV3RE7RJTXV
+7CVJ8CH3UCW7QW
+E8VTFA7KNWAPNB
+E3E8PXNHMTH8TT
+PAET6FYP4U6H6R
+EDQTAUWWEHMFA6
+CQGBJCTQDFRUMB
+T4GBDD4BF3M4EM
+Q8VCKJJ6KVA436
+HYX4H4YPJKKKVU
+UG4BQBFU8E7H6F
+HF6CDCEVXQRR6G
+BRF8A78TVT6VDA
+8KBDNM6HTW7UVA
+XABHCHXNFJNE3J
+FR6EFUHDPKABCK
+E8YKAEFHE6BQBD
+JTC7PPMM8WJ87N
+C4MRC3KAYEBGKN
+WGQ3NFCY4EBK7V
+VPMACMRJR7VNP6
+C8MXA7XJDMAT3F
+QTWUUCTBXUCH8W
+KDAXFCFQEC48X6
+DABUYPPB4AM3AM
+UBC7JGDQRV367H
+YCQGDUBWMJD8AK
+TPHPGJ64CDJNVB
+NNXGRUBCHYCQBP
+HFKG3B3J77QWQQ
+D7TB8FCKE74FAC
+QH8UJ7RXKPQFQE
+XNFPTQCCDNCY4K
+R6M6NRYHTXW7D4
+YTK6QD6TBXWMFF
+UNBTEUYPFTPPQV
+R776GMBAAHVERT
+BNEX6EMP6CA6EA
+Y4RDBM84AUKDWF
+BRVRFAVPK8MQPF
+CBYRJVM43TMAGH
+WTMYPXYW6BVCYG
+UJRDBJEA6DTX7B
+NPXNC6EA6MTNCP
+QX8XAJKNQT786A
+RNWFGC8W4AGADM
+8URGAFDPVPFW8Q
+ETEQ4ATFU4B7FB
+MMT7KVEXEPEVHG
+83VB6CJKE38E68
+KMGGN7QWU63DTA
+KWFFW8UR4BNFBC
+GWRBJCJH4XTXF8
+BAKVQYWX3ERK3P
+XRKVUT644JUKRD
+RCNNH8UNQYDCUY
+MTH4GQ8DNHGBEA
+RVP83GJ78DAC78
+AHN8XNKYQFV8UD
+CFG3MYAPJYBCEK
+CJCTKD76XVM6NF
+6NYGCK4CWVMQXG
+KX3GTH3RX663W4
+PH6TJNKB7B36UW
+XMCEJ44A4A8HR3
+VGA4TG4T7YB8CR
+48QWJ3Y34ERNUX
+JXGUDW3AEFPQFQ
+CY7HYDVAUJEFWP
+P3VWU4XDKMVF4W
+7FWGV4PBAWVUMN
+QK8UYQ6MKTG4XV
+FTXPJYWGMK4NJ8
+BP3Q6KHCWDYYKX
+FD4QC3CVN4F7HJ
+667UK74EHGMXYJ
+XA7AP6B438A6HX
+G8TWUJ7A8XERAN
+FHDHQJQJCMHBRN
+MJKMTRKCVVVGRU
+HMVXJ7GQKXVDWM
+WPWCUWNBPBFDJV
+MCHNTV6DW33XK6
+7YFNJVRQBKTBYG
+XVAVYQ6P7TCE4P
+FPVBQXK8YXF7N8
+3PNT8GVWTXW8NG
+47E7MAQQ3NHCBY
+CGWDEHY3CQMTCP
+WVXW7D4FKBQMUE
+WXRMCCBNPDFJCV
+78X684DKJTTHBA
+4YK3GHEWXB3CXH
+4M4HA4G3EHDKVA
+Q7XNNPC6Q4QRER
+GTU3N8UUNGACGH
+7FKAM4QPM7886N
+QCRDHGWFPEQ44P
+74XC8MPDGVYBQW
+Y68FTGWQCF33HJ
+ATRJ7U3AGRP4MQ
+6TPBHF6D3UNXRE
+PNDABMEEFYNDGX
+BNFRTBMWY8HVTC
+44JDVMFUP8CERB
+FWGEHXKE3CKGRV
+E8MFFN6CTMMBYC
+HAP8Q3XDCEBHM4
+VKM7KP6HA7KH6H
+7GEF8KPVN8AFVK
+T7WPHV38PRAUWN
+MVUVVEMKKNJET6
+RDYAKQB6FBBFPP
+WM3XDWGPQEPTTM
+CJWEVF7PYNYUH6
+FGFYNAJAUFXNBD
+NWW6EFDJPCEDT3
+T6R8YKFUGR8X3G
+BUUNQPK6VKXY8Q
+NUB7BTBEEYVPAA
+7F6M8P8V4ACGMF
+G8TQHFBFFNTRRX
+8CWKW4TGW48VDG
+NEY4GD7K874XFA
+3JTKPQFHFCDFFD
+TPU3JAJ787QUBG
+G4DYN7YAG48KRT
+HWYA8WMTFEGPF7
+TRME8EWQEYGABD
+8QP7GFCKXG6Y8Q
+QU6XB3EYQVQ8R3
+PM8XDEFU3CU6DE
+Y6GYGJR7FVVQBD
+TPDBVKFT6QWGAK
+U7CCFWEEDRBGBE
+37XV3UDEFH4DFV
+XM7CJ6R8YT7JHD
+AYYNC3KHFYEUHG
+VWGHY3YBHN7J7N
+4UMDN8B7MYA3BQ
+N3MHDQTA343PY6
+CW4QN8HPDT4C46
+P4U8E4J3VQXWXQ
+EXYGNACHEBQ46A
+BMU8BYF34R8KNN
+CX73NQTXEWTUTR
+HNNKHN7ET84JE6
+QQ8FDNEXGTJ4MH
+QCPREAV3FDYREW
+G8CBEUQKPVYARM
+Q7BMAHDYJUMG4E
+NNXFQT3TCYMJFN
+8BE73FQXQGTC74
+QYC66WXDNDQ88U
+VFNAGR4TRU83DH
+RXXYWV7DU86RAA
+KQW7XBT7WJAAUP
+VMG6Y3H77GX7NM
+YM77JCETKCD8YE
+G3MWYWPCXKE4BU
+KARN3DBMXRA4RE
+666PDUFEPKNRAM
+BUX3NH6YW6TB3K
+8MUR77CN6PWDNT
+3A3UWHA4C3KHMP
+4CYX8TYGPAEH7T
+8QTNX7RXDP4QWY
+RQEY7EFHCNMAJ4
+FX3XYAENNWKUWR
+ERGDJTNAJM8CPT
+4Q3KYHU3A6QFG8
+FFJWCTRXQMG8GP
+N8M4DHA7GHN7D6
+EV68GYWW6CAPK6
+YQB4XTVPQGHUVW
+UAXH7TM4JTFT83
+BP7TFXQCKEBYKX
+THGUGRD6TQENP8
+6EQUAEFCUY7J7D
+QVEPY7VF8CW8B4
+M4ETRJ4VMYJR8R
+6J8D8MQBF3VFUF
+YRNBPEVMYP7XTM
+JAJKR4BXFT7GYU
+VANE6EEARA7VJJ
+GYCRKEKQ6NAJRP
+8H3UNB8PFJWEMT
+JK4WGK8XC843DV
+PAU3TARYC8GAUF
+AGJCRCBQQKCVR7
+Q8EKFPA7PTBKJF
+WDAM7VWTY7PWKV
+PERKGMDEHUGJ4N
+QEW4HWHRJAG63D
+KJ4XDD74YKQ8QH
+UDQYQ4CFWXFAUM
+VA7TWU4VMXYCM8
+GU4X3GU6JUPNBU
+GGF3D8W8YDJF7P
+8AFJFCBFV4AT6H
+EMVJP3X3FX8DQN
+FDFAMQ7RC7Y8UD
+TPQVRTE4HTKVDE
+CGNVD4C7M3DJYH
+WYE6JTRTXF4VMR
+W7C8EHKGUJDMGG
+Q8W4GFQDUPDMPW
+PYC46CN6J4K6PW
+6WXGRJ4KQKCH6Y
+AGFQNHHQ3WEF8Q
+TVVDMGJQBDAEJH
+YUGJAHJWMCVU4E
+PCD4JMCPG6AF3D
+E877YH4RPQQCKP
+UKKECPB7X4NFJ4
+4RRVUWAWYA6FRA
+QRJD4RUBBEFQUY
+EWMPUTFA8KCYTN
+WEAQT4KF784EPD
+48UWJAERAWWNEG
+YVK68J7FYEA7GB
+WDMAAXGCH6A3P7
+VFHDQNCA3KREEF
+WTEQCV74HGJYJJ
+8KNMYUDVX7GMXX
+8CFWNE6FM63HKA
+KQ7P44JCQ3JFBW
+QQBCV3RWDGN64U
+XFWQKP6NRECBHM
+HBQTMBBDYBGU7Q
+K6KBNDYVPXKWCN
+CG73WTFQUTFHXN
+HNVXRAKFJ7GHXC
+BNJTYJMKX3VXCX
+D6V8ERVPBCFNDR
+F6Q7AHT6QEWWH3
+NEYQDW6XBVKNUJ
+3UU4PADKMV37XF
+CAVCUCTHVYF376
+HKPT3GVNACDRUG
+7QWGT3WHWG78FX
+3XD3G3WKB6A3PD
+8UBWUDAUEJEP6K
+8NYP6MEC8F6RU8
+7XKUQA8DDV8676
+BMXNPKMGQP86P8
+RVDFPEMHFQEAWP
+XTQMJCRVFYDVRQ
+PARRNYNAAK3ATY
+BFX4Q366AW7TFM
+UA7DKMK3437XJ3
+KRRWGUD76DFPMU
+NBVRHRFFXPWKDN
+FHBY3Y6BWFUQ74
+WNFHURTA8DX8GJ
+HKWR3UWMJDHHP6
+HXEJKBTTVKCEPH
+W4YQVPUVYYBPNX
+HENEFFPVRU8YCE
+V4EJAKMRJNFK7V
+VQDGNMBGFGM7V6
+AT8CU7YFV8RB8E
+WUUAXPVD4DRXBD
+EVD4T333BRMQ46
+FPHR8H3H6GKKGY
+GNNXG6GB64EUAU
+NWWECC7QPUNABD
+NCCRHBJFPJJWXA
+QMWTHV8YHCNXPF
+7FKCQJY6B8FGKW
+KJNKEPHMR84YRB
+W8YB3PHB6DAPRJ
+3BYBGVRJPUXWAP
+QAY6NXWFMGMK3J
+KKDYVEWPGRBT6C
+YMXA4CY6NP4FAC
+CVA4C8WGEGVXCJ
+N4B3KPQUAEAGDC
+GMQ8RVKK8QHTGN
+8UVJY4FVPAG84M
+RWFEAB4AMKJD8G
+A4DR4DU4F7KMXX
+YHDFY377WEFVPM
+HFTD8MUVQWDKGP
+UJHAMT7J7QRAM8
+T4TJUMHNHHAXP8
+VVBQVHHKDHJXUB
+GY8W73YU3KRCXY
+A763P4YRCKPCB6
+B7F4X7YPT4JRCH
+XGJKE48J4HG8FG
+UYQB68RTTC88F6
+UKNPCF6E87B3PP
+8MRHJWUV33P4UG
+KVTWJXUHW8MXNC
+GBEWAVGQXFWXJP
+KQBTA8HJRF477D
+384EP36U6WRXGE
+XVJAU3HM4HDDN4
+NF3YYBDEETARR8
+JB4K3NMDGW4Y3G
+36NEQRMUQR3FV4
+6MGKVMNUVNFP7C
+4RXM8K4HWUG64R
+TDNJGXDUWFX6RF
+CCWCPEREN6YERW
+NV36MKUBUBR86B
+3QYHFWGECK7PYC
+UABDWHAG6XAWPK
+C8BDTUQT8RCYB6
+GH3C6PRUVKP6UX
+RJHCNM6M87CFTT
+KTG3AQHJQTQWDM
+773MHQEJU34VGG
+7PPYJ3J8JYP7UK
+6VX8X88T8WK74P
+QXC67FR8NGCWAE
+7JV64JMWAMTCFM
+4CFJT347CAN3FR
+TX7TCX8B44APH6
+JHFUWEDQ7RGB8Q
+HB7BNX7AJMTVJM
+VQ6MPJNPK47874
+AGH3CTGHV4NAX4
+JP6DCNA3GRDM64
+BXMY8MPKNA3APJ
+84E38RJNDE8JJU
+G78KQ6H3RNYXQ3
+N6BMUQKDRJB8JV
+J36NAQB8M37QDE
+G7A4W7AW4KXKXN
+Q8JPTQT8D8RKAP
+EFPUCEQMNA67DW
+K6R6NDUMFHPVET
+B3MGQB3BVJGWFY
+3XRXPJEG7D8QDB
+6XMFQAFFUAQRCJ
+3X346UYBJRMXKF
+4FBX6NEPC8CCPP
+PCNKBENTHYCPPH
+E8UQKVPJW8EY8X
+PY3TG83NYBTXER
+MPJM4A7E73FRWQ
+YPVVDFPAAXJTVA
+7X4VBJ67AT64HT
+NPEC67D8QVKJDC
+PB8JMF84E3HFE4
+JAKV7EV68CUTH7
+7HJX8RGJXQJ3ME
+6BQPD3PEW8B7FG
+MY8833QGYGXHG3
+DKM7KGGFVHNMHT
+BD7NJJPYKA8TCC
+3QXN8XJVJQHCG6
+Q6NFYGB8JKKF4B
+YE86TN7MMJFXHV
+NKQR6WNTAWMP8F
+HGBR8NM3KNRNM3
+678V4JKC4RXJX6
+KRJ63FDJFWAHXP
+GTMFNM66WTUCP4
+RPRMDPFHNF6XAQ
+KUUGVKTYPPDY3B
+WT777XBJ7FEYVX
+GA6RAFET8DM8WH
+4XYWAJGE8HJ87Y
+EMXKPFV6VMRKWC
+6PCEDBCWMUNP7Q
+JHFVUQ64C6PC6E
+XPV8CQ4QM6MDXR
+GKRFKUGTQ6BUCN
+JJHFY7BCVCRWDR
+N3KFEW6GN7R8TK
+DHWN3JCBN4NU7C
+X6JBEWKGJ3RF48
+N3Q8HGCU6NWNBV
+CDRRA7YWF6RBAR
+ARNXF3JRTJAQ8P
+H46M6WB3AU8KER
+QCKDNQX8YDX7FF
+DC4BX7JKTFXVA8
+TR6FVAPW6T8WEG
+XUTYPQKV3TXEME
+4EM7YXY3BQYXQV
+TQ7HYMET4M6GVM
+KRWF6KPH8M38PD
+6BKTJY4M8YKVFB
+FJURTRQNHAFE3U
+3RT36JYGPNHFGQ
+CVAHUE7GHCJX6N
+RTKCV38EQ8BNGV
+34UCHWEVH6BTGD
+WFP3R43877N6NK
+EKR6CJQDKB6ATN
+VBHHF46TUW6Y6E
+HKBWXQQAHAJNQW
+VGVRE6WRJMGAMF
+RQDDRT8F37V6UE
+8ER3M7KJN3UE37
+B7JRB7VPXPGCRA
+XMBMNEGEM8C3VH
+WCMUA8HTPMJYF3
+X83XFACCUD6N3Y
+M4PUVNYPGEHWBJ
+DCGBBKQQV7FMHQ
+HABRPV348CNHKA
+A3CM6XRDC7CJPG
+K8R4QF4CVEB3B4
+KCTY7FPP34FDXR
+UXHMP6CVYPBFUP
+HFAJXM84YPJ6UY
+3JETEAXBTCVTC4
+AJHEUCJJ6BQGNV
+X7CEYRFRN6VDTA
+EUYMKJK7XX6R6C
+RFMR83MGCT8MUD
+TEGGRNE3HFE8JG
+Q7FT3Q3QUHKXKP
+AAGHT8JFQWR86F
+F7JDBCRWNWAN4J
+CKJJBG3NVVPKM8
+DVAGAT3W6BP6FE
+NR44YACF6RFC46
+ND3BE6K8TV7MTW
+GCJ3HFTMPQF6VM
+EA7CDKAEM7DKJJ
+DY6TEJFA6UR8KE
+6QNCRAF7KDHAWJ
+KTT4U4FWJRHXWV
+4N7GKN8WYJGJ7H
+PQ86XVQDJ68PEG
+T4DNJPTQTY4QWY
+XD3JYVC6PXN3RR
+4FQK3EFW8874WX
+DN67PME348CAB8
+UEDTFTB68A4YXF
+UCDH63WQ3BBXGC
+K4AT6BBMRVURJN
+8KXRAHJNKXCEPT
+8HUJRVKTT6GTTH
+KGAQND376C76QK
+3F6UQF6WW6KCXW
+XWYJJMVNYP8HCJ
+6NEWD8HMFPHDAF
+CRWRGXMFYACPFU
+YYWXQBFTU7XQBT
+HYHV4VABD4C3BR
+JTWTJ7AXTTCURD
+MWPVMEM8EHKGVA
+8NQJJVRU8K3MKF
+UY7JNCC7QEPM6D
+NHEV76HBRGNBYB
+G6GJUVHB7BH67R
+VEH8UPYYJUECDU
+WJKXDM6BVDAQ86
+XGCPRNYG7BB386
+TTY6YCE8DTGHMK
+PTPCW3AWPXW3JT
+DY4ATKAKVY4TT4
+7XKTXP4WCK67VR
+FGNWXAGQQRKTKU
+NTTRTCN6BJH6DU
+WMBH86U4GWTNM8
+PPHDTP3VNNQ7WH
+RCR4BU47YUQC4W
+CNCCE4CEJED6GT
+NKK8GGYUJMGCB3
+6YCXKU8C77JXBC
+4AHFJRUKDXG4D4
+N6PM377JGMUEV6
+WX34GNNPDKKFFW
+RW6PXPGGD448FX
+ABF4VGDPGGF8GT
+TMUKQF6J4K67EQ
+JNQGJ367EXPV6M
+BDFMCGJV7EKRNM
+EMBKD8T46JNC3G
+XJJ4B64V4JRCEH
+YHV6X7WA3MAXMX
+C4TMYFNGYTDVYU
+6K3X7TQFJJE74C
+NKF74RADTM8FNW
+WE7TH6VJ48DP73
+MTFR36EEHPBURT
+TB6WBTCGG8W4BQ
+7X8HH33APJV8BT
+H4RERY6XHWPTF6
+6N6WDHRF3FJRJJ
+V8QND4VN3WKTMH
+H7UFFQACJVVPGH
+66BW4JWBQFCTQ4
+XD66BY8PQ3D4X4
+W77RCDVGKQTGNY
+YRFWDJEJAKC36G
+AJFGPWKVX6ETHP
+XW7BBKBNCJJYEN
+NQYE4DYT4K6RAR
+PJEG4X3M3YCURX
+E4K7A7UNWU3YCX
+M3RMN3PNHRC6DH
+MVNEQPG66MQBET
+737ECV4VNPFQ6R
+XAXADHRFJ4HNA7
+RQDH66DQMJCRAF
+BJJFRRRFVT4DNF
+EVNG78J6DUKDEH
+YP7RGJ3AV877BX
+U3FB383VPUHECV
+YVQ67V4FDPDDEG
+4KJBJGJQGXBP7V
+DKTHPCKAJEHTQU
+P4FF7KYKQ4BHV4
+M7J8GKG67HQE6K
+Q4QHWNY6EXJ3AQ
+6Q3DU3HKUEFY6F
+FQMG3CTDN8QUEG
+JR8PJ37CJRACWX
+Y3V8V63YFFDVUD
+HUTETQTUCGAKP4
+KTC448TERPBUHR
+C4DTDBYWJUFQYU
+4NQYE4BK6EUB8K
+NMQJA8TK83VNBB
+YC3KEE7R8VFDVF
+GXRFRJMDU7NJN4
+MKXYCCYDGG4XBB
+84PYVG633DDJD7
+TEMJ8JNVYDAE6U
+FVQP66X3VV8DPN
+NMCDR3PJXMYE6E
+B6PRERAAPVBQJ3
+XFY4YDAVTVBVQQ
+NT6J6GEUQTKRR3
+ADBAMRMWPGHDWX
+6AN6FCWYW8FUMR
+6WW6PAQQMAFPP3
+CKXTMHT67FF4EB
+RMEKYFVEQD8YF6
+D8F8VD4TQRWQGG
+KFE8XBYT8K3KTB
+JQPYATWKNF4TDW
+7JNVTH4DFUVD7C
+3RTAHJMBWPBE4W
+MEF48NTGA7C7HE
+PJY8J6WJKMJBHG
+QGWPJXMPD3BE66
+YNF3YGF6HGM3NU
+MDTCQ8NVP7MWKH
+JFXY4GERH3PV3N
+37CM3JDW8R6WNU
+TU8V7KFTCTCTU7
+G6MHWRQQJGAPNR
+XUKBYWAAKCK63V
+BCEGHQ4X8BPT4W
+DRPGTKBKT7KY7H
+NGCKK4Q43C6KDN
+4EAXVUHQCMTKQ3
+KCX7PUQRWY3RE6
+FCW8C8866T6CEE
+ETFE8U4DMVVAMB
+F8BKNTDNUFAP4W
+4HVTNFJCFGYMY4
+XYXRXU6DTXY7E4
+RCHNHA3URK77WC
+VBXJUX3UFJGMU8
+8PFHMECWNQVUPQ
+AMJKMXU4KNCJEW
+N6TGXMGFNPYD6B
+EH368PTCFQXPAG
+BDN6RFP4UUKEEH
+D6XAPTGNFMRWNB
+XPGDQGTF6VRE84
+EWRMBMNGNWHP73
+AY34MHRQCRGPRG
+QAVA86GT6PVW3R
+GKKP8WU767QMHP
+MAFRCWMDAB7GP3
+HJT8UFJ3BEBJYG
+NXJCAH6T7M7WM3
+FVATN48QJKEV7T
+4MERMDHRYEKUM4
+N44HQDUTQFFXAY
+N7VGKAVN84GTJR
+RXB48NGBDAYW3Q
+6DUX6CPCFP8PJM
+YKDHVYPH8TVQQN
+7VA38T8WEAHW6M
+FB8C8TJVBQPADM
+CRJXC8KYRUE68T
+MRVUHTC6YVAJRF
+EY6U6KV8WEVHEF
+UKR7XC7CF8MN4N
+VYXDTGVK6PWTE6
+FPUB6H7RMRX683
+BTTHVTQJX4BYB6
+U43PC6KDAH766W
+8PG74WUHKTNBDP
+BFNHFU3UCY7T6Y
+GGH78GYHRPEQDG
+WYNY63WNKCPBDN
+JEGYMNVQ36BEUA
+BHA73N8UHCPUQP
+E3RNU77RQ7BP3M
+6C6PGURCPFJYEP
+NEAMRX6W7JAMK4
+E74HCUFB3TCEPH
+T4TU8XKME4W3JQ
+UR7PVUYDJCJEGX
+73E6TCJFGFP6TH
+YTCFW8DMHPTNGM
+A4WEDVVX7QTDXX
+ENJGGBQYM36JNJ
+AYHEBRJHEEDGYH
+RJHWPCXWJDG6HH
+EFFYGA6XMEE6VP
+7XKPAVCAVXUKW3
+THYBEFVXQ6E8M8
+JAARB43X8U3BXU
+WKYBCHFPQNXUAR
+PDYRJ6FWKRAP3Q
+BKYBDPNJD7UJ7H
+FQYHWVCA6NNQQP
+8VQ487J6NR7WQ7
+UKQ8AMBHEQACF8
+VUTVJUXEGF3N6N
+XFBVJ7QU88CYN4
+CEMACUAGENQF4V
+K63MF83VWQCDP4
+U7GV6PNHN7HKTM
+BQ677J4P3JPPWR
+GNW7AD3VQKMYNX
+UJ4TPTKQNRUBYK
+PXHNPYE7TJYRFH
+3CJDQXYA677KUV
+A76H7CG3NX7RDU
+7CXBFDEHVAJJVN
+XBV8PB7XP8G4KG
+BWDHP3Y8YBJ6CU
+P37REHTV3CYYYE
+TEN3DNGBNKB7CJ
+FGKFWGHC4ADJPY
+EY6QB4GNNE4YDG
+7F3YTQVNAVH7B6
+4DD8DFTWWJD8MR
+GWVG8NAPFVXRR3
+DP4B86UKUXW6MJ
+A8W3EE6M6YKC3P
+UDFQA63VBUAPEU
+ERR7QMJMNAJQ7Q
+8CA88EUQJGE6BM
+KNRXTW3WUHCAMT
+RB68EP4YY4MA4H
+MP3APMBHG6VBUF
+QJG87KAT4XECGN
+DJEGMVUMCTNN48
+AJAGCHHYK64GC6
+CFJ8XJRKKCE868
+7VUWMRQKGFUTQK
+X4TRPBWFRADQ84
+T4K4XR3RVJUPMK
+B64R7MN3ANVQAP
+HHTBKWEJ33D6YT
+WDKWB3EHQVHA7D
+BCY8QR34TMTBRC
+3N6EPB86U6JRYJ
+YJKQU8XUTFBJCR
+FD6MUK64YQ8MCD
+4R4FJPNNWC63HE
+TMBMXMUDDR8KH6
+B8DNK7CVQFXG3R
+43VDY4GDR4FDNW
+FX84GJY6CC3HTG
+VCQ7KYJ647TCNJ
+QQFPQ8T8E4AGU6
+X3ENP833AFQNRU
+J46PRW83FQCWXQ
+BFTW6MBFF7R7AG
+X873ERPE7K38BE
+7JXW8AEQFNKXPA
+RT43RCNNQPXTNR
+EDV4EAY7CWQG8T
+W7VFF6AQG7E7BM
+D4VR4Q6YGQCNTE
+KFAF4CJ4YTMJMY
+GVKVNN7H76VDGE
+Q3DP8BU6J3QKAR
+P3KBVQEJWBJKMW
+HDHEBUAQBWBT44
+T7TBXM3F4Q3PJX
+PJNWACWEHHY7AU
+RJM4M8BCYNAG88
+6GHHPQNMY8H67Y
+YGF46APEKF877R
+K8PK8EFRA3V7NG
+6DMFAXRWY6RN8V
+DFEBUBGXQCYXXU
+R8UN3Y8M7Q478M
+EXXN478TYT6C7E
+3JGRM7YCPPF8KJ
+Q6BUCGEKX8GRAX
+QMJNPQ46MYGRJX
+CUKCP4NXY3C4RQ
+8QJWUUATMDHAVB
+A4HAAQ8QVXDGU8
+X4PFQ4UGJBM6QQ
+MR44MDK4AVDK7R
+GWAVCXBDXAAMTM
+Q7B4U8AENQMMYJ
+XATHQ8EGTNWK7H
+TAPHKNRYUVGBM3
+6PCPGW4EE3J43U
+3UJ6YBFXMH7QE3
+DRJEJVTHXG6JQX
+4GF8BKND3QV3D6
+EFJ6QC4FBRB8GA
+GQV6E88ETVPAQV
+FXHDP3AHKMXAQT
+JBXBACPRKMKQYM
+VW44NEFX468MYM
+JDB43VGMMJJX6W
+TWHYHYDGFKRRJN
+MWXPTVARKKMTAB
+XXEMWRKARP3JMW
+RQTHKT7846MBHT
+NQF77CNCTU86CN
+DB3Y6GCQMH6UED
+7CTEUEE3ARVPF7
+CRFDU47J83ACKV
+7HB6WHAHCTDRGW
+F8CFRBCT46GXAE
+EA8M4NH3KVYAMA
+4NH3VFF6FGDHJV
+TCJHH8JYUW8GRN
+PGPFHJJBT6UK8U
+YTWBPN8JRXBK3M
+QVBM4YJKUDMGHA
+88JXMCNRAMXCMR
+YVMVEKBFACQVMV
+6RGUPMJUB6UPAQ
+CN3WXXC88U4PQ4
+HDCFN7ETGUEUAD
+44JGAU6R8BA6XK
+B6QBB44FEPEYWQ
+JAEQTGAA8XV67V
+PAP6QJND36K6HB
+G7NQ6BGV68CPHF
+6GFWJQMK36P3FW
+WTXKEPEFU3A8QQ
+QQKRYX4DEDKTTU
+RGP4AC4HVGPPR3
+D4JNRPK3HTPTAV
+CGKY4P4FBP3UCT
+QGVB7YQ6HUMQVW
+QJ8KHDYBVEKJJT
+H6THABEGYTAHNA
+8Q3YKYVQC7CFRC
+8VCC6QMJTRGEMT
+WUDCDHAXRCTT3P
+M4NPJJKJGEXK6J
+PXW44PDEFEWA7A
+NT6BCKBPMUHMBF
+J4FRY7Q8BQQNNV
+K6N7QEM6JCDTTE
+WE7VYJEDJFKHUU
+KY8MKHT6NEW4WK
+YBE87HMRY8XHTA
+K378QXBJMFGUDB
+U8PAEABCMCFCQ8
+88UYC87GAEF3DB
+VAWYPYTYY7ABGM
+PNPGV8D4UKRYC3
+RJQM4TKHD76CVX
+NYDF8YHVRFWN38
+HTFYB6T8WNYGGF
+RHBK6YGQGD3EP4
+48WFNJRUMH38D7
+AHUPAG7JFWMKUC
+U6UAXYBFNVAKRT
+JHG6BQC78ERK48
+V7MTWBVHTNKDH3
+GNAJYKCA8NDD6D
+A3B64BQAJFVGG6
+67DUMFBEQGXG8X
+F7G4EJUF63RH6F
+TFBHNKX6ENJ8J8
+J464XTKNRQN6VQ
+B4UJCHVNEUG8JX
+4H7GURECJJC8F6
+CDV4JBTMW73PWG
+TEWYNJKFCB7V3J
+WFHNR6JPUY6PW4
+DQAUAVWQGDRGQN
+3EAKR8MCRVYK3D
+48KA3GBN77PAHM
+NNNQFRMFXKB8MM
+PJ3VYYU8NQ3E8V
+3PYMPJ37Q6GQJM
+XCKKT68J7AW6K6
+QP7B4JNF3T8MUN
+8AH6MAEMBQVN8U
+CBQ6EXB6UK8JQR
+E6DA7KUJFQFYDT
+7CRKP6C3EV6WFF
+ECUP6NV8676PHA
+B7WWTA7F3JVEC7
+E3NJ8HU3X3VG37
+6WUJNMX7Q3G4MU
+4H86NNKWK77KRK
+A67GTD8TRQFGJV
+F6U3FHTEKGAMW6
+JDD8TVDDFNQFVF
+7BCGEUY7HFQNUG
+8JP66NGY686RMX
+MTXYHJAXDQRECD
+C78R6KGEBXJBTD
+4EDAMW7JUDM7DC
+WCMAHE6T8U6EXQ
+3WPQHGXQHD3VCJ
+7DHUQ8VJUN388T
+GBWBDUV7MA8J8F
+7FA6CU7JFQA6KW
+K6DTYGUWTGKWKF
+X7RHWFTABVNWXN
+3CR8WWAHTHUFUT
+NFVQT6E8KAPXDA
+WRJYREJB3ANBMW
+BWGBKF6MQGTBUT
+PWR33W8Y3FVDUJ
+VNGXP4DCTEQWPM
+XXAW4W8BBC4TA6
+J3RHPTMQ36W4EC
+H8NF8H6FDNXMBE
+KGAG4RWNUPHCCE
+ERAHMTRTATYHQJ
+R8JQRUT44HGT7C
+QV7YUJWMABWHM3
+QYD77P4KW6HHGM
+4GNEJMUVC8Y6AE
+XWGKTBJY4A6RRX
+YQGFTXY8Q8HFA3
+4NFPU3GFYRV7HW
+WCQDRUNU44UPDE
+FFC4DQCVGUQ8R8
+W8CQMVY36HEMBM
+RVYM7RT8D64JQD
+VR6HXNPFQUH8VK
+NXQEDQ3MYRRQAE
+XBFEDBTXYMAW77
+VHFX667EDUD4W4
+PKH3VAANQPUUWT
+NM7MUAG3NHABF3
+8AXDQP6CQJYJ6C
+NK4HUGVHURWVYF
+P4QNCACFPU6NRQ
+BKWHBGGBC7HMDP
+TP3GBXKGNB8RC8
+DNPHF4KEN7AHEH
+NFHGQFUBCCN4VA
+PABAQCDCEQ38HQ
+WPH7M4XV8GVMJA
+XRW7DCDCDTUNPE
+4YWEV7WGT8DPUV
+BYXYHRNAX3XGPM
+X4WMPKXBCAACN3
+CFKVGPKBBACTDK
+WCQ6W7MUGBPVMF
+VJDR8AQKRUWU8J
+X3VKJ3NJCRVPCA
+KAF33K3MRJPMR6
+7Y7F38UPCJ8AE7
+HU647NRG46T34C
+X7D6RCFPGQHQYT
+FTJR68T8DDKXPX
+3QBRWR4XQT8VRY
+VCMQCGCQQKVWWV
+MUV4TYGM3U84DW
+VHHTKJU7WVVWMT
+UUCWKQADURCCTH
+AKP4QPD7B3XVGA
+FVBTQTK3PQU3QB
+UWFWPEXHQ8G3KA
+AEEPPVWKYUQFDN
+QPPJTNN37REHEB
+EQYNRVTPDRUDW4
+MGHN7NRUR3F34D
+6HTDHAFYR6TGEH
+DXKB8JM4RRQEBY
+HMQCN4TJVUCFCQ
+P8WFUXQCMMYTGA
+P6BPJTQ6A4QAFC
+VQDYDPGUDFHYMN
+GW3RCMEXFD4NWM
+VUV7HCNEWACR6Q
+PBMPWNEPMM4CKV
+PKD76RKK6MECQ4
+QXNGGANBB4CTJ3
+E8RT6UJ4CAB4QQ
+VF3MH4QJUEYV3Y
+JNKRVRMVJNWQUR
+NXPBKAVACDDXUC
+8WNXPUQHG7J4WC
+FD3JW3VTPUANVH
+PNA6UEHKNJTXH6
+GAVEFPBBFYT6ER
+BMQH6VMKMK7EXT
+KDXQGDYTNTMNFK
+GHM6HEQTHDTTMM
+XETXKFMM4HMAGF
+QBPK8R3FRK6TY3
+M4VFU373BRHNG4
+VUUAX7K3EG4KTP
+F8QDW7QRYD4DV6
+KVFY8WGJTQ6PAT
+QDXYWNP6MTV84T
+PFYYE8CVD6TTFA
+VUNBFHCFNPVCCM
+B4XRRXM4J87C37
+KU8ACKA67TMJGE
+M8W7G64HRUVXGE
+P46K3CDB44YBXA
+D7MKTDENY44QH7
+NREVQDAFQ6MV6P
+MD38V48WVV4UW4
+K7JMU8HQYFTK33
+CDPRQC7JYPBMTU
+84WD3X83MMME74
+DP3TJ4Y6XWE36V
+DNAHNG7TCHBGXN
+XRM3QA4H8XFJ7X
+UEYQGB4XBANR4X
+KH63VMPJ44NRKV
+YT73QFFD44CMTF
+8DYQ8PF8UXAGWB
+GBGUYVGU3AY38V
+QFKVJM8VNUNPHR
+DCRU4TP6EGXB6N
+YREJJG8CQGTGP3
+AMRKMBTGKJE3RC
+KJT4ANPT7RJU3F
+HPQDN3XR7AJRET
+RMBPNBXYBGRYQY
+3FFJ68C7EU3AXU
+XXJ3NKHXXCCUTT
+KVH83KRBJ3RRRD
+JWKTYDTCDXRYQE
+BDC4NPUTWURAKD
+MPDYNB8KB4UAEQ
+XEUHHRDB8BEYJH
+GURXAJFUAHJ8A3
+J8YX4T7X7TJUBX
+6JNH7RQXK4GHXG
+VEE3BNTUUR486A
+VTM4FB86UQRD3M
+4AHC3DKXD8P4F8
+8U6XUUFU6DDRJE
+RYF64NDPPNYGAE
+8VWAPYPX64DERJ
+HDCJJKFRHK7YH8
+HXMTD64AMCUWKP
+CUM8GM4N8DYTN7
+CRGCKPR7XBP8DF
+QGQT6G8M7RTQ7A
+3KW6XEJDYYC8C7
+DED4QRJARM6CDK
+UHEH3UU3UKMUMQ
+7RPYJH8FERKUJR
+VRAV7QNMJPM6HF
+H3NAJ7TY6UJGA8
+83R8FK4YAGVM6X
+GMAGUKYHQ4MUFF
+44NTHEAJMJEAK7
+HXFJD377KR4CXF
+EXKCMTJ83NVM4C
+8ME4W7F4MBKG47
+TYDGAEHFBA6U4X
+UJWFQJCYEQ6FJG
+JK674E37ENY7JP
+FJ7URHHQRPHBHG
+GGK4VFU8TDVVKU
+WC6UPARNY46TQB
+GHGH63NMHGTYM7
+JFT6CCH4KKX8YN
+PCGFPHXRT4YD63
+T7JBCB6VHT7HYT
+WW7UNYR7E64HD4
+ATQMWYWD3KQDDC
+BR6XFEBY8UCTMV
+UYPT8EWY7M6NX4
+WRPDA8W6M38PCP
+AMMQB7BFWNBDAW
+4URMG8YHX4RCUG
+BNJVFPFG744T6R
+HCEWEU7CGEE38K
+GAF3TAGQNW7WC8
+W336TAPAUJ8MU3
+JGKVAYQPK7XJBC
+ARNHHE3UK6C6HH
+A7GPVMQMEKB86B
+JDUERQJCV6BU6X
+JHDT47W78HEKFM
+JT6WKG3UARBDBA
+7DFUUF4FGMVTH6
+MBJ7MGVAVG7ANX
+TATXKGYBEE8XDJ
+3H3XPNGVNKJJHD
+8D6WP3QXMGXH46
+XVDFPX8YWPTRKJ
+UUJCQG8V4PJUMJ
+P66CMNM8UECWJN
+XNECDVGXDKBA84
+KEBQMDNYNBHQE4
+YDMQNE4YTNVGYB
+4XJP63QCWCXFHU
+3YFFGQ43RCXCFH
+QDFVE6PP68AHKQ
+AD7CMXVEXPBENN
+YBRBAY7E7KYCUD
+FJQDCRRNFX4YWG
+PYYEDHVKHXNXCX
+XARHUUHVNDQKMX
+NRXPEYCPQV8NM7
+K6MA4MM33T4BK3
+B4CNJ3Y7J3TKHM
+N6X8BA76F7R3XF
+JA7XXN8BWAG6Y6
+J7GYTRP4DCCR6Q
+67AAMD8HWHCNJU
+B4ARWACH7GH3YM
+CQHX6UWNXKXDKP
+QNQ4CEUAVKKQJT
+M4JMDVTBRHWQFG
+TYXF7H6MPP3HKW
+YGUDA4734CXAB4
+UNHBT8DXWHQ4EY
+6PXV4AB3ACN736
+T7FKFJKBW3EDTV
+V4XDABHDBMNQ4U
+V3Q6YC4UQQREPJ
+UBQNY86PEFYY7C
+7BVR8RNP86DBWH
+X8XCK84TMD4T4A
+RCNXKAAHQFUCJW
+MRKQMNBTWXUMWN
+AKF83YAGQHHQWM
+46HHJP4GEVKFNM
+J3FPE6QFKQFVYP
+8BE3FH7KXVN6GV
+4DQVUQTP7M8PNC
+A66M376N38R4WD
+Q4NEGN7E4TPC3W
+HF74GWMN6KEGX3
+3CPDBGAEBR8EQC
+DWX33H7CY8QC3H
+R4K6FMP3KUKDWW
+NAGPMCFJMCARET
+KBCCH66RFDDVUJ
+NUYEHQ364URXFT
+8KKPAKETHJQBDR
+EHTEW4MBMBBY6B
+DXTMUFG6NEA4EE
+YKVCQNNUFEFTN3
+KRQE7JCN4KHQT7
+V6DGRHGFDPUQDP
+GUVJ8HR67B6AVA
+NEXFYFWDAJT6XR
+YA8R3NCHNJFHMF
+UWKB3DNXGUXKHY
+TN4PD6XNCFPWXH
+F4RNBUVQHG73WD
+CPQQTFYFET436U
+WDK6HYTAPMVNTA
+E7BEXWGVBBEXAV
+AJE78GUK7BNYEP
+48PX6YEAHUDQ8F
+B46EF6FHPYE76M
+HNVPHQUEF4DBQN
+FNJJE8BFBUKNR4
+CP4834RREG336U
+UEDHDTGHU8F6R4
+RD44GDAQBN68XC
+HNVXUNDC6PFA6Y
+BKFRDPBGFGP3EK
+KN6G63M7CW3J74
+FH4XX4AFTTJBXN
+FJF4N4F66G6ETX
+6FT7NQKH8HN478
+JHBCGAGQJQB3XP
+RXRU88DAVQKKCN
+PV3BQ8Q84CHFTC
+MNHU4ECAXPJ6VJ
+T6KH6RQN3B8PNG
+3TRC8QMH3YWNWC
+ARYDJJUXFA4U46
+FJHCR3Q7C8PMWE
+CNF8DAKGR6VF74
+NW3PVUQPB4VDRH
+HXKYWBDKCHQEKQ
+6N6C4G4CYXKPEF
+UCRNKJ6AWKKA43
+RVV8R4ACJ3WKUY
+RPRUXRPY3AEYPV
+K3H3T64QQ4QMBT
+FJVJDW648RYVCF
+HWQRNACGJABEN7
+MJTQJHVNEVBAAX
+YDJNRD7X648TDM
+MKEGCWWCQJX4AC
+F67FTQFBCJWUDR
+PCAUJM3MDMTCHR
+NKTFENKJPR4HXX
+MP8CXQQ338K4CH
+VMF3V4XJHED88A
+CQGNRPJTXD3Q6T
+NWDRTKNUFRDAQ7
+C6QQCUBVWKAJWG
+3F46QWQGDBUKKU
+WVWCJHHKQXCERP
+RRQKB7NQBHR8NR
+KKR8D8WQPPDPMW
+H7QT8GWN66KH3B
+6VGHWPU8FC84V4
+PQGMFR6WNVN3KB
+BPCXRBC6EYCHJU
+AMF8WVNRH3GTDJ
+NA86QBQUFNAWA3
+BAU64AUMMNCCE4
+NAYYWVV4VABM6P
+XRU876JNMP4YQU
+URVC87TNJR76CH
+WJXGK8PMVM6AHG
+M38MW3DNYP4MU3
+MM68CX37PVV7KY
+UY44CGKUH4JFH6
+THDVCFYKUEJP8Y
+8CYMUN66DFKGQC
+NPQYFCPX63CGHV
+CWNYD34F8B3BXQ
+MFENCPFX64XW7V
+K6F6NGQVK7TH7G
+Q7RQ3UNFU6K3VT
+NBJNUD4W8QT3A3
+THKFEGWFKGCFUR
+3XG8DRCVGYCWRW
+8AJTY6QMJNH6FA
+GHHFVTTDCF3D6E
+Q8GAHDHRGR3DD6
+B3WRGEKVXWUHYQ
+CC66J7M4KDNAMR
+A3MN74X8TVWFBY
+AVHBEJKJRDX6NY
+TQCFKYH6RWQG8U
+68BFDNU67KBBKW
+3FKUD8PAPDPWGD
+F8BNTQF3HPNC8C
+BFVHMEAP33CMDE
+U3RREEPPQVVUCU
+YF7BHKYVEYQATC
+J4TPNDDFFPQRHG
+C3FMHCFPP3WK78
+Q4YK4YAVMNCFYK
+3PXNH66Q3Q4V33
+YFCPYNFHPUPYY4
+MWK3N6K4QN4VNV
+G6QK48DMFRHEWG
+836DHRHTTX7PB8
+GM8KNGP4HGAPPJ
+H7YMREDHEHAVYR
+NHD6YAE4C3GNR3
+X8DQQHDHGE7NYE
+QA6EXJMDN8H7UJ
+X7E3VGGCH8XHVW
+EPMYEUGYFWUYJR
+PQDKJADP8BGVMK
+PHGW6X7YPXGGQG
+WF4BPCW6U8444A
+KEBN6DRGRKHGMH
+KR4E3MCARKKGXT
+V6V8PQD3G3F86Y
+8T6URV8JDHNCJN
+GCUYNTAWQQCQEW
+HQBCYUHCFGHD6V
+4XKGGGJNM8UVAQ
+6MHGFBE66WJFB3
+AVCQWGWBK73GK3
+NE8CCJTYNVYHY3
+A6AVXNJCDVVEWV
+A3BHPRAN637KNE
+TYUMN4WN3KVHTT
+BQKNQYPAQKMJWQ
+JV3D38DK6WPU4E
+8JEFTTYE7U38N4
+UEJVVB6MT84YMH
+B43VTUD3JNE4FB
+D76MD4YT6VJAWM
+33H7NAEG8U6D48
+KUJVHUBF37AVHU
+JRYQGDHUDUVCV8
+QWXC7DQGJ47RCB
+BMQBNB4HMWBXHK
+VBD3FFYH8ATFF3
+P7AXVNXHQR46H8
+7TUJGRKTACBDYG
+DQ8ABFJQ4QNAUR
+AFAA6QYHDBGXU4
+6XYEFR4G4K48BN
+NJ3JXWYAKD6NX3
+X8XDTYVGDUT3MX
+E4BWBYCEQHCPKD
+8ANNUURN3WDTEC
+XNFJ47MRJMMU8T
+F8R3QKVEWPF7CE
+6AGF7RBAJF4HXR
+V3TKDDQP7DYT36
+HR844EQNK7CNAX
+HAC46UEYXC743W
+NNNFAEKMPFEQNN
+AETYGR84U7MRHN
+FHNCPUBNA7KRXV
+TXFMUUM6BP6WVX
+4TNNH6R4GBFAXP
+C63EJUQHDKWBXU
+PRBKWYMWC7BANK
+YJNMHH6H4QQGQR
+P3N6NG7YKQCDAC
+PCUAW3QQJFXRMN
+RJUJH3RHCGA4RG
+V7RMUVFYXNGGC4
+MKQWBKWR66RETN
+DPBYBQYDVPRVPD
+K4VYAGHNXX666J
+7JXTPBH4KFCTP7
+R3NUCKBBEUXHHH
+NPJKUUGNT6QHBG
+A6VNRYY4T7J6U6
+DBDUMXQBW4UBDD
+PDYAMVFG8JWTQH
+UTRNHWUWJMV6G3
+VR3FTRNJRPKBVC
+JD8748KEK4ATAM
+Y3DPKUXJUPMFRC
+38K38M8MNAC4KU
+B7XX4TGVYND6FV
+BQ38NXEJU7CGFC
+3RUCWFDFWDQVFE
+NUAXPFEEENXCYC
+FEFAD3KCUH43VW
+H46HUKTGWBEFR7
+QWN8BCAB77EEYT
+RCPTH4JUCTR7XY
+QPR8QEB83YHUJR
+3EVW4JT6U7N8MH
+TRD8R3TRBPMV6H
+7F4KYJXFJY4FC3
+CUBHFK4R7WNVY8
+QX8M6PNCVCVWGT
+N4TGEUGTVXRGKJ
+TKQHEQWGKMGCK7
+8AU33M7QYRAEFW
+8BNKNXDGMGBE8P
+RAXNXPDDY7UKJR
+3NVM6HYUKWHBWX
+JR43FDTWCJ8D78
+88DEMKH4BXFKVJ
+WEWM6DA6CGFHKD
+PNKUGKCHPPMFAW
+H8VBABEXUMUVEB
+V78NPWPDDJTGTN
+KV7GWFQMUTMEJN
+PVBXXCNF8RWTTD
+NBQHVRRH7A6M7U
+8NJ8BC6C8UUV6W
+A83P83HWFURWBJ
+JHKYNKXK36QU8C
+PGYVFMKXWBCRYN
+BBHPUM7Y87GTYC
+GBBBKBEX3KDVMN
+F6Y6JG3TKWPAPD
+KPTBTQYWKDU6YC
+M6RQQPF7EBNX34
+4XD4JJNBRVJT6P
+46TE6GJPPCBKBD
+BQ7V6DHU68JUR4
+KCR7E8HY3MFVAQ
+YYBDYET4D488JV
+4PF7AXUUDDTRFX
+VJ3P8H6HMDRQHY
+6QT3B376G3BU6Y
+XYPB3VMGWCFPX8
+DUF34DRAUCDJRU
+BKUWQW4PDA74Y7
+4AQRRGQGUEM6YG
+QPUW6N3RTQRNBA
+KUCFE7JP4MXGHM
+KGG6WDUQ7JKRBN
+7KAHGCDRHB3NHT
+B6WF7AJ4DUP3UC
+KMBD3KKD4YYKUP
+BPEDK7BVRQK8JB
+R8VDRHCEP4GMME
+66DR86DFADNDCY
+HVWPKF6V4W7KK8
+FQMR83K46KYJ4Y
+8Q4BYEBHXDC7GT
+TCUWUP44TUNG4N
+KDW4UC8A8DGC3D
+HRUYBPV8VGXVUP
+FFC3JKXEN7ACBC
+F7G4GBPFCKH6QK
+YA4TJG7EKDKMGG
+PFJTPAAF43EKWP
+PWJDM4VJNVRKAT
+3AMCJQF3JWQGDB
+KXXCAKTJEJWYM3
+H4CDUJ6DCR73DE
+PX4QPM8MRK63DR
+6H3BK8G76WAPDR
+CM6VKWFYGHP4WA
+RU6KJB86W6T8UW
+T6HMGDM4APCCJC
+8BXVVAQT7G3BGA
+TBN7A74DPFHUHQ
+FATQE3QEH6D3TG
+AKG8H4VERKQG4K
+FAMQ4DGDBWAGJE
+AVRBKQNX6JNC88
+XN3PMTYVPYYF6H
+WDAJ8UFWBTD83F
+CGRJHEYQX8G7MF
+XUQUNMRFCDY4T4
+6FFB6BHAAKWAMQ
+8T6GDC4CUXNEW4
+DDG8J7MBBJR6PH
+GAD8V3XHPHX873
+FTFUWE8VVCDBNK
+833UWMUQT7N7NX
+X3KKYKRYKMJWYC
+KGWUGGCHNNDGDK
+6FJWA3U6GT4RVC
+VVTEPVFUARJX8V
+CGWVGYFFPQR7VD
+TXCEFRXUGP8UG8
+M8DFDTBFJKVXHA
+6DHJE4AG8PDN6Q
+EEUNPJATDRRKEX
+W6WAHAKBQTJJY3
+BXU6PGWARRAK7C
+3EFQHBMBDMYT88
+RAQGCG8WYYV7K3
+6BETT833X3KAU6
+T4X6XB4R74TA4G
+FXETNDPCVGENPN
+6JEK4YBBJ48TFQ
+CFED66GB3TCEHE
+4PRMC6DVENB3QW
+WENV6ABVAPAQG7
+BUX7WR44WETRC6
+FGDA34KQRJAH8B
+F7FKGUJ3MXHFBA
+3AXQ4D388E7HBU
+PTGCC77YN8JUXK
+TRCJWEAFM6YVDX
+B6Q8FHB7T7U48U
+GD66E8VG4AHRUM
+KUQWKDQYBBCDKK
+DA76MAYTFGDRXH
+XQ3ECEM4RGBRMN
+4HRXPWX3DTQ3CF
+RY7VYCEY3KTQ4X
+8CG7PQHWAQMPX3
+ARECEMB7JPFGMA
+WF8T3JKPJ877EE
+WBGGJJF8K8CUC6
+V7BQTY38TANCVR
+7CPQAT7QRKUFHB
+7GXHPPX3TRH384
+MTNQ4N4NMDBABK
+XM688FFGBP4RXD
+4HCMWPWNGFBQN3
+H7CWDUXPWFBXVE
+8Q3KV8R74TKFER
+CKTE4M7T3B8KCU
+4HMV6JM8EURQU3
+A6WQ4NRJFJYGKF
+EC8G7BGTBRGETJ
+67DUUWCRP83CJN
+3TKY443XAQ4MVA
+NT46GWHFCQDT4V
+PHAUEGMXHP7VCH
+URE7CJWBVEGUKF
+FE7H7CCH36TVPX
+3TCEE8EGGG6QJT
+N4FURKATTNBHX6
+MGWKPH3N8N48YB
+UUBRHCJWT4HB3M
+VAHR6XYYNQN7P3
+G8G48VNYPENCMU
+MTX3VQECKT78KE
+PQDNYPMBGUJYEQ
+4HBNDRBFMG6R83
+WBCX3RFBWYDKGV
+PCRWYXPH3RYFMY
+YMQJWFDW7EXVCJ
+QYVFUPBBT7XE6R
+3KXUAVVAQEB7H4
+BKMWMAFD4CJVCM
+XGEFHFVNBNY3NQ
+RXYRHPAV6K3UCG
+H4FUCXFJAYMR6D
+MXHQA4QWBK4HRA
+KAMJBUKGXEUNTE
+KDRBFJEWKFCQ7U
+HNADUGJDECMPHU
+AUG6NXKTF4GFAD
+CCPJCFHYTCEHED
+EWE3UTXYWTYBUN
+C8GXKBY7Y8EEUQ
+TGVJNVNQFGUYFP
+GQHCP3KXFCVJE6
+WK8NPDJCHTWEWY
+PHMJJTJYF6CG8A
+AFNAW7JR4V6FPJ
+7HPXX7FTC8MG4R
+DUHH3DVUYAQWY7
+TPNWN6487DUAPH
+HBCRRUYQC74D47
+VWM7DHTPJM7WG6
+6GAEKPFQNGW4YP
+DBMW6XTRGWNVCH
+JN7VK8BWGVBDCR
+477WXB8ATNJDMC
+UWQUTDXTKMVRWT
+BM6MJWMNFFQXCG
+Q4MUMHET3WP4JU
+6PM6QPNWTKEQ8U
+AVTJNVAX6VRVHE
+GTQQME8YGUR8FU
+JNYRBPWTVM74YB
+HWDQDCVPPTBFMF
+VJMH7VE46CD8CM
+7W8YH8UMJKFT3R
+QTPMBWGRVYVKFX
+6TGRERQABCNKUY
+YAH7UQE7E8WYRP
+YXPY7VVNXHHXTA
+TGAKTRP3JJKGW7
+EKKMDGRQPD6UEX
+8T6QGXK78MF46Q
+4AKGY7YU3NFUKM
+E3C6V34RJ38X8N
+TT4VWYTPYUQPYE
+BY7F6TGYM6EGQW
+EJMPC6MTQ7WH4Q
+HWGEP3DGR6JJJT
+E7K6EMJ88WTA6D
+T3438A38VHG67Q
+MKR6WHBT8ND4DD
+FWXKMJ7XVJQAPD
+WAFEGX4F4EKD4W
+HUPETH6XA4TYVE
+JUW7JMD8NX7QDP
+GXNJWEPTEGDHFA
+6YCGPRRC6PAXG7
+7XHNPR4GJ7DBQ3
+P6HP6BECG8DXWG
+4X3DNQ7EGVPUE3
+ATG4EKDP8HDHHG
+YN6NFP38N3GTNW
+FH8PXKYVCD7YKK
+37EKMWMY3B6VXJ
+CXE8VXGFU8TFBM
+VQ4J7R6FXBMGYU
+FJ33TNM6C8M4WF
+QXFBQ36MBPFW3H
+8X8FRQHJ6DG46V
+UPTUFYGCNBM4WH
+6UUT3YPJA8Y6QH
+FBNKDP3TCGDXUN
+JPFHJPTBX7MRE7
+AVTHCQYE4C6HX4
+36K37PQ6T6F38T
+Y4JFQ4MTPYG77Y
+BDTCDYXPJGPDRG
+MGY7M3TPYBBNDP
+P4QXNUCCD8RYT7
+B48BERXYM8YMVR
+EU8GPAFCXRWPKU
+HBTX3Q7C3M88VG
+WTEGCMC67AEUJW
+ART34AJ74HT4GE
+W3X83APYQMTQ4D
+4YEXNYFPYPXVEK
+3PURPHQKQJF4HD
+UTF7UMDDF6HXJJ
+DKG6RUJNV673GR
+PEBRYDAMYMQQBP
+RPY8JAH8UY7QEX
+TGFWFCH7GCVDAM
+EFWGGPFD6YH846
+BTTQ38WVTARTEJ
+DAWYUV78G3BRYN
+YCN6JPYUK7WGT7
+A4RQWBXUWG4443
+GVK8CJQURUHQYJ
+BP4WK7VJVHERHV
+PVQ4XTQACJMWKD
+78XWKDQHNUCHD4
+BNJFG4NJGUXTXJ
+3VKN4H7QBB3HQC
+3DQTRN6KCDB8NY
+6Y4P3UBJ3NFM4D
+7RRABKCC4NMD7V
+AFCXPJGNF88FV7
+FVCQNWFPBAU7CK
+66ETEVT7ENCGTV
+AVDYQKDA8WKKPQ
+8UC7QABFBHNHKV
+C3GYFA6QH86UN6
+CUAVWWEERVJN68
+EXCGCAFPQQRH67
+CP7JNKQPQCKJW7
+QD4MDHEBF4Y7D6
+KTB3EAEEUBFB4F
+VKPY334TC76B6M
+7HQHN8A3P477DX
+RRR8WENANMTP3G
+K7NWWPTDAM7CJV
+AMEJAXNWNXAK8X
+BMARPJQJCWYBB4
+KWJDNEMBRTNNJE
+UGCAANEUNNBMVB
+PQ3WGABH3TCCMV
+YW4MYN8376PARK
+X8KQTFHMNVCT7N
+V8W7K7QRAECAPF
+8GMDV8PHE8UCK3
+TQVMTFQJEH4TWT
+4NJUYXMWCFTF66
+KFUWB3GV87CTM4
+JTAG6M8VUHPCYJ
+8R7GMARNRJCC3K
+7GXK3WRFCNX6TA
+BX7RTY74AHT4QW
+8FTKADYQ7J7PG4
+PXJGKB4JDEFJME
+THKWRRFDNH8XQG
+4PJ8Y38EQCDWH8
+QTQHYBUWVNVF44
+BTJTWCTKAMCNUC
+KDA6MACAW3FMXF
+RKTPXVD6PJMWWG
+BGUUPAQEX7GQH6
+CTJ7CE6N7H7QHU
+QQ8APF7EKQWXYR
+A3Y3CQCCH3VYXH
+VMFXAU8X4XMCCM
+D8KMPVGBPT7HBF
+KWCWCPTK8CTKDF
+WEURJUEHDTQD6U
+MTD4JKVHWUKADE
+GRJGCPJRK6Y788
+PAUV3PHP6RKAMJ
+JK6BWYMQWACGJU
+U4FHURB3KPRC66
+AVA7QCQBBKUQKE
+RA6H4U3MPMXTGU
+WEHUJTGMF6HRWE
+MR4T6AK87BQ64W
+XVA6FC3JCR3XAQ
+8TBEVKRUC668BH
+MR4FXH6QBYMYC3
+RWNA74K76FXGTF
+BYGKGYFDCYRC3E
+RJRJCWRKJRJR6F
+N6PTVXHBCPG7P7
+W7PNADUH8EVUWV
+WFDGQACV6NYEMB
+ENNQFN7BAAUQEP
+RQ4D4WANFQ7RDM
+8WJ8JQCUGAWKXB
+AFKC4DCRFDAT68
+U4FEHKQU4U6HEM
+ETYYTEE8GCUCX4
+XUFDQWPFBKCH7R
+F3WJWYTMMFBNMD
+6TFUHYBUW6BWUA
+FAAHRNEC8MD8WX
+AJETWT6KJH87QP
+JAW4RGAABN8KQ4
+UHVY8RAEJTFKJE
+HU4RG37FCTHAJB
+YGC66AUVX4JQ7A
+UGNJVRQHQ8YBKH
+MB3VVXNGF6FW7R
+FRPYRXB4YB8EPY
+6J4PRBQCH83FRX
+6G6UJKTDNRFCCD
+PNFD6687W7K3R3
+NXTNERG33DTD6G
+BHXJMGEDBGYBJN
+P6RGC7PVNKJAMB
+CAUEH4EXCTEWUQ
+RH6WWUQACG8QRR
+83BQKYE3XT77YJ
+RDU4K7Y7HJABRW
+P8DTD78U7RBF37
+KXP6GK7CGKTAXP
+6XAA8UNTXDEY37
+6W4JTQ6EKUYJH4
+T3FTPHFFP8R8R3
+XMWPQHA3XQQJPR
+VBDMJB4GHPK6HV
+TJGAMEXVDHJ47V
+3QH7GYTAAQ73YH
+PPMKJEFGNFGGFM
+UQ4YEFBJFTJTCR
+4U74M8AGK4XPKT
+NXAH7BVHG3TBJC
+7U4AWGCVAFGQDM
+D3VBH337B8FKW4
+XMJ8WKPNFQFQE4
+P6RVCJ7NH6V4GM
+XRV7CQWYNVBNJP
+FHYGV8NET7A8MB
+UVJRD7R8T4UFRT
+WAR4JD7DDM66C8
+NV7BJB4QT3YXHN
+FANVFQ6ABA7XE7
+YTCEDDRN3M46DT
+J3BWWVDRP83TU4
+Q4UE4KNG8NBA7P
+WHK4Q7NHBDVREQ
+U3MVPKAX8Q8PMH
+XMPJGW48WEMQ8R
+KMDBWFUTCAUXRK
+JBX7BKXMK8DWYP
+A4RXVV6BUP4ENK
+UWNTHTTNKG6FDM
+GU7R8KUKVP6XH6
+UWJBFG6MRDUJBU
+KRPQWMJUN4NY6U
+BMGBHEJPT7WXQF
+DHWPUYB4G4QVWE
+G8JKEUBQ3YHER6
+HTFQREXPUQ3YCN
+QYKYDMN3KFVNWC
+3YR7AH47P34TNA
+REQUQEERHYXKH6
+EFHTEN87WTEUUE
+KMC4MFMNYAPU66
+X4HJ7VE4PMX4FA
+UY3RECWAC73R7W
+8Q6EX7BCNFBNCU
+T3GUPP6DMY8XJU
+JAXY73WKKMTFMC
+FGBA37NR3VUQNU
+648TK6VNTJDCAD
+GEM6CH3AXRR4KJ
+YK83PDTARTVNER
+AYM47NXWB73GE7
+Y7BEQEUQMY6AJ4
+UKCKMNNPF3ECEP
+36U7QFMG4RRQQV
+QHM4XQBX4NQ4GK
+NUEYKKYXDB6AYG
+F8XYTQCCGJW6HQ
+JT6AXWPPP7FP8M
+G64YKPVPVPFVBJ
+6BMEYBNTY4TMQQ
+Y7PEUEJDPK4JMQ
+D6R3NH8KKQF473
+KYFWP8C668XX67
+4J64DQR3DHCXTU
+H8NPE8846EWMBM
+BTRPKAAQ3FTB37
+UQ7JGBE86UUNMR
+BR8WV4NERGJWPW
+3MHBG67EYUKCPG
+P3PK4HUCMRQGQT
+HEJEAJP76P6VQW
+FQAKRCCTQACKWE
+DQWEHAN7AUNKT4
+VCWH4J3EYHCPRT
+THYX8T3X6Y44YN
+AKEBFQFUY78V4Y
+YNPQYWMVKH67AW
+KR36MA34VEN3YT
+7BT8JNBMRP7ERW
+37TVB77U7F678T
+RR4XGHUW6AJJJP
+MEY7RCUGG4BKTB
+RPRJXDC7JXCTHG
+T7K7EW4CG4H8E6
+MEVA4FB33U8DEE
+3RBFC7URVDNFMD
+YBHYJ7DU3RPNN6
+RT4PTKNHWPRCX8
+444CXA7WYN8DC8
+EFDM6R366AEDXF
+ND7EMNTKJHFNFB
+BJQYGYYGJ7HFVD
+PWKPVKC76PVMEK
+AXFWHYPHWAQA43
+7863JFM4B3JMNG
+8HDYFVY6EW7HYT
+DFFY4WYD3CBNMC
+ABVGHR4RTQQ8YW
+GMPXM7TH63N367
+VJDKJMAUKD7FDD
+XNYNKWNPFKAX3Q
+QAHRYCVW4MJ6PP
+XME8EH4XYADYU7
+TQRJRE6JJWVEVD
+E3CWHHMCRDREBW
+HDP3HUYFWEKX6Y
+YMBQB6FJJAFAXG
+6HPDBNJHK7XMVA
+KEKFPAP8RTVEFX
+8J43WHUP86DKVT
+BEC4GJ873TRUM3
+6FBV7VNVGKTEX7
+Q8EXFVN7XAVYXP
+YMWPWK8MDVE3XB
+GPQN4WDFG7PAUR
+YWCQHG348YPHT8
+VWRPVG6K8QP4F3
+JUQPYMQ7HUN7CE
+ETQ7VTACJA4YC4
+QMKVRGU8JTRHAG
+HC7Q4E3RNKHEA3
+TFR6FB6U7GN4DA
+RTMENEBKVQHNRF
+JJTDM4RPDAK687
+NRUHMBCPUQWTFP
+QNP3X6UVN86RR8
+FUAUUYJX6WJ7FU
+KR4363M8EA8Y6B
+DRK7EX6WN6RV6M
+RXVRKP7YHBXRWE
+HFHV6TNMHYP4D4
+VMCHA36XUQJJB8
+FCTREEXHTHR78T
+XVY7X8VXVEPND8
+UP34QRXNNWFQJD
+G4VFGJQMAWK3MP
+6RHMBKCNCUR7CB
+CXCJNBJWQYJ6K4
+TDKC6FTV77KGT3
+J3J7FFNUT8VADF
+BW7HDEW8B7HRHN
+VB8MDXKRFAQV3V
+4BBHFA6TDK46XM
+374ATC6843YFTH
+WAXGXHT66GBP8F
+DT46TACNTD6FF7
+RPRTC83EBUKMEG
+AQG88F87AFRWEF
+BUY6MC8FP4BKYK
+EBN4CEYU7UMD6N
+KM6Q8GQDR387HT
+X3FQ48YM8PAXHV
+RBBJK8384UQVCY
+YKEATGB3NCGXJM
+CMCDDNJF47U7DM
+PGBDR3PGEMMKNU
+QNKU4PKBFR4GEQ
+XRWMEVKQKKYPVE
+MANDC6GP3WFYUG
+8VATE8UJNNEQM3
+QWDCGAGKMKMEER
+8DDD4WKHD7CB7F
+CB8RHCMEDCWWQ6
+QUD7HPPP3EC4BW
+KXKP4XQQT6E74E
+7EFTMQVHHA7PMD
+DQQHFXAKUP6HC8
+8GGYRAXCJFHMHU
+EUF3JH6JJFNV6B
+G4CXEKHBD8MDWW
+FQ76EN7WETNT67
+7CJMRGWMMADD8K
+AYNWN3MPRPQGEV
+BKMRYERTXW4R46
+NTEJDYMQHPXFHM
+R3JRMTR87DBAYP
+6BXNNE3VYXBUUN
+7UEFCYU8XTPTEW
+374YNFPCFAEV3D
+YBRJUTNMYGTAEQ
+KRQUABEEAUKAUU
+Q4EWMPGHVQA8VK
+C4WXBBUHNJYWD7
+VM6ANB4YCBREB4
+BXYFV6FAA6K6R3
+R3JJX6A3NP36X6
+HHQFRHWAFKA8RC
+TFJDHPJHMMAEKF
+XPWVNUBENEDMVC
+N8J4WDKFTXFRUP
+KWD7DGVPMGFTPW
+BEFDEPEBMKAFGQ
+KB7EDM3P8MR8HC
+UKKFRXD8WMKPCX
+4PN6HWJ7AXBUQC
+YTDVRJ6GXWQTGA
+JPJD7W8MXAJVHF
+J3RCD3PEF84KUQ
+FT6XX37RATYAUG
+6X8J73TFQAB4DG
+A7EMATFJUDNKFD
+TJJ6HDKB6FG8FU
+PK3CUXG7AB33CG
+GVRJDU4E7PAURN
+UBMBQC763QYD8W
+VHACUNFV8YBE3C
+MTW4DVBFB4HUAC
+6GDRWCUMA3GKHP
+P4DJPNKVFFDD84
+38MQ6RFY4JHTPQ
+KMT8CN6EJMQWDT
+AAFKHVQF6D3QTW
+6MDHCVBBQHMW8T
+HRXRQ4QYTR7EGF
+KBJKPMNWRCTJWP
+FKJYWQKKT7Y8DT
+QHUWTGYXHPVN64
+QDW34FYJMTRVQD
+DR8NM3J4G8MGHJ
+A7GPR8MRWDEJ3Q
+TGKRNMATWD3B6U
+NHNDKBNPHADC8B
+6RRU84X43EKGJM
+DCRACPRPEC78V4
+EXJJE4D4T6U37H
+FAA7FFJ8PV8U4T
+PTWAFVYU6WRGGB
+AYT8VD8GTWEWYD
+DPUPMMUTBBRU4K
+AJDQ8HEREDJMMB
+UJKPMENMRC3GMD
+HF36GYEDHCYGDB
+WRPGVDHBW8D8KA
+XCUPVDXAETBKX3
+MKXHFFTMHXUG4M
+RRY4PCGBVN8HD6
+TDVQBDRDTJCUPG
+H7UH6FVBUEFYKN
+4Q67RRXH8P8DG3
+HGDH7MGJG4H8MA
+QQCRTUPXVV8RWY
+E8RMQDHPGAQNNW
+WDRUJ3MYW8MNAD
+UD3P8XYD7BVNCW
+PGHP8X3TUDPFJT
+43VEBMMMJQ8CJG
+C6DBGQB7Q8DPRB
+T46GTGUKEKR8NH
+FEHVCCKKVEJ7XU
+8J3R4FJQ6H8RKK
+UUXFU3BPP8KNYV
+38AV4EMER6KCXR
+3GJCBRMD7NWHNC
+E73HJETNMJBEKK
+4NY3D8XDNDJXPC
+UXMKJDV6XYNPC3
+A8ABPHQ4F6VHFN
+KGPV83WFYUWEXP
+D8JVAWHQVA4H4J
+Q3MJJBW6WYP48K
+WQCK7WVCB7GM47
+8PNEV7ANQ8KQ38
+YCDUX6REUG888D
+8JRFGA48XG88VB
+NNACN66NVKKTKW
+8FR48WEFENAM6N
+RPEVRCFNRPCTUW
+NJKBHKEBMQ663K
+7YXC467NTQFGRK
+XHDW6YV6VF8MY3
+3GNATYAUDAR47G
+MBFFQ6R7V3QA8V
+TD4E8J6FACT84J
+RYN7RTFYYQRQFE
+8RDWEUMJ7XKY7V
+FNHX8D8T3QTRBA
+FBQX7BNPD68MXJ
+NQA3MUX4QDPMRU
+R3MMKMVM4ARJTM
+WGDCCTAF4MWYCX
+PDDEVMF8HFC8V8
+MGNJKEUH6YTMUA
+WEHUMYC8E3W6QG
+P4DWBRC76TE3MF
+Y6YWVRBDGVHA4N
+T3QTDQQACAN6TT
+8TAVXHEPBQ877C
+4EBPR6MD3WNPU8
+DUY4RD3UKUEJNB
+N7KPQBDGRQGVDR
+QMNW88VPF46YHM
+8EP6DRP3U7FFKT
+CKKRPTRP33MQ6C
+YVXPA6WPAVUY4C
+KJQTJUQDBGMRN7
+R4C4JVNTJREAFP
+FKQUUG88YMEBW6
+FFMPATP3KKJ7KC
+WMABAHKE6ABQC7
+WTAV8HWNPNF4XE
+A4ANRXXC4GYKG7
+34UB6NEFBPNQNW
+FWRWXFPC6JK8N8
+M7838Y6G3A7QVQ
+HVCDQ4CJE7YQGV
+4NTXM36AY4NRXT
+3KKHGHYWG8HE8H
+HQ6DXEXR7BQA3F
+UM6YRQKBRFQHBF
+M7JWENTU3E4THW
+WERVWHJREG7ABW
+TUGAC7NKDFN7BA
+BDKCF73HPWUNFN
+HFF7NGFJPKDPJX
+VXFDUDD86YCFCM
+VUCCG7VEVAXJYV
+DBK6DPYMRG8D3V
+UU6WPVUA3N4YFJ
+KAGXBGXMJ8G3C6
+FCPP4FAA63NW8B
+QVHGQVVQRBRP8D
+FATVCEEYVB44YD
+6WFUJFQMDKPQKH
+EE6RQ6MKDATBNU
+WHFNEQPPWGY7JQ
+QMGHR4GF38678K
+WNKFK4PQFQXKN3
+47Y7C6CPFEXC3K
+XCMVJ4MFR4MCXR
+X73U8MCNGRCUKP
+VHJFGU7DX7CF6X
+NVN7QEYHNYBUCP
+ENERRTPA46F3GC
+Q46QNNJNB8E6X6
+WKVRRRTA6UFK8T
+MBHM4NYRPJUCFD
+BXFMHEPNXD3E7B
+WY8HJ7QQ4ADM3N
+8EHKU36RN3DKFR
+VHRM76KXNYGEVB
+E8CH7HHG86GY6N
+MUACCFVAA7P3XR
+FM633ADUDJTCRM
+JGDFTGD6N64HPW
+QMVAMQYC6AE4TK
+UJ7N6V8XXFUBUA
+RU8RMMTVRHADKX
+EPMMYCE8FNCJWM
+63TRD6WG74DTHR
+MBNYRP4EXA4NVX
+YXBKRM63PJQYBG
+N87BHGJAGE8H8J
+7N4UQNMCJ3K46B
+4X3ETUMDDGXBKQ
+NHMR6CCD6HNBRQ
+RUNEJMWGDFQNVF
+W6FXV8PFWF3F7Y
+MN8AUC6TFEUCCR
+6CTEB8CK6RQUUQ
+H8YHUFX7HQTJPQ
+MEQMYC87XU74XN
+AK46QJN4X74RCR
+WC6T47TXUTQWFJ
+VQA74RNJYHT3QG
+HXDMUDYT3PB8GD
+6TKCPTJTNMWQHU
+KR4PRNCBATDTET
+8XF4QDARUPHJN8
+QT4JUPEY7P8PAW
+7VU8737TF8TYHE
+XBPW3GUKYCPPPQ
+JYKJRB7TETRDRE
+REMUUMBHDRWTTB
+H6TJC3Y8T4PJJ7
+N6CQ4QDGMY3J6C
+V3KTRPG7GCYPCE
+G8HHR44X4KCFR3
+EWFFRBEYUNRJAH
+RFNDV7TRHYCKYY
+4FH8CAFHGMHC6X
+RFC6787UV34R68
+MJNT8TCG4F4WCJ
+ENUCNFRVQ667BC
+FWUY7Q46K84WDX
+UBH8K6WTKHV7RK
+U4BYPJ6HNFDU8U
+PGYPE7UMBAHDBD
+GQHYKFXJMUVEDD
+TN6ADYHTJ8W7D4
+UQDBBAQMM84DE3
+4ANB47NC33WU7X
+C476H6GEVWT6X4
+DRQPAR3A3FC3T6
+QGYHKVQNQHAXXT
+NTBNE8XYYDKUY3
+8CU7NEGTFV33V3
+EPJRDTKBV6CFU6
+BMNBGX3TKPEQAQ
+QFBU83TTC6HUE7
+TV4R4G6Y6FC4NA
+H7JT6ME4FNP7N6
+RD4TCT63EUXQF4
+K63R6CYKT3AWVG
+P6MCA747P4URK8
+PTRG37P4DCW7MT
+TR6T8AWUURMP3C
+VATPHAWNNB4JHK
+UPWDE4NMBEP63E
+QRQWJ7CJWWRH6P
+DBCN3EA3JHBRWD
+XUVM4NCCM3VBQ8
+VJWCFMJDMUBRNN
+AF6DU4HKE3MVVU
+PMHX77QGFFXD7K
+WK678JBBCQ88HE
+CGBGQ8MEXK3B73
+MV4B868DKKHWPE
+H3Q3TG86TGFF8J
+CAGXG87G3T6FEY
+DWA46UARFJQ8TQ
+MFGUDCNWF3H6QU
+UB6RD8QXURYNDJ
+NPGTE3XXWAU8NU
+4K34N4WNGKVF3E
+BYXTGJY4AWNAC8
+NC3MQYBYD4MUPF
+GUE7ERYT4PNRKY
+3W7AJBBK8BNC4F
+DHWTEHMF46B33Q
+RAX4V46NDGKK3C
+4FRKWUDRKAR8JJ
+JEYNTMQ6HHKKWV
+8HV6MKTNKPBW3V
+6AY7DCG6DGCMHE
+7MJBBYD6CRJRDQ
+HCXFPV6KREE63E
+BWJDEEPGN8VDNA
+RUP4B38DXPCN67
+FNHV8B7UBV6YKJ
+UBX47NHRGTM76D
+B443N8CRF6RB8V
+67GNDVVNMJ4KPU
+BHVK68RU4GKNKG
+D84V4RQHYBWG66
+WUCUWVR7PAJEUB
+D8GJGNHRRGKEAH
+34PCPCN4UPJ4MH
+KRAUC3YDNKKEMW
+TUR3RKK4ENWMRE
+EKKR78XJ8MYHE3
+YKU7WMR7CCAXBM
+RW3JHBWD8FTH7T
+RWDC74MWBDFU6A
+NGUGF86H3T36PN
+44HTFTRWCBV4XG
+EKBA8F3JEA6U6C
+CRADGNVEPXC8PN
+RB4JF7QP7KJJP8
+GT7JQH3JQYQYW7
+PGE7PGAMY8ECTT
+3A6WGQMG7GX3JA
+DBBBUNAH3AH3GX
+4HJM8H7VQNNEBA
+YTHKJE6KMP4T8A
+P7DE3FDGFQCCTM
+EHHQQ6GH6KHU38
+Y37KMVAU4AD6TX
+J7MHFPE4H7C44N
+UHV8UKKHDJWNHM
+FUP6WY73HVKK3K
+6Q8FEFN7Q88JQ4
+JUAQFDBAWMTVK6
+CBP873366EBWAX
+T4HRJYKPBVCRM7
+J4PEC63RBAJ8FG
+XGU8MHXKDVYNPV
+77X4Q3NMAHHPUP
+JPTWCYGQ8R8MRJ
+JE8FDHH7E3X8WR
+K8JHUW7VQAUQ7N
+8J88JRRMFKCNMN
+CFGFUTM4A7QWN8
+FYG8QMHWHMQGPJ
+C8RFPYGGE3HV3D
+CPCK6EPDNTRQPB
+KDUG4AMMPDTF34
+UF8HY6FHHJPY7K
+8MUJMVRNTUKP3R
+JBJBP8MXDUN7CC
+RAFJGPFNP6D7VU
+VGH7H3JTK848RG
+MBFJ86DVTEAEQY
+MK6FBKPEABWRMJ
+P8GBFGM3F3JXJ3
+EX8KJ8NFADGYTY
+A4HWMMCUQGBAQE
+FBJRXMHRP8PN6V
+4PP8DB8J7DB6MH
+8QJKRXMMBNQKU3
+QP3BWPCQXW8PPM
+QNTRTTFTMCQR4N
+8RG4VWC44FDRYJ
+3D4BTDFWP6BV4Q
+PUP6T7W4QK8QXR
+YFG63GE8JFU7QT
+N6C6UQQ4AFDTDA
+R344XJABBBD6T6
+N77HQAGUPHQD6M
+Q7RBE3MBCF4CJN
+DDGBJCQWNNBRNE
+37XWY7GAMHHKNA
+NHNWRXAD88TPC3
+CCFY64AJWGECWA
+WHHYAJ86TE6TC6
+7KQYQ38GNJEFDG
+MNPPBTDQGCYVFT
+GCF7RBYQADKRC4
+AFAP7BA3Y34WND
+8X7BRJHBD7XNTJ
+YYURGV6NV3FRM6
+RAUG4NQYMBECPH
+R7XF8PUD6Y7MQH
+64F3U6HRCNPPMB
+MG88NPEC6DTGW3
+NABQWK8FTN8GRB
+H3UNQKM4ARGVGT
+TXNJAFA6GR38RP
+FDDD4Q4ECRC6WG
+4KDF3QBD7QVDWB
+46AEFFHDRTPCBF
+A7DNPAX673H83R
+EKANG3UEBGDGPA
+TNU684CNQNNHWG
+NUN8J3NPAFMTTR
+MJD8ERVXY3CENP
+8XD3PTJNQE7VQA
+YN8VE33HVM4TRK
+CGFR7UFKPYEQUK
+7U8ABDTKVAHBBD
+FWGPQQ8WU4FXJX
+ABCAJRKPNDFG8P
+MXFJ6KHJCGHANK
+RH6QD88NC4VYDD
+NFX34W6WKPE4H6
+HNARUJE7MHNQCM
+UFPC7PRNN8AKBH
+YM6MHFV6D8EPVQ
+KEVJEMTFEPQQUQ
+VDP8VCFHEXYMYC
+QXVYNHCGRXQPRP
+HX64BA6XTMGDGE
+BPPXAWUJKTTMPQ
+GNCFAYX8BWTWQD
+C3HPAHQ6TJDARB
+3RDJ4PXRDATXJN
+MQ68DQN6WKVC6W
+JUD8AUMW3VDDP6
+R6E7VT44NBUUDQ
+7YW8Q3QUX6PR43
+CYUVNCPAMA7CV3
+HKXCWVNTDDNUX7
+YAUMAEEHUBJVCK
+TXT6YF7DTUJ8XU
+F4Y37XM4UJYUPN
+8HJNGWQDJKRRHW
+BMJ4GHTWYVTA4V
+EQQN4DK8HJNNYN
+CHGBE4AJDY3TWP
+FATN6WQJBUFHBN
+VX8NGAW7DGWX4T
+YAAF8BGNEPUQYA
+XT67FHABPJH6XR
+FNR46UQ3YPVWVD
+7D3XWXJHDF47U8
+KJQYNCW33KRRC4
+DWGK37EJH43VU7
+7T6EN7VVQ3QMBB
+RXQJDCVVTF8ENP
+HHBAEHDKVACU3E
+7348ANWY8DU74W
+7NXQV38F773CQR
+8CCM33KGYEYUPF
+TGKYA3TMCYE3MR
+WPAVAHNT68CUFC
+Q3CKJTCUUFYVDM
+KRWFD88Q8GQUUU
+QTW6EGD48JYQDP
+EG3J7BFPEGMPGV
+BTFATVAM8Y6GPK
+RTHVRJWVBYE666
+KA6MDPEXX7MMMQ
+7NV3CQAPU38XKJ
+MWGUXMTK3VP6RF
+3UNKX8AM3AGXYB
+FDP8BHTKG438DY
+JHEYMWQUREHNTX
+4CFNC4WFHYCE3G
+QW4DM7MMYYT8MQ
+MEKUUUGMEYGKB4
+BRBTQT4KMUMGCC
+NR4GJW7CPBYNRK
+JGJM64MBDCVE68
+RMEHW4HXPXEEMF
+AQR4JU4XT63X3P
+JFQQ7XDDYMQKT7
+A8TB4Q33QQ7FHK
+8B3GRC3H74YFEK
+RRPHCTPMCHJJ4A
+BEBJTPAQR3YUQT
+XFPF8YEXW48ABB
+BP4N7DYP74HEV8
+8G67JHJ78TARFM
+3UPT8V3UMTHDKC
+RPP6GYXAHH4MXA
+HXNPUYBNWH7RTH
+36TUV6PY7NQ7UR
+R3FEBE8KJCQBJT
+VNUFFPBNYHHWYN
+J6JREJA6XQPBC6
+CNJJJ47DAPX3MM
+6Q8DJA8A8V3RUR
+E8XQA38BN8Q48Y
+KQEURXPBQPQVBG
+FCYHPAFCKYPUJQ
+TGYTCWAXKQEQ4G
+WXC87MR8XMUEUW
+UMKXB77BJDGDPP
+76GCRU7RYY4B86
+CK764J4CGR7AAA
+CME4KP8TQT8BVG
+CVBATXTY6VQTWB
+7N6YM837TQVNQR
+B76733CMD48T4X
+YJU8AUUJRD34KV
+8PT43V66UG44CW
+V6K6TEMV7HBPAK
+WENRENX6XQRAFN
+B84C43YV8DGUDN
+FUQCG3F7NGP3VT
+WMXKUUUMDPFM3K
+K7G7WB3CHYBYDG
+VCG8FDWVPAPWGK
+WTEYAUQHV7WEHF
+N6PWQ8WBJVVD8X
+MKK4UQ74HG6MDR
+EVQMWUVJ36QT78
+U3MQD4FR3AHFTR
+Y7HARRTVQN7YBB
+C3MMBTB8VMURAH
+7BN4X3YAYNAYDY
+GBEATPPHQEHFMU
+7U3X8NBDRFWJ3C
+EC3PUFKGDDJUX4
+D473B3RRMQ7BC7
+7D4UQP3P3TK3Q4
+3FVUEP84AFTY3F
+FCCWDWWTM83UV3
+XXDA3DQCBETTRX
+FW3GW8AVXHQ8B8
+8MUXAADQ44HB4B
+BU6DWPFKUFJMET
+DH8FCU37TDM6AU
+8NRQ7WC8BMK4RU
+V4Q4UDRGPK84BB
+PX6PVN7TDUBMC6
+3VBEPDUNUX76W7
+N44JWNCFK8BBBB
+EE4PHM6EARXDDR
+XY3NGC4A7EQHPB
+3KGGWA7DWJRET6
+THJVKUHXB8CXVG
+DYNDXYN4RMNCNX
+CRWV3HNXRKA4XT
+VVA6AVWKNAVWQF
+B4EEJTTFEBFMF4
+6ADABVGQVJD4EG
+3QXBPMMF7UTJKE
+N7FNUVDK7HVMWC
+KQKBDCU34JNKJB
+CGCUMXUVR7KC8A
+MCP3TCEBPBXQHJ
+WHXNQHBMAFJXTE
+K8Y6UEPEB8Q7BD
+URU6CEE83M3GAN
+EVTQ6TNVJ87EMJ
+M8FQCWJXNPFET8
+4GJFFDNEBWUCVC
+KAN6PEFTDBEJW3
+8AQENABDDQUT8Y
+TEHMAJBGK6TT6H
+6FV4NEEVBRA4DA
+ARCVXGGGJCDE76
+EVQT463AFXQHWK
+774HM6RQNGNKUV
+FC7Q8BEJAKHUDG
+GABUH6NQVRDJ8K
+DD664DUCFEQTH6
+T3CKCBWMHCX6PM
+WBM6TMBCF8XPQ6
+6RR6Y3MX7NTCD8
+ETMYJ74XFGQKWU
+438KPFCQDXENYU
+C7VYKJQGVKVPM3
+7UD4GHDFRJC6UE
+CEE6AK6JN8C8QB
+TTDPRCW43ATJ8M
+M4KF8ANN6U4FWA
+FDPVFCYA8MM44J
+MT3N6CHQ3XRFEC
+FHRN8VCYGA34UE
+FQE3JEPCTQWG8W
+KGCKVAARKT7BX4
+8RVNFH6WYPK6TF
+UBGWJTN4AGQBCN
+CWJUJ87KFBG6EN
+F86ATN6U7FQQ7N
+HBGAM877VTNR78
+76XNCTEC373MB4
+XAN6QEF4B7VUGV
+CNYG88DBP8NFJ3
+3T48FCBRVTTU8J
+7UKQ7GBUKCJ46T
+4PGW8YVPXC7RCG
+PR4UA8J3ANHUQ6
+WXNFEPYK3CMYJT
+EWFWHU33EMF7TX
+W8VAV6W8437JHN
+FXK4HTD3RF7BPB
+AR3TURA786YFUV
+6BDYVA8FWKBQKA
+MKTMMAKMCAJPAC
+7FT63RTQHFWP6F
+MXFMDBGXJKBM3G
+UQTH8MGKJV8AHN
+BRGHW8VVQCUMFT
+RWCNBJ7RGMX8KN
+E7GMFPCBGWE6AN
+WNUPEEHU8MWMUX
+MPYCYUTCTJB6XB
+3KEVUM8NWQRJ8F
+4DM7FTVRYHJNCP
+G4YCABFEBFM3WM
+T7CX4VCMYKA4YD
+86AMRBRWXKTGPG
+4J6CAXN3Y8BPU8
+NW6YK7VMNF6PFQ
+NKWJUGAJAN7ATA
+KDA8QF8BFKH8BE
+KN78QRVV8H3UCW
+7GUGVDHXKTQJBE
+7WVQMRRCHRNXJE
+UXMBHXVKYX6RBV
+JQWMBHHAVHJGY7
+MKFQ4JWFW84ND4
+CDP77XYKRFYKR3
+EMVB7TMXEVFYGQ
+YQHREB6RM7G38D
+TTUPBXTUWP7G8M
+33VNXXUQDHRPHE
+GBKABY3PQC6T4D
+X68TGED7N476CA
+7GXWRE7HCYNNXR
+GP6MR6UKND46EV
+BR4B4XWVFEBRJK
+QN6P6CYNRP46GB
+NCURMAWHUMB4NH
+4BH3XHP34NGQ4K
+VRJDE7Q6PBDVUM
+UGPG3D3PPAKT4T
+HQGCCQGTPNCCPJ
+A6BBAMVH4MQV7F
+BU8APX4U4RRM8J
+YTA7PDQGBJNBH3
+3H7MT7J378RDWH
+7JECBF3DVCWEKG
+DEKVVTE8N48QRH
+FQ7QGNFNGCTRVV
+NN3TCRRJ3DQ88A
+WQTTXNKJRKKQRD
+CCHF886AM6APCH
+PJGWNTEKU8TBVV
+YNAKFDV7GKRTYG
+MMU3RMYFUPNU4P
+KGJUKGN7AA8BMW
+Q3T3NYGKNEGG8P
+KFAH4XMB67YRYV
+KW8PWJHNWXT4C4
+78D3K6TTXUE6BN
+6YPYDDNMYUEAB4
+THJAYFTPXG76CB
+QTYCG76TQPDP86
+MYARMQFVPKYCMJ
+ET6V6G8QHKAMPX
+FEHJ44RE8G3MCA
+DBRHE4KK4BU4CH
+XW4TK637D7PXXX
+REWMMED8FKYH88
+7VDJGMEQ7WFCR8
+X7MGGWNPYKMM8F
+T67467HPQECNYG
+UYTVJQM4EMFNX7
+EEW87NPVRBUTEB
+JFHTJHJG6WFCGP
+RPV86WVJRAWG8D
+EMRDC7HEGHFHRD
+RTM7CAYBDHAYM8
+BMEBCANURYDHBT
+DFQUR8NCPAM4XX
+VQWTAQTNAQTENT
+HVBCQCA6B6KRMJ
+KNE4BTUNWKBB6R
+V68WUM8RJY8N4J
+J6UVGB368VQYUK
+P8QKWUDHK46QFT
+NJH6MDM3GXFGDA
+W7XQKATXFMFKKF
+J78MWAK7XT3TTK
+8UDMNVQWECWWT6
+KKG7FD6G4BWAEF
+FXKDRCY7A67PEY
+MH876DNRMBTCYY
+DKPGRRC8VR36YW
+E36KF8CKDRNKTR
+EAFRJMEQ4WQYPG
+FYGRTVTJRE4GTD
+WKGPFRTCRFN6MR
+Y6BVTEVPACC46P
+YMAH6HV4XU8E3V
+WXXWH7JRA4TXX6
+3TXAHCPGKQBMG4
+BUNWYDTKDEVJXN
+MKUH7NF7YF8EHM
+KA8XYQVVPV3EGN
+8EVFQXJG7DFRUF
+GQQ87RHK4UY7RX
+7C4ENCQJA6CH48
+RPTX7A3CTMFRD3
+DE4B6B7GNYHK8G
+PQUPMJJKJ8HNEX
+4T3VBTKJAHP67R
+EVCRXKC76DMBXN
+AVM37NKRUH6YTR
+VYU8AAB68YWVWP
+EPXGTK3JBJJ7EP
+YG4AQFBMXFUPP4
+D7CMWNBKE4G6UT
+N34B6YC8X3NREY
+RQJEKTUJ8TUATJ
+U73G4CCT77WM4E
+FHAK4TJXPHAJRF
+FYDUV7UPM3FVTV
+JV3C8GJ36AVHEQ
+M4WBEQRNFW7HVK
+7J3PGRG4T6KMXT
+HCR7XKH8M3E67M
+UHYBU6NCJQRVYM
+AQVRV7PVQHMC6M
+UWUHGVHT8PTKGT
+CPFGHNX8PEHKAD
+MH7WJC3RMTDGMN
+8R4CDBHDTC6CED
+VY38XAGF6QRTPW
+8DN7YJ4346NAU8
+DDX3RHKPRUTT7M
+7QKGRFNWVJC4WW
+TDCGCGGNWWH7RP
+XXEFHM7DMFEQYN
+CDQECUECUVRFAQ
+7NYCFGXJTHFM6G
+CEDUBK66N3RVTF
+6KDEWTK7ENVUVA
+WX7WKMWYD473Y8
+B4K4BBH3RXFHGG
+P76R3HXGYQADQG
+4JFR3M43ERBRGK
+36XMTCQA3NTAER
+MPC8TB6A6TQD8Q
+YKFF4JGVMJEH6U
+PNA8CGPEQGADQH
+MF3QBGUNXM8FUV
+VQCXXC3AMFXGHP
+78XAVMDNHUKKME
+QMYYB3HQVG3FGT
+6AE4PEDRYC4PNA
+JBN3PMNJNT4R3U
+F8A3WKUCMFJTEK
+JXEXUYFNK7MHMP
+MKP7GXM8VV8G3M
+DUWVTC6XT388H8
+7U8DNJ7PY8QKRK
+HYH7D3FFQHV6JJ
+UAACXRDX8JBXXG
+8CWDECWWVBERWX
+NJE8VV88JXHKVY
+FPM7EPAJAMR7PG
+CJCKW8NWPAWU46
+DKU6G7RPH4HPVB
+M6FXB867KMTJV3
+VR48AQ3NHFJGXR
+FF4AAD3TAQEBVM
+JEUD4M4YJM4BRM
+4QB6HCHUQ8KWMB
+G8BURHHCE6MT4C
+7CQJWHYNDVT4WY
+G4HGECAXKC84AR
+EDY6WD8BKDMTNT
+3YGK7ETG6UC4DX
+CE4UCYB4W3QHGM
+JRQMHNTDWGDFBK
+VNHYE3NGH3MMFC
+XJ6P3FTCTTYJEQ
+BVGQHTGXHT4CDX
+AKGEE78FPAE8DA
+BAM8TPHP3BGUHJ
+ATUQBAMKF8U8V7
+VA76TENYF46K6H
+H86C8Q6UJXTJKX
+4VQAKMPJ8KV7PR
+BQQ6DB84AUA3DT
+MYEM6EGAJRKHP3
+MMRP6KMTTMVX7H
+A8QJBAPR8VACF4
+DGJ6FHF4UD6VKK
+MBYD6KWAD6H4QT
+3QHWXRNE3MJUPY
+KT8ERDK6W3FNJR
+XXKQTJ4PGHXQKK
+JCJ3WRDXPB3U4M
+3F67F747K6XP87
+CPHM6KCKXFN7BV
+ENCP6BDAUQNUCG
+AN7M37G3WRHQNC
+DDJRR3KMWJYGGX
+EVGUQYU66TH76Y
+RCFM3FH4FUGP4R
+J8B4PVDR8CABU8
+GQ776AQBM6CCV8
+6B6CVCD47DTMRK
+8BWQ344C8VRDRN
+KH7N7QUJDXYMVA
+YUGUK3CB6M84BA
+PNVH6CB7V487KA
+8EXG43HHMA6Q6C
+WKQYNEPWHB7C7R
+H4QWACTT3HVGYW
+PWUCYDA6FD4D7Q
+GDCUAXEU7UCF6J
+EH48MR6JXP8YF8
+WHCXTVCBBWAKAV
+6VTGCRYHFTPNHE
+BYN4QGJ7CWYGUF
+DYB4YAP4JUX36M
+FRPMRDAVX6EP8Y
+CU4MUGHHRDYT3D
+P64RVMTR774N7J
+3BBEHBUPT66A4N
+NUUUWVABAYDBHN
+7HUAR8A8PNGBJT
+VVFG4GCN8UQQPH
+46NNEKKR3T6HCM
+8Y6UVMDQMBYKJG
+BFEBVGGEGCCCEN
+GFM4H6RAPH3KA7
+HYDFWTDVTHDK4J
+YTCAAKBTCHVDYT
+3XXNDHK76VWGVD
+PMNVPUK4Q8NYCE
+4WAB8RNJF64FCT
+NBT4FM67VCAVDR
+D7UJ84RPANM848
+PFMYGTEMPACRNU
+W3QG6EJ6AKB6AH
+K7KWDVA6WVWHY3
+YTYQYCKX7UVN3Q
+MCDMCBMXHNTNQJ
+T8K3GD8NCKPMW3
+WCM6XB3YFPJU7G
+QRTHXRXNAMDTHK
+A4PCFEFDQWXEUM
+VU4CYREAYGKG6A
+NGVYAJ6XT4KPJF
+F8BAAK3H76V7QQ
+PRJMYARQJUFC3H
+8VTNU8878XC8MK
+U4T7DB4PPQCK8T
+Y8A6RU8E3HVEKE
+4R888QRPD8KE8T
+GKTW7QDEVXWRN4
+EVDNVA4RWH4GCF
+FMYM8Q6NJ37DT4
+PPEKVDVD7Q7RUC
+4QJPYYDGQRJD3P
+WBKQP8CBFQWDFM
+AKKBPBJCAN6YFD
+4BUBHAVTYV83AP
+A7YRF4K4C6B83R
+B8FR34D7CYKXWJ
+QV6PFJP7HC4MQH
+YGYQPMRY4TE6TW
+34CCBWCNCFDCMG
+RMNNBNCDTDJGKQ
+76AYRQWDP7PA4F
+QQRAH7T7PKAHFH
+FBRRUHJBNWARNP
+YCAWRGE338EFKB
+M3RJDPUFFKBMEP
+WPFG8NNM7N8NHW
+3NT34PH8JFQNEW
+BNGCBNR8VUDRVU
+RTCQXEW3Y8EGDA
+MVF3T4PU6FA6YC
+FGQYHXBDRMWA7Q
+8Y6863NTK7XBHW
+7X6BP8M4FAXTXH
+X8UWJU4MCMCBBQ
+WJPRAVXET7R76F
+MMQ7W4TMKQJWBC
+CVEDDAQ4TEABBK
+AW7C7MQF8UHRJ8
+YQNWBB4FKKEHPQ
+EGYF4ETCBYMDGX
+Q4G8MP4MGPP4D7
+M8T3PBT7EYVYR4
+UVPAENQXVEMDQF
+X6M6JFHADGJXGH
+KT38DHJXNQUPMP
+YPCBQYU7B7FAMD
+WPMPUU7W3PD4FV
+KGNMHPGYNTRJ84
+PV4NKQK6UJXKJ4
+FTJV3TVB4UCTDF
+ERQDYH7RY8TNAQ
+NJ487J6F6KEBPX
+VMFKMF6C6H8GER
+YHVAK4FWHV4UTR
+PGFRGDMBVJG4GX
+6DYV8J834UF4PA
+D3VADAY8DGMKRW
+4ADDDWJ867BDFH
+XHWG8ECBGJQBE4
+UMMU64AKHUTKBH
+4WQBF6AFRC4RGX
+7MANJFWHKJQ7EW
+XWMJRCHQ7GCKVD
+WTJ66FPVNK6GXG
+EKPEDMX4F74R4P
+TG6WKWU74PQG8Y
+WAB4VBJBRG6AWK
+C4GKMYC6XJVBXP
+VTYWQCFCFNMMX8
+CXCYAWEFBKRGGE
+G7H6JNTYWVECWU
+XMHKCXAGPHRVUP
+6JXQ3W6N7J6C6N
+NTFFXRDTHTPNH8
+34NHCN443M63V7
+TNPFQH36BR3FN6
+3DJQ7NJQP3VADK
+MWEWP77EGCGAGE
+EKYH7UNW6DD8RY
+MTEJJWBAJ4JHHY
+DY6BCU4E3GFBNQ
+Q3F8ETEKKBNV7B
+UDWGEV8NNEH8RJ
+68TTPBWRE4NERJ
+JVAPJ34Y6BVMM4
+JYAGFH3NMQCDWQ
+TAXY6NCPP8EHCQ
+FPR8HH6XWDVCR8
+6DQWJ7CKGHKGDH
+XXTYWW74NHHRYA
+3P6EJ66A6CX8R8
+7E3WCPF6EGX3T4
+67PUF7BV874FKW
+VUXG8MR3DDQGEV
+B66TN4VH7V8BAM
+7CM3JGEKM6CUFV
+PATM7HEMFKAHCU
+6VXADB7X6JJ7QK
+BBFVPF6EJMA48V
+FRYF774HJKYVQW
+RAM78FDA6HUQJR
+HPC87AGF7GJ7TW
+RBDFXWKKDJE6CN
+RVMX8C47DGBCAY
+DARK8T7AVUCGR3
+GC88TWMEWG6DPA
+TH7PHDB6BYJV36
+X36GRFP4FRBVGR
+6UVWP44PBCMY37
+4KAJWGFR6CCKHD
+MGNKEFB3XKAMMF
+7KX8T3RUFUMERR
+6VWPH6WDJW43AH
+6YKAQUTKE7UYY8
+HHCVJN3YPXFQGN
+478PTBM4KWJTAQ
+QJHTM8DVGNTEE4
+A6YACDXR8AH4KU
+3TWEUYE6ARKXTD
+TPK8A8NBBK88EE
+Q3YXH86UVUDNCE
+BNWB8R3F4FDFKV
+DVCC4PCK764PXN
+JM7PKJCV6J8MTG
+WUDAW4QDWDGJHX
+YF4TKD8TAJWNRT
+KW4DE8P43PEKBF
+7QMGYHCT466HTT
+JHBC48WBP4EPAV
+R7QUGX74TMT78K
+Y7PCE4RREC7R34
+PEYJ68DTTJDCNF
+UYHJYQYYBPWRM8
+NNTANAP8CW6T4A
+EPGGRTFXMFCFVP
+V3NFFKJBVFHEC7
+NAJPWRBFVTF3F8
+3YBV8GFTAJ7ND3
+MXNUUN3DNK68YQ
+MUYUTCPVT68PPX
+UJPY8K8RFAYAUF
+C8GVPY8V67XR7B
+CM8HGQPPNQU33J
+GEWV4QPD3KFPYH
+N4QRDHWTWQUQJ4
+JTHVYPXQF8VCAU
+KHVDQDRXTD8K47
+JUDURKQ87NPTUQ
+EVR4QG6PHXWBDN
+UC6HMB67MMHRWP
+YWUKQGNDKD7TBC
+EFPBYU4AD4JFM6
+FMHXQ74RHPT4CA
+E744H7UHK4C6MB
+BJM86BAFMRDGAN
+QGN3UCU7UAGYMH
+7HHN8RAAAYKUE6
+87FRADEDG6HY3B
+NTQ6UKQRMHEGQJ
+JXMD6EMQYMQRDX
+XNCT88WATB8VEX
+QXMBR87QRK46AA
+AKF4JQU8DEPF4F
+XT8XNQP38FW6J7
+DGWVD7FWAKYDH7
+GBCPUHEK7Q3GGD
+NTRT6RP8HFRJCX
+KPYJVX48FM7KB3
+W4U3BN6CX7XEPQ
+QCTNFVQQXVMX4B
+86FBNNFR37NTFK
+FX76HPXQQYYBBX
+EATDKQDFDGCK3V
+X8FQQDWXRGNPAY
+WRTBUKPHBHB7W3
+8X677A43FQAHY7
+D88BTRABYJ6FXP
+N4XH4EAKVXC7UA
+UNX433HYRCPKRE
+M7GGFEGGAJQWBX
+6QQKPJP4RH3XBV
+X7ECH4866FE6FR
+NCPE4GCHE3UW6H
+JNXBMACYKQECMX
+VVMVGDRCCWUWGE
+W3DDXGD4WMECF3
+ETX4XCK46D7TRC
+ANQ33TDMFAHY6N
+4Y7W6VBUWUQHXA
+MJ38DEU3XGVUPU
+AKKP4RJMRY3MU7
+FGRNT7Y6UWDV6E
+6AWTYJ6NGKACPX
+WPY4VDRMEPFFKR
+VVHJXFNE3WKPR7
+HM6HNQFCVE8K8P
+WAFFVY3ARWJCMU
+NCVFCRJAGUHTUN
+8FFXRVHXCNVP8Y
+3RNKP46UFPXUC6
+Q7XUEPREG4KXWJ
+WMT4FEP8D8AVPY
+D3KDTF4D4TG43J
+XTTUTB64E73CNB
+AD37KMC7D4Q7J4
+AJFKRWC7NERQXX
+4H4KM3EXDYNHGT
+8MFGGRJWVUAN47
+XUMTP7M8Q7ABXF
+4T734BAUA4QBJA
+P6RTTGCE73M4QV
+JT3DRPKJQ3QDBV
+3NMEBYXRRB34HF
+W7J8JEF6WXAX74
+VK4FWVN4B4C6RH
+P8YWNJWDK6FHMA
+DWBWTXJKGGR6NR
+73DX8E6P8TBGK7
+CRM8EUD6P4KKX7
+RUDF366BCEG4DF
+YXV6QKQFC7AKWB
+WPHTU7J44VVNV6
+3E8HYHC4XPHNMB
+FDKNHRVJ8W8KNE
+AFQ4HTRKYBJGWE
+Q4BECWMHXM7YBF
+6XW6ACDMFQUAAK
+BHEEM3AYG36YEF
+BK6CJVVUPWA8ER
+NEHQYNFDFTMETH
+DDQT8VQAQGQMM4
+NARDFNFTYPVYGW
+7MMCJJBJGAB868
+6GRUBHUXR7YVNF
+E3AAXBR4PXPH3Q
+WF7QXBVAVERPHU
+FTVA6YYFGN6PKH
+7KXT7VEENRQN7B
+KC64AGPDWNRMMB
+W37VF64CFV76XG
+3463U8UBNDCKC6
+BVTRHCNP4GATU7
+HU8PAJ76XBPD3Q
+VCV3X4MQFJK433
+RT8NQE3PYN6N6E
+4KH74YHPN38UFP
+XV4BTENTPKNCT3
+KMRRGJKV4BJUVG
+FGB64RNACP7JKM
+7UAQRYEJF74KD4
+GHWQEBUCCDVF4T
+BJF3FKEPR7DRQC
+WKUC3AF8DJKDAF
+PDR843D3DT7PJ3
+N33Y66FH8KDUBX
+R3EB7MBAGBUCK4
+W78MRTBRMY6QMB
+6XPNVFXAVYEPVY
+P6KY3PCFAGB3RU
+V8F77TT6MAAYC3
+DCFAG44TYU3PM4
+AG7FDN74EE4DMN
+R7NQ37C6DE3YPN
+PWYQB3U6CU7PDV
+DKCEFJPYUWVCFM
+F3JE7WAQW67U7V
+KQBBXTN4QK3RKD
+X3Q6FJKQ4BJARA
+377P4ENYWUCYRT
+ADVNBAYK6FVCGP
+8RD3YTYCTJECBY
+AQN6A8VUTEKC6P
+VDVY7RJU3BW8EW
+XRAFQFHDVTCHJ3
+D6EX37MG74X6HV
+7AHN7XMNRR3B4C
+KFMMCNPK87G6XG
+4XUNDBCJARWNDK
+PUW7RP74NKBKYP
+EHBJXDCFGKVFPT
+4XACKJR76QREK7
+TKHN6G3V4KB7QY
+YC8PBGRH3MYWEA
+4GUEGAB4F3VGMA
+MVBQFCRHU334T4
+CKB3QQCC8YACC6
+WK6CJVQTXUWJHV
+NAQHQJFMKJRR7M
+DYTPEDWU8AEWXP
+AGQ4EEUMAJFPNX
+3VEX4TY6E774UA
+N6BNDEHVXGPTED
+8JGYTKH3ARBQDA
+DQQ6KQ38E7GP8J
+RWMGQYMHD4Y6TA
+YQVQDR44QAAXBA
+PJRRK8YKKRRBTN
+UVFJ6CM4QTJAT7
+GF8JRTJPMPDJ4W
+WPB68CHHUEDGRG
+VXG3KGHVAXF8JP
+BV7473Q8ETKCV8
+DHTRENFPHPPMVY
+KPNAXHU4F3GPRP
+RBGQECTK48R74C
+6K4QNRX63UHKAP
+VMKVYQBNXRX6V8
+DPFA4PBWEQUE4N
+GQ6TT6EU6XX4GP
+3EQWR6E46TPVUA
+RF684QVK4VE8FF
+UDD7Q7ADTGD3XR
+B3KNQ8KAMPYANW
+EWD84WYBJHDGYN
+QCWYDRG4P6MP7E
+E6EJPUK3FAVGC4
+E7DQKVK84VBTRJ
+UDEKX3VD8M3E8A
+7PC8K8N6JDKGK4
+KTMHUTGJHMJAUH
+NCVRPHR3N6BJUF
+DQHGFAC6EBXU7U
+KANG7DRHBQWY3X
+JFYNVRT7UT4FHD
+CRHM7QAM8TWVFU
+CENUBCPDFET3NJ
+QHNA7RJNAN4MFN
+KQDCXEE3GPJK88
+CFEVQCEWEWK3XT
+8GNNN48WJRJXJC
+FWW43YAFM8KC4E
+XHBKPANBMBRMCP
+XW7K7Y8TUWU8NE
+TMUXGCANCM3TDE
+BD4JBHCEHXHRKB
+B7MNAFNWKUXBG6
+TFCCTXPF34P4G6
+BD7N7NMABBAWWF
+CJBRYQG4N6MCNC
+FRHCFV3GPR3EWB
+PEE4P83XBHDYR7
+EHUN446A3KAXJR
+QYCGF7YJ7NQRPC
+7WQCYQG3XBUEBP
+WBGY7NR876RVRK
+HKPEVDRK8M4BUC
+HUJH88BAVE7DMK
+X3YCPD8XTDUNMF
+VQ88FGACP7U4WU
+E3BG36P7XAAUJ7
+6FH4JYHK3DKVE6
+8P74UCCX3QTJ6P
+4UTDEHXAEKN4CT
+YB6AWP38ADEQAY
+XCYRNCKPFJ8DBT
+F7UYTPBEXRCMDW
+X6RKJMKBRQMCB4
+DKCTX4RT7VA4RY
+PJE8EERKKWYRWG
+4446CK4AN8TATP
+JXCY3WWV4X4GCB
+EWWBC7XNMPDA6D
+ADGG6FKBGWWEF6
+4T4GVVPY8CRDKD
+HX8DGUW76RPKVC
+JKYEYEPRNEC648
+M3FAKUEQQFBMX8
+UJQQUQ3VX4XJHR
+BJPAN6737HW7DA
+NXPAJCQPWWPAPH
+WME7FEXRUMUC36
+DWCDDRAGE3XA8M
+UVFE7AQATFWM4T
+CTXXRGW4FV38CM
+GGADP4BBMYVN6C
+3HBGWH7J3DFDHB
+8RHQD7RAVDMYAE
+P7M37PFMVJAYU8
+UEHGFD6G3NTGBF
+HXGH8QXJPEHKCU
+33NW7Y48VCJJ7Q
+XA4Q8RWDDC6PQX
+FW3ARJDK67AH8C
+TD3Q6T63APVN68
+NCTG8PVKU6VBXX
+6AJUNDV3TEQTQQ
+MTYKBXNJAED8FX
+M6VJRFGPA6VPVE
+J446C3C86BWK4P
+6CKM8BKAPEF464
+UHJPJV4T73PV7V
+MFWU78XB3CWVW7
+NPKB8HEHF3G76F
+GAXAEEHJQXQMDG
+DCMNCFC463QRUY
+VFD436CP366QFF
+KRHRFCJJ3QGUKN
+JYEMPJRTMTHHXW
+ECQPBHRQ374U8N
+WEJWAGDVUENCBM
+UPQM7FANKEFNPT
+MYT8JM6QMGHTPT
+WG3G34PFT7YEJC
+CBTRJ6VUJVWGMQ
+VYHHBD6JGVXYUA
+47DVW7PMJUHAGN
+3VEFWK4V6ABHC7
+7DWTNFTPUMR7TK
+U78WMMCY6NJ6YX
+QEC6QX6QFDUH7D
+4UYMJ4CNGUJ3C3
+7HGMR4U4FEVDJ3
+FRUXCQJKW3K7QT
+EUENWDH44YKYCK
+JQMUHXDUBBRPUC
+RB7JH6NB7FRDAC
+HRAMUMMBMMPKTT
+MBXWQBA3RPDDG7
+MCHWUCHYAJEPGV
+PXJXYPA44RQRWW
+6UFJYCVV3EKWPG
+GUQ4DHQAVCH8JT
+VTQX4FTJP7K773
+W783PGGXQPG8QG
+HYWPTRJ6YAKDCQ
+DWUB6EWMDEMP4P
+JK7KN474R6NKTJ
+FKM7GJXXYKAHTX
+UCUJ86BVXF84TB
+6H4MY3TPPUW4BD
+PANWPCURMTFGHX
+PP8E4VJ3NBA4QB
+NG4A8FYNF774R3
+HCETECW4FBCNFN
+N7VME6ADC6U4D3
+XK64DFNTWNEX6N
+4WK3UPN6MU6T6D
+XRPTNH4DC46FPQ
+K86MJJJBFV777M
+PJ7GXEUVQDRNVA
+G3FNN7BGBPFAJ4
+GF3H6CH6XWFY8K
+JJREYGCUPFAVEK
+K6XBNDEP7J6DJA
+DBKVCCFKJCHJWA
+AKM84EGQWHN6D8
+TPDJEHDVY4W4MW
+8K6RCXRVEEKDA8
+8CP3BGBB4DATNE
+6DY7EFKX8JRYKJ
+QGAMMTUD4BVE3U
+TFEE46YYT3TVTU
+CCNXDBCBMWCQAV
+EJ6HRR64UXB8BC
+YR3HK7YEGYWBEY
+67RBGFBWQYXBQK
+THVXK4UAH6JHW6
+JFAU6GBWWE8DNB
+RQ4MYHXEB8PURD
+E6RY8RQQTG67GU
+TT68DMTJ6PK8BU
+F4HP6KAKUNYKKC
+T3MRGQRDJRWTYC
+H6RNQT6BUFCEYR
+BBQ4HPAAM74VNR
+E84AUWEV4VC43Q
+RDN6MGPPHW7NP7
+6CHX3RPHAT7AF3
+BHYBQQBHD4CNNC
+JEDFEDCKCEPKJQ
+QJB6N6YJTAETE8
+6CTC3E3BCVCH6G
+AA8BAWVBPWCCAR
+XGFNBY4Y4U8GH6
+VMMCFQGBFAPCKG
+WUFNNMETNNFP7B
+KT7MTP6UHDRXBJ
+MJEF688ENEAY66
+BWJMJTECP8F66F
+QYHCUPPYNBAARA
+VXUF6EQJR3XNG7
+AEXWWNGAVY7EMD
+JHNWXAGB78AYGA
+8V6QEDGNMK43XE
+U8TWU66EAYEEX7
+AETR47RBBTTAKU
+KBP8WGR6GJWU3J
+B67CQ6YEMJJ7HA
+A4U86M47F3DAQ4
+FVR4FEKT8XW4JY
+AW8MFKXEPR7XHJ
+3QGBH36GXCMCME
+D6QWRT6W44TRQJ
+X6XXNQY7HEJGPG
+WVWRHCWCAK8BAK
+KU733FHFR8MRWX
+NF3HCDX7TBX4TC
+XFTVU7F8HNTQCP
+WGN4KBJQGEKCRV
+WY8VXQ8PAJBTKF
+6D73Y4EHV4YTYK
+VFNPPK6DJCJMHW
+AJVABF3TMNJ444
+HBCRTXYNQB6MKP
+4KGVHDAW3RBXG6
+JYQTDJWAVCGHT7
+RHYXEBTRNFCAKQ
+GBMDY8378YJHAC
+UJD3D3EBDNJG4A
+GRJCFTHWNXVV4V
+R34QXV8A8XCMUA
+QUNA3GEBVHMGGM
+CH4FVQ6T86NJKF
+KAFXEWHVURTGNB
+KN6PD464WJVCKC
+R7JVKFCK8XYC3A
+BQVREEEFABAMV6
+YTAURBDQETU3KE
+GEC7CUTWYYFH6F
+RWYQ4VX3JBUDNF
+AHRYWYVF64XRA8
+FC8TNBY7QTAGJD
+KHYMFPNPHCDUCU
+R4J68X3FJP4JUR
+PVAFJQQ7PE333V
+NXQJMCDPF3VVCQ
+HDFQF6U64QB7KW
+VKCV8CGTTGCT7A
+RHM4EW3YHRUV7K
+M6NWRTEPN7KDUE
+MYMFXT7VRRXR4B
+AUHNTCEBWVMKK4
+PYHVBQKWBMU6VB
+WT8MBGYP6XB36K
+B3FMTK4GQ48CCG
+V3PPDF64VURBMX
+EVR3DAAG34R6EY
+YRRWUJXJARNMMQ
+YG7HTHMTNHFTC4
+UACYRPKRGPMHFB
+CCU4VUMVUGJW67
+B47HHCEGBKAFVC
+HUU4CCWM8PN8VP
+U48HMAAGVBYEN4
+DHYTJ6VPREKD4X
+WPP4MDAWVUFNTR
+YT4EF844AJV4X3
+7NJBHRRR3QMWYF
+U6DY7EDWEB73AW
+Q8T8GQA8MTGDVJ
+UEUGPEMX6FXXG3
+RC7QDBKDQBNRYT
+NHU4CGQT7EHHBP
+UKQBKBG7V7TCYN
+D6R7K3TQJW6EQ3
+76VXCN73NQGTXC
+TA4YQEG7HWNF4U
+H8YR88HWPUNTNX
+PQ4XWAB4EDAJNJ
+JEGWUDMUFRF4R3
+C33GXU48MPGYT7
+AFRBU8BH4MBTJG
+BEYAWCAYRPTGMH
+RQVV3VXBAXBWH8
+7TXHNGCPURDYE4
+ACEFX76GYTFK64
+8KJBPKCTUYRUYW
+JF6MRN7VQMAC8T
+A7W68N4BEGJPRJ
+CVGE8UUHYUWREG
+NRY7BGWEU6XQMT
+J4BR7XMPWEHC6Y
+7GDVX8GVB7KJHR
+JM3TR7RBU87V3X
+6YTDWB7BMHWMNF
+863TFUVNGTEWPJ
+EMHUF8MVRRDR74
+D6UYP6HUMH4VTE
+GCYD7TAGACKMWJ
+73RABQMD8MTJBV
+CRDEYHC8EBEW3C
+ABUHJ4HQP66PCH
+M3TDBA8YDNA38P
+8K6CARNJXPC6YP
+HVUUJPKRPU3FE4
+3MN6GR4AKG3UHQ
+BQAYVFQGW7ETJB
+7XGGK4DXR3YC73
+HGGJAPPYQ7XCGF
+VTN3QQJVT7NEVU
+GBX3663YKWUCG6
+RFCRQ8FAGURVRE
+PMRU7MW8MC8DDM
+WAVA7QJWVDEHCJ
+EHHD3DC4XXEJHX
+TFBKW3PBD3VTHE
+DGHGR8URTTFB8C
+AHAN6DYNTWV8GN
+77M34WU6NKCVAV
+DCJQK73HMMXVF7
+VKMBHEXX78YNW4
+KFNDRD6CMQJAAP
+DUVYA8MV4V8MX8
+G6E7ATKDFFXCBK
+BX8CQJWTNA3PTG
+3KCKRTR7T83NE4
+4NHVUUNXM8NHA6
+DBH8DREG8YM8GQ
+DBR7VCTR7AFRQN
+VXR6T4MJDJFVHJ
+PAXYVFACF7A744
+RGMDVQD3QJGYKA
+77MCURCGJX7N6W
+44QMA4ENDMMYQD
+KWJETHEMVGM4GA
+7DPWDNPE7WRPNV
+77BJKQEYPYCPQN
+PT6CRQDU6U3F7Y
+7VTR6668M7RPM4
+RDAEVK8XEP4KQ3
+3QP486XPAEAE73
+VNVRMXHQPGM7QK
+Q3GMFENFFGP8T3
+6FXAPKVFKRYWDV
+QTYVFVK7CBMNHJ
+XYKRUC8JHGWHFY
+3MTYCDXC68HK74
+38CKC8VDD7P46H
+RFXB3NRTFMQVGU
+RC36YK77HJW8KE
+HHA7H67P6RQ8PF
+KNUJA6DHHDD7XJ
+NDGFBWW8EDYYN4
+7RJEEPMMQ783VG
+3NXRRWFXUJMW8R
+PXNKKYQXJDY4CN
+DT86GHDKV63EKP
+VCGHME6QRD8Y37
+XQRJ77BRPU3KEX
+8K7FKXXWH8HDM7
+NUCFRPE7ACH6YX
+GGJQEBYVPC6MUH
+J7VHHEFR7YUETM
+A44VCFFF4PHR6U
+R34XYUG8A3KD7J
+F4EBXCUJCV7BYR
+6PTTKX36AWUP8P
+QN7VXR646EHYYC
+4R48BQAVXY87AR
+WNMPPPJAKJ6U3U
+KNKQ7WRYRVPKN8
+87PM3P6J4D4DJY
+VJ4PAJT6MGG8VR
+UVGJVCDXXBE7VC
+RNN68RGBUMTH6E
+GNA7PPMFQTGCFF
+TN6HNPDRTVTWC8
+3RMG7PGA6UXMQ8
+WWA8MCN4Y6MN6B
+7BFQT3A3UFDH44
+MAUNEM84TWHG7V
+Q3DMJJWUDKXN88
+X6XUP7QR7FKV3U
+XMXNGPURGX4RCD
+KMVMTR8MDQ8NRV
+PH3RBVCMURAE4F
+TQAJU6MGTTN8P7
+MT4YDG6JAXMHCW
+7UC8W3QT4X8YA3
+4D7DJVMRP6ETBD
+W4YBJXQHFEPVH3
+KJHTDEV8U8JXF7
+8FXEMNJG8K8AD3
+TNGQ73VKRHQE3X
+YF6ND4XJHGFN3C
+CGCUJP7W4PADCP
+YHUTPFNE7HVFEE
+KBND7PD74PWGGJ
+8BJJEAQ7JEWB6R
+N3WRFNGCBAADEJ
+FBN6WREBRT7FTG
+EHMEAGA6DMYKWU
+D747VD7VCMH3PF
+UY86KWRXGYWQQA
+QWYVQN4AJN8GE4
+W7EDA8CWMQR47G
+VAK8GUQCURM6MN
+JP3TQAMCHPVBHR
+PJNVTU34CMENNR
+NCKAGXQXUWHRD7
+WCT8UV4QCUFRV3
+6F8EN7RUYVKEYU
+QVERDQRXX3G7RM
+ACVVVFUAHMPNFK
+HWF68TC7BA8P74
+4EUB7Y4KEMC3FC
+RRRFVWYYAG78QA
+MFJAKDYKV7AEQD
+7NWRPXYXQ6ARVM
+QMTCRBECHW648Y
+NNYJWVEKGGCBER
+GQARY7KTFVH88U
+V6PANMBTAWA64N
+QCXH7VPAAG433B
+KY7H8DDBFF73U3
+PYPT3AHQREAVDJ
+4TX4FJEXPVFAF6
+NXBEPJ6E48DEFE
+U8TUC74XF4FJMY
+7VRX37HRQCCKEW
+WUEADBE8W8EUT7
+EJFJJ8DHDEGKKE
+QKMU4GJAHV7CGT
+NGEMEW4EMQWN36
+8VT46GBBXTCBJJ
+HFNYQ6PT7EPTT4
+PXXVEVCPRAKD4B
+4PQ8F7WM8D7M73
+YVKUP4TXXRGEK6
+ENHTHH8B6AEFGN
+TN6PUFRKV6QYJE
+U3QH486E8T4ARH
+HTGXK3HJRKPQ83
+G7EPGR4PF7T8Y8
+RC8WWPJ38CNNXH
+DFQPBQBE63RRUC
+RK8CTGFHJQTYQC
+QCF8JXDGXN4GCK
+JNX44KREEEQYCW
+M7DXA6RQNVYBDD
+FXG4MNQEC8MB8G
+4CCQCFMC3E6GJ8
+TEU8WFCCE4VXDE
+CFQ4BU3H4T8NC3
+QN7FCEMVKUFC8B
+WKFFHHHVVAGCH4
+XN643TMQYQQANH
+AWKGABJNDAKGYH
+6GRAJNFEMDQJWW
+H6NCUR3BUVPYM8
+BUV4QTXVFC863K
+DCX8DTDCD68FCX
+HMYCA6BY7GQF8B
+QFX3JUP8BRWGVE
+CV3NJYUDBT7Q3N
+C7K6UQ3TED43GY
+VAXFPGCBBCWDFT
+V4JQPUCFPQX388
+HFWJ6D3JF4YWUW
+CAMYX6EH6F8MJA
+P7RFFFN6ND3WAH
+8VTGBVNURGETPK
+UABQFYB7E8M67A
+YMUQN34F6QBWHC
+7QVNJPGF7VRJUQ
+DDAGMCAB37WFKF
+KJBQRFJFU6FGQN
+XBWJRWQCB3CNJG
+66BPGRQYJK34FM
+YDF83V6MN88T8J
+UFMDDYJ48UDRT3
+KFHJUVNJRKHRUN
+T3TT47E88EF6PA
+H8ME6J6HUWPWHF
+3ARCMBRHKGBU7W
+UXMWKXTMTFRDJT
+UD4QJ4DHPX6GWJ
+RMWK6KY4QAPGYD
+BG7V446QCFEKWM
+FNABQ6NFJEQBNW
+R8MHQKFKYNAMX4
+T3RWGPD73JTAWK
+C6APXU8Q48D6GB
+BHUQENJ4AXDE8J
+V7QHP87NFPDGX3
+FUPJCMC7WQPCWM
+JPYK8FH6KVCDKH
+UB6DKDUBE6GB7K
+UQF474BQM4TKXC
+UHQEWJHYWXXEJG
+JQJE7PDT483UC7
+EH7TP88KCVEH3X
+F3EQTNH3634M7U
+BXC8KVV66E6G4G
+KYN6EETNMYKRAC
+EYXTPYQXBKABRD
+JMWBUKV374VU7R
+GDT7RJ7N4KU4EK
+C3VRJT4DMTR3NE
+8TMFAGWYRTTE4M
+CFTE64KKXMJKQV
+NE67P48QN4MH8W
+PECQJ6YCBQG4F4
+HYACDFWQGCGRBD
+Q7WDUMH3GWPT3M
+HBXKQTTDPMUXUE
+MRWM6N3HBUGERB
+6X6F78BAPPGMKQ
+8AMNA76BCYATCA
+C3DANMUX8AC78P
+YQD3TTMPWVVY4D
+FEQ6MXRGB6BFNY
+RR87HHQRQNGBER
+B3BG4ER6QAVPM4
+Y4TRG8J6PY3VEC
+AKWBNFHQ4T46GF
+XHMB6W6YAREA6V
+Y4EE36VVPXAA3G
+ECM4KP6J6GERBK
+KPVKCUXPF6KCJY
+ADH4MBTURPVEYV
+XXDC8FYDMDMHNA
+UV88B7DKDVHNU4
+A7CE4AWTWJFNFA
+QHPC4UQQ83FEBH
+TJ6GY4R8D87NQT
+TU3FFVXPPPDH7T
+CBTJEKHMGC4BKT
+63D8PDYHVTDDRJ
+DJN3TYGYG3MRAT
+7G6QDAGPMDE8AX
+7UGQAYJBGJJMNT
+KU6HDG7MMHPDRR
+EH6C3AHTVNTXCP
+GDTEUXPXHC8C8A
+AVJ4RM4AJQC3X3
+WCHK3E3D4PPQNT
+HVA3DPCEUPVDJ4
+BJ87CVQXBKQ7BB
+QU6P6VFTR6CFUX
+NCHAVVMECUDETJ
+JPEJMMN8ERKNC7
+A7N66V87NGXF6X
+AR87JMWNQHWWBY
+AJA338RFJPGBXW
+TBJJ8GR8DV7DDN
+CBFUBAWFUARFMY
+HYYVBDURG3WVTP
+E8KGH8WWRCHHTD
+T7UGQFJ8E7NG8E
+KVUJBGXAYBM46C
+7JHNECJ63PAJXG
+B7UVVG4DGF6EF4
+U8DU7TU6YMRJA7
+RFW7JAGEBGQWRD
+7XFXP7MHK46XNY
+G3XGMM6MY8M3E6
+CEXN33M3W7GMPC
+AYKKKGN8QYMGBQ
+474XQKHMJN6DR7
+F3KWYA7G7PXVYK
+4BQP33U8J3F7RN
+6YWQGNFJWJN7BQ
+H43EKYNEH6G84B
+DYADPEQVRYYRUX
+JEEUK4G4DCABBK
+Y8JTHX7AC78GRC
+FG4MWR7CA7KJRT
+3EBANDXU7NJQ7V
+MHEHJRF8AJTJDE
+EUTJGRQB88MHCW
+W7ERWXRGTCTQHC
+4CHBFXJJ4QBHKP
+3XXNWKTPD8HJHV
+TDC6UPKJ83WMA4
+6HE4GNQBGB8VQJ
+KJYGV86WAWUDUJ
+QCUQMMTPRNWJDF
+RBGVEVCWG67BFE
+KPC6RCV3DPUJBR
+74AFDCFVVMBMKF
+EKHUF3TWHC8RA7
+V3QVPNNB3CBQW7
+B38QTXBG6HJ3RH
+CGDPXWR3YBQGPX
+JTTDA644FHM8BP
+TVWWC7CDP7DND6
+HE4K8PXBHGFER8
+MTV8QPHG687KQF
+8GVMMHT474YDCM
+3DXEEHPFCH8MBJ
+PR3GJG6X7BPHDR
+M4DKCVN3BMQREQ
+TVJTX87WN6UM4H
+XA636Q8HFPPFBX
+MV4QNEEFQVVA6C
+4MVFKTNDKKJUQA
+B638RQFADKXN4P
+37J8JPFPAQ877F
+FNHEMW7MBWBCFP
+XKEY8HKC8DDBBA
+3N43NDQVNGRYGY
+TMRUJETJU7TFUE
+78DEDTNJEVG3R8
+KNM3GEQYH6DX3U
+XJXVTJFGNVHW7W
+AGRKDXRX8WC3G7
+GFU84YR6DTGHJU
+GPXTQGAJPJADVG
+FFRCTDQ6D4D6RJ
+6RW3HJMDM86FE6
+BCWGKAFXBFFAET
+DJXBGPJY77JWPH
+PFY6RAADAENRWA
+7EVE636VJNARRN
+F3Q4RR3MBB448B
+HCAG63PXVEDKWH
+C6FNPWNEEC48HW
+QCPNEPFGXE7VGD
+KQFENWWHUA3VU3
+HTXRXJKR8FXTKW
+HKAEH6DQEEE7CV
+87JBU4UPCGFVWA
+B4WFX7TTCRXEVR
+DFFUPC87P8KY4C
+PU673868V4WB33
+EN78WXFFX7QDAK
+X3QCQXJK3Y7VJP
+V4ARAEE4FNQ463
+HB8TV6BYCMDUB6
+XCEXE8APP647UQ
+JCNCAVD6RUQMDD
+JCJE8QTGUR3E3X
+6DK87DFQGACG8E
+JERTQ4UP8U7WQD
+EMAJ8MNPKBFUC3
+GBKVVKXFXMA3FG
+PTEDHADYP4FKRG
+QA74P88J4AAXNK
+PTPTCNXYVQTHTB
+DAYN7EXPP3NRJU
+QRWXD3384JXEWF
+DVC4UQG8BBT66E
+AJF77U4U6G7GGQ
+VYFXJDB76XDQHK
+J3G3JRKBT4CEJC
+RWQECHTFPUPA8P
+CHE7TKR6TN8FCG
+EG8688H83WUDYX
+VQPJ8UEMTQTXA7
+EBNPUN7KMF6XUC
+JRD64VT7KBRAJ6
+6MCGVKX86GF6FG
+6VFCV7TFTHDJHT
+E833AVGG7CGPCP
+7RPDCHKHCKVCET
+XYHQD6NVKDFW4P
+WVQKQRT8B8EK68
+PEVA4EDPHJRNNQ
+H84PV4MNK8D8CM
+JBUJP3TYNCFKUH
+P4KEFB3QY6HT4Y
+DGAXGUX67FMUXY
+K3GWNK38NGYYHH
+FQHG46Y47HGVUA
+JDKCUDDX8JKJER
+CWYEENJACT6B3A
+ER46CMCG8JD34C
+BTUQFU4BXAQANJ
+6MWTRXJMM6NXCR
+CMP7FEAN6ERQJE
+3WAXYUPDEQG78G
+XUNR8UP8MEKTNV
+6TKDHKUU87XW7F
+8TRMBFD7BGNF4P
+ETPG6WW4EPH34Q
+QKX3QCU6G8KA6J
+6FXQXCF8EATAPC
+76MGEHJFRVRFJ4
+H8VRGFG4DHF47E
+NETG74UAKWRHMH
+CTYEN4RB4BQ46R
+FCJ3B6ENDGVPUP
+TMCX4XBCBCEHHB
+CE46JKVAKKJ4DR
+T8XVEXDBADQFEJ
+8R7TB437TBU44P
+RMGM36QHY8DUKD
+MCXWFQVJKGEMNE
+EQHT7CN6G7KMBA
+F6N6JAJRYFUGA3
+B6HMJ7VUK6KCQV
+XNWE6DEJFP4JHV
+VBEYCYPA8AK8EE
+D8MV7HPBPBMBKA
+GB3MPBQJKTPTPN
+RXGK8RCVVVUTKM
+PAMFYC8NBFY76K
+U6DEKBUYANJKGF
+HXEWNVE8W7A8NT
+7F7X3BNCBPDW8G
+EYRT3EDRFPGXHE
+NFMMCY8C86GWDK
+EK7XUAJDAHHQTX
+87Y3UVW6K44TPD
+76CQYAACUJWA6H
+XG3K6EK8AEFXJQ
+3HMG8NTFMWYBPP
+HVAWTKTR43V4DJ
+CHANAUURFMJVVH
+D4NU6XRHQXUHPE
+7QNEX3B8YFRQE6
+QKU438KBVX7T8V
+QHETVHHFWK67TB
+GVU4HNVHTNNYKP
+MN6Q64FQ4VXEAG
+AMEFEPGTDXBNT4
+PP8Y3KM8TX4EAW
+JTGU76VR3YTGTH
+C8ENC6YMAJBDPT
+AUYQB87F7HHCUR
+MNHGA7T6DFEDA3
+TNKDMERJTKYYEN
+DJPATYEXBJWXXB
+GJNDJ7ER6BYABE
+AJCJV37JTHTDRH
+N8KU6WQXYJB8TY
+KMT84GTXKC4T38
+VNRJERXAJERKFY
+ETU3WA7EJQAG83
+PA4WPYBQTX84G6
+WGGHCAT8EAWY4Q
+8BDCENBYTP8TTP
+NRD38FWUMH6YEE
+NE8UUNN774M8TU
+CQCRPTEH3RD88P
+BWYVDQRHJ8NVXV
+NM67D47UB4JCFA
+WBFDAHAFV4G4J7
+EETQA3YAXFN8AT
+GBQHRKVGHEBTVX
+XVH7C7KPTR7M4B
+AM8N643JEF3J4T
+WP6P67AEDWE8RG
+RK6FBB4Q63TCXA
+K6Y3RCEAKB87BR
+PEYWFBPW3FUGNG
+UYTEXGDTTHBMFF
+TE4UC36PNWEN37
+QA7YRBE8JKBYDD
+3G4N84KE4BDJGD
+APBRVAAYJU3YFV
+7YWMVYKQGWJC8U
+EP3RNYKC7PBRPV
+MA4YVA3EC6A8WF
+RKF6HPY7KYGETC
+KFU4MFCAU4TAKQ
+AJUXDV4ARFACW6
+7HUKWXA4GG8QWP
+TPDKC64NUQQNXW
+GFC3GM7YBBX7GN
+ANY4JJXXQTJG8H
+E44GG4WGCUHNTM
+6X8AVRN4FJCAM6
+DNJAHMDMKYDYX4
+P4BTWVJHUGDUEU
+EMBJU6RG8TTY6N
+RBDCUCBQPPM6PN
+QQJYC7TM884KEJ
+XD6YEBEHEWNCHE
+7DRCPXJWJP7T7U
+M4XM7PUKGP7EER
+4EXWDJ4QD8GMBJ
+7PPMK7PNFTUJWF
+AUNRNJRFQM8J7U
+AVQRP8CVK46C73
+XTAKEBDB4GRENJ
+JKPWXUXVXP7W4U
+GMFHQHBDK8HPCB
+ANW6HUDGHBHDEP
+3QBANFTYRRPU8W
+3BEN4DKXR6YGCY
+4UJ7KBKUBCC3FM
+VEHKCGJMAFJWEG
+QC6ATRJWK6MUXK
+MAEJDQ6CCUWU68
+KQY4QC4NJ7B67J
+7FCRH3NA4TAUX7
+WT37D73VB7CBNX
+KVAVCBWGK3PGYH
+3UHQFJA6TEPECV
+MGVQCN66DEP4WE
+YUPYT8HFNPVG6N
+NPQWUYHUCXWFGU
+TNTXBAPWXADYBM
+GYGPRVRBQGWGH4
+CCY7PM36YTQRN8
+CWDR4XE3K8HJHV
+RAE4CMMUKHWRDX
+QUU87GQNABUMVP
+JK3CA8QWACE6GC
+M8F4A7RBCCDFMD
+E87GYW7CJGDUTM
+VVY6F6GHNTBR44
+CTNA7RYTEH3RQT
+EXTAFM6UHYCGMX
+PPQGTWHNPXGVDA
+QD4QQF64HGD4JP
+TQKKTJKRB4D3XF
+MXDV3UJRTGXG4B
+767UNMNEQ34AKN
+GVUMUQVEA8QE8R
+K8AJPNWT6UUYUG
+X64X38FG4CM7M8
+H6X3CGUPA3FTHK
+3TEFGABA6PWVFX
+G3JA7PPVKRVCMB
+DEDA4JYWGVW7UA
+RXMF7RHXTEXXMA
+V6GBG6Q73QTQPQ
+RYXDR6VUGJ43FH
+NY4AHY668Q4KVE
+PKVBDB8REHKHJG
+R8BEAKPAQEWQBG
+BABTKWMCVPHBEM
+F6CU4Y76JVXFKX
+KCT8F776CYMME6
+T84JQGEC46V4CT
+FJ3QJHHDFXJEEG
+HR6DP66DMJK8UD
+NKH7XECF6YURGP
+QDRNE33J87HR6B
+6CJQUH3DC8AG7U
+8KWKR8MXX7UMUY
+MW3MUMNUVDFFAD
+GDJH8DPJQP6D8H
+QFRCQPJWUWCBEP
+EMUCV7WJRACN8H
+E787WNR3FNRVXE
+CG8YE3F3FE3GRD
+C7KAXHP7MXFJNM
+JUANV7MXX7D8PA
+HRRDPUU84VMA67
+43NBJG73QTQ4VV
+JFUQBXFN7PYXK3
+74F6YRGHQ6FKT6
+CGMMNDX6DUBAJD
+H436DX8CEEW4Y4
+MDYVNDFYEYCMRU
+8RYQTGA6TMRGMD
+FGYJ7D348QVWWX
+EMA6NVJBYB7MRG
+WCHVFMRQ4BDFWV
+  </script>
+
+  <script>
+    /* ==========================================================================
+       APPLE FLUID INTERFACE PHYSICS & COMPOSITOR ENGINE
+       Strict implementation of WWDC Fluid Interface principles:
+       1. Zero-latency response on pointerdown
+       2. Direct manipulation (1:1 tracking) with grab offset
+       3. Interruptible independent analytical springs
+       4. Exponential momentum projection and progressive rubber-banding
+       5. Compositor-only properties (transform, opacity)
+       6. On-demand rAF loop (auto-sleep when settled)
+       ========================================================================== */
+
+    // --------------------------------------------------------------------------
+    // 1. Analytical Apple Spring Solver
+    // --------------------------------------------------------------------------
+    class AppleSpring {
+      constructor(val = 0, dampingRatio = 1.0, response = 0.4) {
+        this.value = val;
+        this.target = val;
+        this.velocity = 0;
+        this.dampingRatio = dampingRatio;
+        this.response = response;
+      }
+
+      setParams(dampingRatio, response) {
+        this.dampingRatio = dampingRatio;
+        this.response = response;
+      }
+
+      setTarget(target, dampingRatio, response) {
+        this.target = target;
+        if (dampingRatio !== undefined) this.dampingRatio = dampingRatio;
+        if (response !== undefined) this.response = response;
+      }
+
+      snapTo(val) {
+        this.value = val;
+        this.target = val;
+        this.velocity = 0;
+      }
+
+      update(dt) {
+        if (dt <= 0) return this.value;
+        const d = this.value - this.target;
+        const v = this.velocity;
+        const zeta = this.dampingRatio;
+        const omega = (2 * Math.PI) / Math.max(0.001, this.response);
+
+        if (Math.abs(zeta - 1.0) < 1e-4) {
+          // Critically Damped (zeta = 1.0)
+          const e = Math.exp(-omega * dt);
+          const c2 = v + omega * d;
+          this.value = this.target + (d + c2 * dt) * e;
+          this.velocity = (c2 - omega * (d + c2 * dt)) * e;
+        } else if (zeta < 1.0) {
+          // Underdamped (zeta < 1.0)
+          const omegaD = omega * Math.sqrt(1 - zeta * zeta);
+          const alpha = zeta * omega;
+          const e = Math.exp(-alpha * dt);
+          const c2 = (v + alpha * d) / omegaD;
+          const cos = Math.cos(omegaD * dt);
+          const sin = Math.sin(omegaD * dt);
+          this.value = this.target + e * (d * cos + c2 * sin);
+          this.velocity = e * ((-alpha * d + omegaD * c2) * cos - (alpha * c2 + omegaD * d) * sin);
+        } else {
+          // Overdamped (zeta > 1.0)
+          const alpha = Math.sqrt(zeta * zeta - 1);
+          const r1 = -omega * (zeta - alpha);
+          const r2 = -omega * (zeta + alpha);
+          const c2 = (v - r1 * d) / (r2 - r1);
+          const c1 = d - c2;
+          const e1 = Math.exp(r1 * dt);
+          const e2 = Math.exp(r2 * dt);
+          this.value = this.target + c1 * e1 + c2 * e2;
+          this.velocity = c1 * r1 * e1 + c2 * r2 * e2;
+        }
+
+        // Settling threshold (0.0005)
+        if (Math.abs(this.value - this.target) < 0.0005 && Math.abs(this.velocity) < 0.0005) {
+          this.value = this.target;
+          this.velocity = 0;
+        }
+        return this.value;
+      }
+
+      isSettled() {
+        return Math.abs(this.value - this.target) < 0.0005 && Math.abs(this.velocity) < 0.0005;
+      }
+    }
+
+    // Apple Momentum Projection Formula
+    function project(initialVelocity, decelerationRate = 0.998) {
+      return (initialVelocity / 1000) * decelerationRate / (1 - decelerationRate);
+    }
+
+    // Progressive Rubber-Banding
+    function rubberband(overshoot, dimension, constant = 0.55) {
+      return (overshoot * dimension * constant) / (dimension + constant * Math.abs(overshoot));
+    }
+
+    // --------------------------------------------------------------------------
+    // 2. Multimodal Audio-Haptic Feedback (Web Audio API Synthesizer)
+    // --------------------------------------------------------------------------
+    let audioCtx = null;
+
+    function initAudio() {
+      if (!audioCtx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (AudioContext) {
+          audioCtx = new AudioContext();
+        }
+      }
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function playFestiveChime() {
+      requestAnimationFrame(() => {
+        initAudio();
+        if (navigator.vibrate) {
+          try { navigator.vibrate(15); } catch (e) {}
+        }
+        if (!audioCtx) return;
+
+        const now = audioCtx.currentTime;
+        const freqs = [880, 1320, 1760, 2640];
+        const gains = [0.18, 0.10, 0.05, 0.02];
+        const decays = [1.1, 0.75, 0.5, 0.3];
+
+        freqs.forEach((freq, i) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+
+          osc.type = i === 0 ? 'sine' : 'triangle';
+          osc.frequency.setValueAtTime(freq, now);
+          osc.frequency.exponentialRampToValueAtTime(freq * 0.996, now + decays[i]);
+
+          gain.gain.setValueAtTime(gains[i], now);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + decays[i]);
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start(now);
+          osc.stop(now + decays[i] + 0.05);
+        });
+      });
+    }
+
+    // --------------------------------------------------------------------------
+    // 3. Embedded Codes Parsing & Non-Repeating Cryptographic Random Draw
+    // --------------------------------------------------------------------------
+    let allCodes = [];
+    let activeCode = '';
+    let lastCodeIndex = -1;
+
+    const vaultStatusText = document.getElementById('vault-status-text');
+    const activeCodeDisplay = document.getElementById('active-code-display');
+    const codePoolIndicator = document.getElementById('code-pool-indicator');
+    const cardMicroCode = document.getElementById('card-micro-code');
+    const verifyInput = document.getElementById('verify-input');
+    const verifyFeedback = document.getElementById('verify-feedback');
+    const pasteInputContainer = document.getElementById('paste-input-container');
+    const btnRedeemAmazon = document.getElementById('btn-redeem-amazon');
+
+    function updateVaultStatus(text) {
+      if (vaultStatusText) vaultStatusText.textContent = text;
+    }
+
+    function formatCodeDisplay(code) {
+      if (!code) return '••••-••••-••••';
+      if (code.length >= 12) {
+        return code.match(/.{1,4}/g)?.join('-') || code;
+      }
+      return code;
+    }
+
+    function renderCode(code) {
+      activeCode = code;
+      const formatted = formatCodeDisplay(code);
+      if (activeCodeDisplay) activeCodeDisplay.textContent = formatted;
+      if (cardMicroCode) cardMicroCode.textContent = formatted;
+      updateRedeemLink(code);
+    }
+
+    function updateRedeemLink(code) {
+      if (btnRedeemAmazon) {
+        const inputVal = (verifyInput?.value || '').trim().replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+        const currentCode = (code || activeCode || '').replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+        const pastedOrCurrentCode = inputVal || currentCode;
+        btnRedeemAmazon.href = 'https://www.amazon.in/gc/redeem?claimCode=' + encodeURIComponent(pastedOrCurrentCode);
+      }
+    }
+
+    function dispenseRandomCode(playEffects = true) {
+      if (!allCodes || allCodes.length === 0) return;
+      let nextIndex;
+      const buf = new Uint32Array(1);
+      do {
+        window.crypto.getRandomValues(buf);
+        nextIndex = buf[0] % allCodes.length;
+      } while (nextIndex === lastCodeIndex && allCodes.length > 1);
+
+      lastCodeIndex = nextIndex;
+      renderCode(allCodes[nextIndex]);
+
+      if (playEffects) {
+        playFestiveChime();
+        showToast('✨ New ₹2 Amazon Code Dispensed');
+      }
+    }
+
+    function initializeCodes() {
+      try {
+        const rawEl = document.getElementById('embedded-codes-data');
+        if (rawEl && rawEl.textContent) {
+          const lines = rawEl.textContent.trim().split(/\s+/).filter(Boolean);
+          if (lines.length > 0) {
+            allCodes = lines;
+            updateVaultStatus(allCodes.length.toLocaleString() + ' ₹2 Codes Loaded');
+            if (codePoolIndicator) codePoolIndicator.textContent = allCodes.length.toLocaleString() + ' Genuine Codes';
+          }
+        }
+      } catch (err) {
+        console.error('Error initializing embedded codes:', err);
+      }
+
+      // If for any reason embedded data was empty, try relative fetch fallback
+      if (allCodes.length === 0) {
+        fetch('./codes.txt', { cache: 'no-store' })
+          .then(r => r.text())
+          .then(t => {
+            allCodes = t.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+            updateVaultStatus(allCodes.length.toLocaleString() + ' ₹2 Codes Loaded');
+            dispenseRandomCode(false);
+          })
+          .catch(() => {});
+      } else {
+        dispenseRandomCode(false);
+      }
+    }
+
+    // --------------------------------------------------------------------------
+    // 4. Specular Canvas Shader & Dynamic Sheen
+    // --------------------------------------------------------------------------
+    const specFront = document.getElementById('specular-front');
+    const specBack = document.getElementById('specular-back');
+    let ctxFront = null;
+    let ctxBack = null;
+
+    function resizeSpecularCanvases() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      [specFront, specBack].forEach(canv => {
+        if (!canv) return;
+        const rect = canv.getBoundingClientRect();
+        canv.width = rect.width * dpr;
+        canv.height = rect.height * dpr;
+      });
+      ctxFront = specFront ? specFront.getContext('2d') : null;
+      ctxBack = specBack ? specBack.getContext('2d') : null;
+    }
+
+    function drawSpecularHighlight(ctx, width, height, rotX, rotY, intensity = 1.0) {
+      if (!ctx || width === 0 || height === 0) return;
+      ctx.clearRect(0, 0, width, height);
+
+      const centerX = width * (0.5 + rotY / 75);
+      const centerY = height * (0.5 - rotX / 75);
+      const radius = Math.max(width, height) * 0.85;
+
+      const grad = ctx.createRadialGradient(centerX, centerY, 5, centerX, centerY, radius);
+      grad.addColorStop(0, 'rgba(255, 255, 255, ' + (0.35 * intensity) + ')');
+      grad.addColorStop(0.3, 'rgba(255, 172, 51, ' + (0.18 * intensity) + ')');
+      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, width, height);
+    }
+
+    // --------------------------------------------------------------------------
+    // 5. Ambient Sparkles Canvas
+    // --------------------------------------------------------------------------
+    const ambientCanvas = document.getElementById('ambient-canvas');
+    let ambientCtx = null;
+    let particles = [];
+
+    function initAmbientCanvas() {
+      if (!ambientCanvas) return;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      ambientCanvas.width = window.innerWidth * dpr;
+      ambientCanvas.height = window.innerHeight * dpr;
+      ambientCtx = ambientCanvas.getContext('2d');
+      ambientCtx.scale(dpr, dpr);
+
+      particles = [];
+      const count = Math.floor(window.innerWidth < 600 ? 25 : 40);
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * window.innerWidth,
+          y: Math.random() * window.innerHeight,
+          r: Math.random() * 2 + 0.8,
+          vx: (Math.random() - 0.5) * 0.25,
+          vy: -(Math.random() * 0.35 + 0.15),
+          alpha: Math.random() * 0.5 + 0.2,
+          decay: Math.random() * 0.005 + 0.002
+        });
+      }
+    }
+
+    function renderAmbientParticles() {
+      if (!ambientCtx) return;
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      ambientCtx.clearRect(0, 0, w, h);
+
+      for (let p of particles) {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha += p.decay;
+        if (p.alpha > 0.75 || p.alpha < 0.12) p.decay = -p.decay;
+        if (p.y < -10) { p.y = h + 10; p.x = Math.random() * w; }
+        if (p.x < -10) p.x = w + 10;
+        if (p.x > w + 10) p.x = -10;
+
+        ambientCtx.beginPath();
+        ambientCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ambientCtx.fillStyle = 'rgba(255, 172, 51, ' + p.alpha + ')';
+        ambientCtx.shadowBlur = 6;
+        ambientCtx.shadowColor = 'rgba(255, 153, 0, 0.7)';
+        ambientCtx.fill();
+      }
+    }
+
+    // --------------------------------------------------------------------------
+    // 6. 3D Card Physics & Gesture State
+    // --------------------------------------------------------------------------
+    const cardWrapper = document.getElementById('card-wrapper');
+    const card3d = document.getElementById('card-3d');
+    const stageContainer = document.getElementById('stage-container');
+
+    const cardSprings = {
+      rotX: new AppleSpring(0, 1.0, 0.4),
+      rotY: new AppleSpring(0, 1.0, 0.4),
+      scale: new AppleSpring(1.0, 1.0, 0.4),
+      panX: new AppleSpring(0, 1.0, 0.4),
+      panY: new AppleSpring(0, 1.0, 0.4),
+      specularIntensity: new AppleSpring(1.0, 1.0, 0.4)
+    };
+
+    let isCardPointerDown = false;
+    let cardPointerId = null;
+    let cardStartPointer = { x: 0, y: 0 };
+    let cardGrabOffset = { x: 0, y: 0 };
+    let cardPointerBuffer = [];
+    let isCardDragging = false;
+    const HYSTERESIS_THRESHOLD = 10;
+
+    // --------------------------------------------------------------------------
+    // 7. Bottom Sheet Physics & Snap State
+    // --------------------------------------------------------------------------
+    const bottomSheet = document.getElementById('bottom-sheet');
+    const sheetHandleZone = document.getElementById('sheet-handle-zone');
+
+    let sheetPeekY = 0;
+    let sheetExpandedY = 0;
+    const sheetSpring = new AppleSpring(0, 1.0, 0.4);
+
+    let isSheetPointerDown = false;
+    let sheetPointerId = null;
+    let sheetStartPointer = { x: 0, y: 0 };
+    let sheetPointerBuffer = [];
+    let isSheetDragging = false;
+
+    function isDesktopMode() {
+      return window.innerWidth >= 880 || (window.innerHeight <= 520 && window.innerWidth > window.innerHeight);
+    }
+
+    function computeSheetSnapPoints() {
+      if (isDesktopMode()) {
+        if (bottomSheet) bottomSheet.style.transform = 'none';
+        sheetSpring.snapTo(0);
+        return;
+      }
+
+      const windowHeight = window.innerHeight;
+      const sheetRect = bottomSheet.getBoundingClientRect();
+      const sheetHeight = sheetRect.height || 420;
+
+      const peekVisibleHeight = Math.min(320, Math.max(260, windowHeight * 0.44));
+      sheetPeekY = Math.max(0, sheetHeight - peekVisibleHeight);
+      
+      const topSafeMargin = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--safe-top')) || 20;
+      sheetExpandedY = Math.max(0, Math.min(30, topSafeMargin + 40));
+
+      if (!isSheetPointerDown && !isSheetDragging) {
+        sheetSpring.target = sheetPeekY;
+        sheetSpring.value = sheetPeekY;
+      }
+    }
+
+    // --------------------------------------------------------------------------
+    // 8. Unified Master rAF Clock (CADisplayLink with Auto-Sleep)
+    // --------------------------------------------------------------------------
+    let isLoopRunning = false;
+    let lastTimestamp = performance.now();
+
+    function wakeRenderLoop() {
+      if (!isLoopRunning) {
+        isLoopRunning = true;
+        lastTimestamp = performance.now();
+        requestAnimationFrame(tickLoop);
+      }
+    }
+
+    function tickLoop(now) {
+      const dt = Math.min(0.064, (now - lastTimestamp) / 1000);
+      lastTimestamp = now;
+
+      // Card Transforms
+      const curRotX = cardSprings.rotX.update(dt);
+      const curRotY = cardSprings.rotY.update(dt);
+      const curScale = cardSprings.scale.update(dt);
+      const curPanX = cardSprings.panX.update(dt);
+      const curPanY = cardSprings.panY.update(dt);
+      const curSpec = cardSprings.specularIntensity.update(dt);
+
+      if (card3d) {
+        card3d.style.transform = 'translate3d(' + curPanX.toFixed(2) + 'px, ' + curPanY.toFixed(2) + 'px, 0px) rotateX(' + curRotX.toFixed(2) + 'deg) rotateY(' + curRotY.toFixed(2) + 'deg) scale3d(' + curScale.toFixed(3) + ', ' + curScale.toFixed(3) + ', 1)';
+      }
+
+      if (specFront && ctxFront) {
+        drawSpecularHighlight(ctxFront, specFront.width, specFront.height, curRotX, curRotY, curSpec);
+      }
+      if (specBack && ctxBack) {
+        drawSpecularHighlight(ctxBack, specBack.width, specBack.height, curRotX, -curRotY, curSpec);
+      }
+
+      // Bottom Sheet Transforms (only in mobile sheet mode)
+      if (!isDesktopMode()) {
+        const curSheetY = sheetSpring.update(dt);
+        if (bottomSheet) {
+          bottomSheet.style.transform = 'translate3d(0, ' + curSheetY.toFixed(2) + 'px, 0)';
+        }
+
+        // Dim and scale background stage
+        if (stageContainer) {
+          const expansionProgress = sheetPeekY > 0 ? (1 - (curSheetY - sheetExpandedY) / (sheetPeekY - sheetExpandedY)) : 0;
+          const clampedProgress = Math.max(0, Math.min(1, expansionProgress));
+          if (clampedProgress > 0.05) {
+            stageContainer.classList.add('dimmed');
+          } else {
+            stageContainer.classList.remove('dimmed');
+          }
+        }
+      } else {
+        if (bottomSheet) bottomSheet.style.transform = 'none';
+        if (stageContainer) stageContainer.classList.remove('dimmed');
+      }
+
+      renderAmbientParticles();
+
+      const cardSettled = cardSprings.rotX.isSettled() &&
+                          cardSprings.rotY.isSettled() &&
+                          cardSprings.scale.isSettled() &&
+                          cardSprings.panX.isSettled() &&
+                          cardSprings.panY.isSettled();
+      const sheetSettled = sheetSpring.isSettled();
+      const activeGestures = isCardPointerDown || isSheetPointerDown;
+
+      if (!activeGestures && cardSettled && sheetSettled) {
+        isLoopRunning = false;
+        if (cardWrapper) cardWrapper.style.willChange = 'auto';
+        if (bottomSheet) bottomSheet.style.willChange = 'auto';
+      } else {
+        requestAnimationFrame(tickLoop);
+      }
+    }
+
+    // --------------------------------------------------------------------------
+    // 9. Card Pointer Gesture Handling (Zero Latency & 1:1 Tracking)
+    // --------------------------------------------------------------------------
+    if (cardWrapper) {
+      cardWrapper.addEventListener('pointerdown', (e) => {
+        initAudio();
+        cardPointerId = e.pointerId;
+        cardWrapper.setPointerCapture(e.pointerId);
+        cardWrapper.style.willChange = 'transform, opacity';
+        isCardPointerDown = true;
+        isCardDragging = false;
+
+        const rect = cardWrapper.getBoundingClientRect();
+        cardGrabOffset.x = e.clientX - (rect.left + rect.width / 2);
+        cardGrabOffset.y = e.clientY - (rect.top + rect.height / 2);
+        cardStartPointer = { x: e.clientX, y: e.clientY };
+        cardPointerBuffer = [{ x: e.clientX, y: e.clientY, t: performance.now() }];
+
+        cardSprings.scale.setTarget(0.96, 1.0, 0.15);
+        cardSprings.specularIntensity.setTarget(1.4, 1.0, 0.2);
+        wakeRenderLoop();
+      });
+
+      cardWrapper.addEventListener('pointermove', (e) => {
+        if (!isCardPointerDown || e.pointerId !== cardPointerId) return;
+
+        const dx = e.clientX - cardStartPointer.x;
+        const dy = e.clientY - cardStartPointer.y;
+
+        if (!isCardDragging && Math.hypot(dx, dy) > HYSTERESIS_THRESHOLD) {
+          isCardDragging = true;
+        }
+
+        if (isCardDragging) {
+          const now = performance.now();
+          cardPointerBuffer.push({ x: e.clientX, y: e.clientY, t: now });
+          if (cardPointerBuffer.length > 5) cardPointerBuffer.shift();
+
+          const targetRotY = (dx * 0.45);
+          const targetRotX = -(dy * 0.45);
+          const targetPanX = rubberband(dx * 0.25, 200);
+          const targetPanY = rubberband(dy * 0.25, 200);
+
+          cardSprings.rotY.snapTo(targetRotY);
+          cardSprings.rotX.snapTo(targetRotX);
+          cardSprings.panX.snapTo(targetPanX);
+          cardSprings.panY.snapTo(targetPanY);
+
+          const dragMagnitude = Math.min(1, Math.hypot(dx, dy) / 150);
+          cardSprings.specularIntensity.snapTo(1.0 + dragMagnitude * 0.8);
+          wakeRenderLoop();
+        }
+      });
+
+      const handleCardPointerRelease = (e) => {
+        if (!isCardPointerDown || (e && e.pointerId !== cardPointerId)) return;
+        isCardPointerDown = false;
+        try { cardWrapper.releasePointerCapture(cardPointerId); } catch (err) {}
+
+        let velX = 0, velY = 0;
+        if (cardPointerBuffer.length >= 2) {
+          const first = cardPointerBuffer[0];
+          const last = cardPointerBuffer[cardPointerBuffer.length - 1];
+          const dtMs = Math.max(1, last.t - first.t);
+          velX = ((last.x - first.x) / dtMs) * 1000;
+          velY = ((last.y - first.y) / dtMs) * 1000;
+        }
+
+        const flickVelocity = Math.hypot(velX, velY);
+
+        if (flickVelocity > 450 || Math.abs(cardSprings.rotY.value) > 65) {
+          const spinDir = velX >= 0 ? 1 : -1;
+          const targetRot = cardSprings.rotY.value + spinDir * 360;
+
+          cardSprings.rotY.setTarget(targetRot, 0.8, 0.35);
+          cardSprings.rotY.velocity = velX * 0.8;
+          cardSprings.rotX.setTarget(0, 0.8, 0.35);
+          cardSprings.panX.setTarget(0, 0.8, 0.35);
+          cardSprings.panY.setTarget(0, 0.8, 0.35);
+          cardSprings.scale.setTarget(1.0, 1.0, 0.4);
+          cardSprings.specularIntensity.setTarget(1.0, 1.0, 0.4);
+
+          dispenseRandomCode(true);
+        } else {
+          cardSprings.rotY.setTarget(0, 1.0, 0.4);
+          cardSprings.rotX.setTarget(0, 1.0, 0.4);
+          cardSprings.panX.setTarget(0, 1.0, 0.4);
+          cardSprings.panY.setTarget(0, 1.0, 0.4);
+          cardSprings.scale.setTarget(1.0, 1.0, 0.4);
+          cardSprings.specularIntensity.setTarget(1.0, 1.0, 0.4);
+
+          if (!isCardDragging) {
+            triggerCardCelebrationSpin();
+          }
+        }
+
+        wakeRenderLoop();
+      };
+
+      cardWrapper.addEventListener('pointerup', handleCardPointerRelease);
+      cardWrapper.addEventListener('pointercancel', handleCardPointerRelease);
+    }
+
+    // Desktop Mouse Hover Tilt for Tactile 3D Depth
+    if (stageContainer) {
+      stageContainer.addEventListener('pointermove', (e) => {
+        if (!isDesktopMode() || isCardPointerDown) return;
+        const rect = stageContainer.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const deltaX = (e.clientX - centerX) / (rect.width / 2);
+        const deltaY = (e.clientY - centerY) / (rect.height / 2);
+
+        const targetRotY = Math.max(-26, Math.min(26, deltaX * 24));
+        const targetRotX = Math.max(-24, Math.min(24, -deltaY * 20));
+
+        cardSprings.rotY.setTarget(targetRotY, 1.0, 0.45);
+        cardSprings.rotX.setTarget(targetRotX, 1.0, 0.45);
+        cardSprings.specularIntensity.setTarget(1.25, 1.0, 0.35);
+        wakeRenderLoop();
+      });
+
+      stageContainer.addEventListener('pointerleave', () => {
+        if (!isDesktopMode() || isCardPointerDown) return;
+        cardSprings.rotY.setTarget(0, 1.0, 0.45);
+        cardSprings.rotX.setTarget(0, 1.0, 0.45);
+        cardSprings.specularIntensity.setTarget(1.0, 1.0, 0.35);
+        wakeRenderLoop();
+      });
+    }
+
+    function triggerCardCelebrationSpin() {
+      cardSprings.rotY.velocity = 1200;
+      cardSprings.rotY.setTarget(cardSprings.rotY.value + 360, 0.8, 0.35);
+      cardSprings.rotX.setTarget(0, 0.8, 0.35);
+      cardSprings.scale.setTarget(1.04, 0.8, 0.2);
+      setTimeout(() => cardSprings.scale.setTarget(1.0, 1.0, 0.4), 200);
+      dispenseRandomCode(true);
+      wakeRenderLoop();
+    }
+
+    // --------------------------------------------------------------------------
+    // 10. Bottom Sheet Gestures & Momentum Projection
+    // --------------------------------------------------------------------------
+    if (sheetHandleZone) {
+      sheetHandleZone.addEventListener('pointerdown', (e) => {
+        if (isDesktopMode()) return;
+        initAudio();
+        sheetPointerId = e.pointerId;
+        sheetHandleZone.setPointerCapture(e.pointerId);
+        bottomSheet.style.willChange = 'transform, opacity';
+        isSheetPointerDown = true;
+        isSheetDragging = false;
+
+        sheetStartPointer = { x: e.clientX, y: e.clientY };
+        sheetPointerBuffer = [{ y: e.clientY, t: performance.now() }];
+        wakeRenderLoop();
+      });
+
+      sheetHandleZone.addEventListener('pointermove', (e) => {
+        if (!isSheetPointerDown || e.pointerId !== sheetPointerId) return;
+
+        const dy = e.clientY - sheetStartPointer.y;
+        if (!isSheetDragging && Math.abs(dy) > HYSTERESIS_THRESHOLD) {
+          isSheetDragging = true;
+        }
+
+        if (isSheetDragging) {
+          const now = performance.now();
+          sheetPointerBuffer.push({ y: e.clientY, t: now });
+          if (sheetPointerBuffer.length > 5) sheetPointerBuffer.shift();
+
+          const sheetHeight = bottomSheet.getBoundingClientRect().height || 420;
+          let candidateY = (window.innerHeight - sheetHeight) + dy;
+
+          if (candidateY < sheetExpandedY) {
+            candidateY = sheetExpandedY + rubberband(candidateY - sheetExpandedY, 200);
+          } else if (candidateY > sheetPeekY) {
+            candidateY = sheetPeekY + rubberband(candidateY - sheetPeekY, 200);
+          }
+
+          sheetSpring.snapTo(candidateY);
+          wakeRenderLoop();
+        }
+      });
+
+      const handleSheetPointerRelease = (e) => {
+        if (!isSheetPointerDown || (e && e.pointerId !== sheetPointerId)) return;
+        isSheetPointerDown = false;
+        try { sheetHandleZone.releasePointerCapture(sheetPointerId); } catch (err) {}
+
+        let velY = 0;
+        if (sheetPointerBuffer.length >= 2) {
+          const first = sheetPointerBuffer[0];
+          const last = sheetPointerBuffer[sheetPointerBuffer.length - 1];
+          const dtMs = Math.max(1, last.t - first.t);
+          velY = ((last.y - first.y) / dtMs) * 1000;
+        }
+
+        const currentY = sheetSpring.value;
+        const projectedEndpoint = currentY + project(velY, 0.998);
+        const midPoint = (sheetExpandedY + sheetPeekY) / 2;
+
+        let targetY;
+        if (Math.abs(velY) > 350) {
+          targetY = velY < 0 ? sheetExpandedY : sheetPeekY;
+          sheetSpring.velocity = velY;
+          sheetSpring.setTarget(targetY, 0.8, 0.3);
+        } else {
+          targetY = projectedEndpoint < midPoint ? sheetExpandedY : sheetPeekY;
+          sheetSpring.velocity = velY;
+          sheetSpring.setTarget(targetY, 1.0, 0.4);
+        }
+
+        wakeRenderLoop();
+      };
+
+      sheetHandleZone.addEventListener('pointerup', handleSheetPointerRelease);
+      sheetHandleZone.addEventListener('pointercancel', handleSheetPointerRelease);
+    }
+
+    // --------------------------------------------------------------------------
+    // 11. Dedicated Copy & Paste Controls
+    // --------------------------------------------------------------------------
+    const btnCopyCode = document.getElementById('btn-copy-code');
+    const copyBtnText = document.getElementById('copy-btn-text');
+    const btnPasteAction = document.getElementById('btn-paste-action');
+    const btnSpinAgain = document.getElementById('btn-spin-again');
+    const btnGetAnotherCode = document.getElementById('btn-get-another-code');
+    const toastPill = document.getElementById('toast-pill');
+    const toastMessage = document.getElementById('toast-message');
+    const hiddenCopyArea = document.getElementById('hidden-copy-area');
+    let toastTimeout = null;
+
+    function showToast(msg) {
+      if (!toastPill || !toastMessage) return;
+      toastMessage.textContent = msg;
+      toastPill.classList.add('active');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toastPill.classList.remove('active');
+      }, 2200);
+    }
+
+    // Physical button compression
+    document.querySelectorAll('.apple-btn').forEach(btn => {
+      btn.addEventListener('pointerdown', () => btn.classList.add('pressed'));
+      const unpress = () => btn.classList.remove('pressed');
+      btn.addEventListener('pointerup', unpress);
+      btn.addEventListener('pointercancel', unpress);
+      btn.addEventListener('pointerleave', unpress);
+    });
+
+    // Copy Action with Fallback & Multimodal Feedback
+    if (btnCopyCode) {
+      btnCopyCode.addEventListener('click', async () => {
+        initAudio();
+        const rawCode = (activeCode || '').replace(/[^A-Za-z0-9]/g, '');
+        if (!rawCode) return;
+
+        let success = false;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          try {
+            await navigator.clipboard.writeText(rawCode);
+            success = true;
+          } catch (e) {
+            console.warn('Clipboard writeText failed, using fallback:', e);
+          }
+        }
+
+        if (!success && hiddenCopyArea) {
+          try {
+            hiddenCopyArea.value = rawCode;
+            hiddenCopyArea.select();
+            document.execCommand('copy');
+            success = true;
+          } catch (e) {}
+        }
+
+        playFestiveChime();
+        btnCopyCode.classList.add('copied');
+        if (copyBtnText) copyBtnText.textContent = 'Copied!';
+        showToast('✓ ₹2 Code Copied to Clipboard!');
+
+        setTimeout(() => {
+          btnCopyCode.classList.remove('copied');
+          if (copyBtnText) copyBtnText.textContent = 'Copy';
+        }, 2000);
+      });
+    }
+
+    // Dedicated Paste Button & Verification
+    async function handlePasteVerification() {
+      initAudio();
+      let pastedText = '';
+
+      if (navigator.clipboard && navigator.clipboard.readText) {
+        try {
+          pastedText = await navigator.clipboard.readText();
+        } catch (err) {
+          console.warn('Clipboard readText restricted:', err);
+        }
+      }
+
+      if (!pastedText) {
+        if (verifyInput) {
+          verifyInput.focus();
+          verifyFeedback.className = 'verify-feedback active-notice';
+          verifyFeedback.textContent = 'Tap into the input box to paste manually.';
+        }
+        return;
+      }
+
+      processPastedCode(pastedText, true);
+    }
+
+    function processPastedCode(text, isPasteAction = false) {
+      const cleanCode = (text || '').trim().replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+      if (verifyInput) {
+        verifyInput.value = cleanCode;
+      }
+
+      if (isPasteAction) {
+        playFestiveChime();
+      }
+
+      if (cleanCode.length >= 10) {
+        pasteInputContainer.classList.add('verified');
+        verifyFeedback.className = 'verify-feedback active-success';
+        verifyFeedback.textContent = '✓ ' + cleanCode.length + '-character Amazon ₹2 code verified & ready to redeem!';
+        updateRedeemLink(cleanCode);
+        if (isPasteAction) {
+          showToast('✓ ₹2 Code Verified & Ready to Redeem');
+        }
+      } else if (cleanCode.length > 0) {
+        pasteInputContainer.classList.remove('verified');
+        verifyFeedback.className = 'verify-feedback active-notice';
+        verifyFeedback.textContent = 'Pasted code (' + cleanCode.length + ' chars) ready. Verify before redeeming.';
+        updateRedeemLink(cleanCode);
+      }
+    }
+
+    if (btnPasteAction) {
+      btnPasteAction.addEventListener('click', handlePasteVerification);
+    }
+
+    if (verifyInput) {
+      verifyInput.addEventListener('input', (e) => {
+        processPastedCode(e.target.value, false);
+      });
+      verifyInput.addEventListener('paste', () => {
+        setTimeout(() => processPastedCode(verifyInput.value, true), 40);
+      });
+    }
+
+    // Redeem Button Click Handler
+    if (btnRedeemAmazon) {
+      btnRedeemAmazon.addEventListener('click', () => {
+        initAudio();
+        updateRedeemLink();
+      });
+    }
+
+    // Spin / Dispense Next Code Actions
+    if (btnSpinAgain) {
+      btnSpinAgain.addEventListener('click', () => {
+        initAudio();
+        triggerCardCelebrationSpin();
+      });
+    }
+
+    if (btnGetAnotherCode) {
+      btnGetAnotherCode.addEventListener('click', () => {
+        initAudio();
+        triggerCardCelebrationSpin();
+      });
+    }
+
+    // --------------------------------------------------------------------------
+    // 12. Lifecycle & Orientation Initialization
+    // --------------------------------------------------------------------------
+    function handleResize() {
+      computeSheetSnapPoints();
+      resizeSpecularCanvases();
+      initAmbientCanvas();
+      wakeRenderLoop();
+    }
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', () => {
+      setTimeout(handleResize, 100);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initAmbientCanvas();
+      resizeSpecularCanvases();
+      computeSheetSnapPoints();
+      initializeCodes();
+      wakeRenderLoop();
+    });
+
+    ['pointerdown', 'keydown', 'touchstart'].forEach(evt => {
+      window.addEventListener(evt, initAudio, { once: true, passive: true });
+    });
+  </script>
+</body>
+</html>
